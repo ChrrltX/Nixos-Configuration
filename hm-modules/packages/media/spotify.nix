@@ -1,16 +1,35 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, inputs, ... }:
 
 { 
-  options = {
-    spotify.enable = 
-      lib.mkEnableOption "enables spotify";
-  };
+  #options = {
+  #  spotify.enable = 
+  #    lib.mkEnableOption "enables spotify";
+  #};
 
-  config = lib.mkIf config.spotify.enable {
+  #imports = [ inputs.spicetify-nix.nixosModules.default ];
 
-    home-manager.users.chrrltx = { pkgs, ... }: {
-      home.packages = with pkgs; [ spotify ];
-    };
+  #config = lib.mkIf config.spotify.enable {
+    
+    programs.spicetify =
+    #let
+    #  spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.system};
+    #in
+    {
+      enable = true;
 
-  };  
+      #enabledExtensions = with spicePkgs.extensions; [
+      #  adblock
+      #  hidePodcasts
+      #  shuffle
+      #];
+
+    };  
+
+    environment.systemPackages = with pkgs; [ spotify ];
+
+    #home-manager.users.chrrltx = { pkgs, ... }: {
+    #  home.packages = with pkgs; [ "spotify" "spicetify-cli" ];
+    #};
+
+  #};  
 }

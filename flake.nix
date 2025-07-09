@@ -17,11 +17,14 @@
       inputs.hyprland.follows = "hyprland";
     };
     
-     # Stylix
+     # Stylix:
     stylix = {
       url = "github:danth/stylix"; 
       inputs.nixpkgs.follows = "nixpkgs";
     };  
+
+     # Spicetify:
+   spicetify-nix.url = "github:Gerg-L/spicetify-nix";
 
   };
 
@@ -32,6 +35,7 @@
     hyprland,
     hyprland-plugins,
     stylix,
+    spicetify-nix,
     ...
     
   }: {
@@ -45,9 +49,10 @@
          ./hosts/chrrltx-pc/configuration.nix
          ./nixos-modules
          ./hm-modules
-
+         ./themes/default.nix
+         
 	 stylix.nixosModules.stylix
-	 ./themes/default.nix
+         inputs.spicetify-nix.nixosModules.default
 
          {
            networking.hostName = "NixPC";

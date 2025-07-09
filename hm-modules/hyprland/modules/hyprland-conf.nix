@@ -15,7 +15,7 @@
 	  border_size = "2";
 
 	  resize_on_border = false;
-	  allow_tearing = false;
+	  allow_tearing = true;
 	  layout = "dwindle";
 	
 	};
@@ -99,22 +99,52 @@
 
 	};
 
+	misc = {
+          
+          disable_hyprland_logo = true;
+	  disable_splash_rendering = true;
+
+	};
+
 	input = {
 	  
-	   # Keyboard Layout:
+	   # Keyboard Settings:
 	  kb_layout = "us,cz";
+	  numlock_by_default = true;
 
 	  follow_mouse = "1";
            
-	   # Mouse Sensitivity:
+	   # Mouse Settings:
 	  sensitivity = "0";
+
+          touchpad = {
+
+            natural_scroll = true;
+            disable_while_typing = true;
+            clickfinger_behavior = true;
+            scroll_factor = "0.5";
+
+          };
+
+	  gestures = {
+        
+	    workspace_swipe = true;
+            workspace_swipe_distance = "700";
+            workspace_swipe_fingers = "3";
+            workspace_swipe_min_fingers = true;
+            workspace_swipe_cancel_ratio = "0.2";
+            workspace_swipe_min_speed_to_force = "5";
+            workspace_swipe_direction_lock = true;
+            workspace_swipe_direction_lock_threshold = "10";
+            workspace_swipe_create_new = true;
+          
+	  };
 	
 	};
          
 	 # Definitions:
         "$mod" = "SUPER";
 	"$terminal" = "kitty";
-	"$menu" = "wofi --show drun";
 	"$browser" = "brave";
 
 	bind = [
@@ -126,7 +156,6 @@
 
 	   # Executables:
 	  "$mod, Tab, exec, $terminal"
-	  "$mod, Shift_L, exec, $menu"
 	  "$mod, B, exec, $browser"
 	  "$mod, S, exec, steam"
 	  "$mod, D, exec, vesktop"
@@ -175,6 +204,23 @@
 	  "$mod, mouse:273, resizewindow"
 
 	];
+
+	bindle = [
+          
+          "XF86AudioRaiseVolume, exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 2%+"
+	  "XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%-"
+
+	];
+
+	bindl = [
+
+          ",XF86AudioMute, exec, wpctl set-mute @DEFAULT_SINK@ toggle"
+	  ",XF86AudioNext, exec, playerctl next"
+	  ",XF86AudioPrev, exec, playerctl previous"
+	  ",XF86AudioPlay, exec, playerctl play-pause"
+	  ",XF86AudioPause, exec, playerctl play-pause"
+
+	];
          
 	windowrule = [
 	   
@@ -182,6 +228,29 @@
 	  "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
 	  "suppressevent maximize, class:.*"
 	
+	];
+
+	windowrulev2 = [
+          
+	  "center, title:^(Open File)(.*)$"
+	  "center, title:^(Select a File)(.*)$"
+	  "center, title:^(Choose wallpaper)(.*)$"
+	  "center, title:^(Open Folder)(.*)$"
+	  "center, title:^(Save As)(.*)$"
+	  "center, title:^(Library)(.*)$"
+	  "center, title:^(File Upload)(.*)$"
+	  "float, title:^(Open File)(.*)$"
+	  "float, title:^(Select a File)(.*)$"
+	  "float, title:^(Choose wallpaper)(.*)$"
+	  "float, title:^(Open Folder)(.*)$"
+	  "float, title:^(Save As)(.*)$"
+	  "float, title:^(Library)(.*)$"
+	  "float, title:^(File Upload)(.*)$"
+
+	  "immediate, class:^(steam_app)"
+	  "immediate, title:.*minecraft.*"
+	  "immediate, title:.*\.exe"
+
 	];
 
       

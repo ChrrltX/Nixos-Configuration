@@ -1,9 +1,6 @@
 { config, pkgs, lib, ... }:
 
 { 
-  imports = [
-    #./../../themes/default.nix
-  ];
     # Packages:
    
    # Desktops, Display Managers:
@@ -26,7 +23,7 @@
   brave.enable = true;
   obsidian.enable = true;
   vesktop.enable = true;
-  spotify.enable = true;
+  #spotify.enable = true;
   kitty.enable = true;
   openrgb.enable = true;
    

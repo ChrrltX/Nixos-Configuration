@@ -1,16 +1,19 @@
 { config, pkgs, lib, ... }:
 
 {
-  #options = {
-  #  obsidian.enable = 
-  #    lib.mkEnableOption "enables obsidian";
-  #};
+  home-manager.users.chrrltx = { pkgs, ... }: {
 
-  #config = lib.mkIf config.obsidian.enable {
+    wayland.windowManager.hyprland = {
+      
+      settings = {
 
-  #  home-manager.users.chrrltx = { pkgs, ... }: {
-  #    home.packages = with pkgs; [ obsidian ];
-  #  };
+        exec-once = "waybar";
 
-  #};  
+      };
+
+    };  
+
+    programs.waybar.enable = true;  
+
+  };  
 }

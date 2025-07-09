@@ -47,15 +47,16 @@
         };
       };  
     
-       # Addons:
+       # Additional Packages:
       home.packages = with pkgs; [ 
       
-        waybar # Taskbar
 	swww # Wallpapers
         eww
         mako # Notifications
         libnotify
-        wofi # App Menu
+	pavucontrol # Audio
+	playerctl # Audio
+	wireplumber # Audio
 
       ];
 
