@@ -51,12 +51,13 @@
       home.packages = with pkgs; [ 
       
 	swww # Wallpapers
-        eww
         mako # Notifications
-        libnotify
-	pavucontrol # Audio
-	playerctl # Audio
-	wireplumber # Audio
+        libnotify # Notifications
+	swaynotificationcenter 
+	pavucontrol # Audio Controls
+	playerctl # Media Controls
+	wireplumber # Audio Controls
+	wl-clipboard # Clipboard
 
       ];
 

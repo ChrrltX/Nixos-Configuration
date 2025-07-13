@@ -11,7 +11,7 @@
            
 	   # Gaps Between Windows:
 	  gaps_in = "5";
-	  gaps_out = "20";
+	  gaps_out = "18";
 	  border_size = "2";
 
 	  resize_on_border = false;
@@ -126,21 +126,21 @@
 
           };
 
-	  gestures = {
+	};  
+
+        gestures = {
         
-	    workspace_swipe = true;
-            workspace_swipe_distance = "700";
-            workspace_swipe_fingers = "3";
-            workspace_swipe_min_fingers = true;
-            workspace_swipe_cancel_ratio = "0.2";
-            workspace_swipe_min_speed_to_force = "5";
-            workspace_swipe_direction_lock = true;
-            workspace_swipe_direction_lock_threshold = "10";
-            workspace_swipe_create_new = true;
+          workspace_swipe = true;
+          workspace_swipe_distance = "700";
+          workspace_swipe_fingers = "3";
+          workspace_swipe_min_fingers = true;
+          workspace_swipe_cancel_ratio = "0.2";
+          workspace_swipe_min_speed_to_force = "5";
+          workspace_swipe_direction_lock = true;
+          workspace_swipe_direction_lock_threshold = "10";
+          workspace_swipe_create_new = true;
           
-	  };
-	
-	};
+        };
          
 	 # Definitions:
         "$mod" = "SUPER";
@@ -151,8 +151,10 @@
 	  
 	   # Main Binds:
 	  "$mod, Q, killactive,"
+	  "$mod SHIFT, Q, forcekillactive"
           "$mod, Backspace, exit,"
           "$mod, V, togglefloating,"
+	  "$mod, f, fullscreen,"
 
 	   # Executables:
 	  "$mod, Tab, exec, $terminal"
@@ -206,15 +208,19 @@
 	];
 
 	bindle = [
-          
-          "XF86AudioRaiseVolume, exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 2%+"
-	  "XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%-"
+           
+	   # Increasing/Decreasing Volume:
+	  ",XF86AudioRaiseVolume, exec, progress-osd --volume +2%"
+          ",XF86AudioLowerVolume, exec, progress-osd --volume -2%"
 
 	];
 
 	bindl = [
-
-          ",XF86AudioMute, exec, wpctl set-mute @DEFAULT_SINK@ toggle"
+           
+	   # Mute Volume:
+          ",XF86AudioMute, exec, progress-osd --volume-toggle"
+           
+	   # Media Controls:
 	  ",XF86AudioNext, exec, playerctl next"
 	  ",XF86AudioPrev, exec, playerctl previous"
 	  ",XF86AudioPlay, exec, playerctl play-pause"
@@ -227,6 +233,8 @@
 	   # Other Stuff and Fixes:
 	  "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
 	  "suppressevent maximize, class:.*"
+
+	  "center, floating:1, xwayland:0"
 	
 	];
 
@@ -247,9 +255,19 @@
 	  "float, title:^(Library)(.*)$"
 	  "float, title:^(File Upload)(.*)$"
 
+	  "fullscreen,class:^steam_app\\d+$"
+	  "monitor 1,class:^steam_app\\d+$"
+	  "workspace 10,class:^steam_app\\d+$"
+
 	  "immediate, class:^(steam_app)"
 	  "immediate, title:.*minecraft.*"
 	  "immediate, title:.*\.exe"
+
+	];
+
+	workspace = [
+          
+	  "10, border:false, rounding:false"
 
 	];
 

@@ -55,7 +55,12 @@
         package = pkgs.dejavu_fonts;
         name = "DejaVu Serif";
       };
-         
+
+      emoji = {
+        package = pkgs.noto-fonts-monochrome-emoji;
+	name = "Noto Fonts Monochrome Emoji";
+      };
+
        # Font Sizes:
       sizes = {
 	  

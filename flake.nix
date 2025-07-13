@@ -9,6 +9,12 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+     # Disko:
+#    inputs.disko = {
+#      url = "github:nix-community/disko/latest";
+#      inputs.nixpkgs.follows = "nixpkgs";
+#    };  
     
      # Hyprland:
     hyprland.url = "github:hyprwm/Hyprland";
@@ -22,6 +28,17 @@
       url = "github:danth/stylix"; 
       inputs.nixpkgs.follows = "nixpkgs";
     };  
+     
+     # AGS:
+    astal = {
+      url = "github:aylur/astal";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    ags = {
+      url = "github:aylur/ags";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.astal.follows = "astal";
+    };    
 
      # Spicetify:
    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
@@ -31,10 +48,13 @@
   outputs = inputs@{ 
     
     nixpkgs, 
-    home-manager, 
+    home-manager,
+#    disko,
     hyprland,
     hyprland-plugins,
     stylix,
+    ags,
+    astal,
     spicetify-nix,
     ...
     
@@ -51,8 +71,10 @@
          ./hm-modules
          ./themes/default.nix
          
+#	 disko.nixosModules.disko
 	 stylix.nixosModules.stylix
-         inputs.spicetify-nix.nixosModules.default
+         spicetify-nix.nixosModules.default
+#	 ags.nixosModules.default
 
          {
            networking.hostName = "NixPC";
