@@ -3,7 +3,7 @@
 {
   home-manager.users.chrrltx = { pkgs, ... }: {
     
-    stylix.targets.waybar.enable = false;
+    stylix.targets.waybar.enable = true;
 
     wayland.windowManager.hyprland = {
       
@@ -227,7 +227,7 @@
 	}
 
         #workspaces button.empty {
-	  color: rgba(0,0,0,0);
+	  color: rgba(144, 144, 144, 1);
 	  border: none;
 	  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
 	}

@@ -9,7 +9,7 @@
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
        
      # Wallpaper:
-    image = ./wallpapers/purple-desert.png;
+    image = ./wallpapers/dark-cat.png;
        
      # Dark/Light Theme:
     polarity = "dark";
