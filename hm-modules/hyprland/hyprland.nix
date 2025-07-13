@@ -6,6 +6,7 @@
     ./modules/monitors.nix
     ./modules/waybar.nix
     ./modules/wofi.nix
+    ./modules/swww.nix
   ];  
 
   options = {
@@ -50,7 +51,6 @@
        # Additional Packages:
       home.packages = with pkgs; [ 
       
-	swww # Wallpapers
         mako # Notifications
         libnotify # Notifications
 	swaynotificationcenter 
