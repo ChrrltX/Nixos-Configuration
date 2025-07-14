@@ -154,7 +154,8 @@
 	  "$mod SHIFT, Q, forcekillactive"
           "$mod, Backspace, exit,"
           "$mod, V, togglefloating,"
-	  "$mod, f, fullscreen,"
+	  "$mod, F, fullscreen,"
+	  "$mod, W, exec, ~/.wallpaper-switcher.sh"
 
 	   # Executables:
 	  "$mod, Tab, exec, $terminal"

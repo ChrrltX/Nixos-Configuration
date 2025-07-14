@@ -5,16 +5,6 @@
     
     stylix.targets.waybar.enable = true;
 
-    wayland.windowManager.hyprland = {
-      
-      settings = {
-
-        exec-once = "waybar";
-
-      };
-
-    };  
-
     programs.waybar = {
       
       enable = true;

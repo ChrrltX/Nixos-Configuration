@@ -2,11 +2,12 @@
 
 { 
   imports = [
+
     ./modules/hyprland-conf.nix
     ./modules/monitors.nix
     ./modules/waybar.nix
     ./modules/wofi.nix
-    ./modules/swww.nix
+
   ];  
 
   options = {
@@ -30,6 +31,9 @@
       enable = true;
       #package = inputs.hyprland.packages."${pkgs.system}".hyprland;
     };
+     
+     # Scripts:
+    environment.systemPackages = [ (import ./scripts/wallpaper-switcher.nix ) ];
 
     home-manager.users.chrrltx = { pkgs, ... }: {
      
@@ -46,7 +50,22 @@
         xwayland = {
           enable = true;
         };
-      };  
+      };
+       
+       # startup:
+      wayland.windowManager.hyprland = {
+      
+        settings = {
+         
+          exec-once = [ 
+	    
+	    "swww-daemon"
+	    "waybar"
+	  
+	  ];
+
+        };
+      };
     
        # Additional Packages:
       home.packages = with pkgs; [ 
