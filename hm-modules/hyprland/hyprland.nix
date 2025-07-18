@@ -1,7 +1,7 @@
 { config, pkgs, lib, inputs, ... }:
 
 let
-  wallpaper-switcher = import ./scripts/wallpaper-switcher.nix { inherit pkgs; };
+  wallpaper-switcher = pkgs.callPackage ./scripts/wallpaper-switcher.nix { };
 in
 
 { 
@@ -81,6 +81,7 @@ in
 	wireplumber # Audio Controls
 	wl-clipboard # Clipboard
 	swaynotificationcenter
+	swww
 
       ];
 
