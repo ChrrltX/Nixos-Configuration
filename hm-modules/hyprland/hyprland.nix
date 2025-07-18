@@ -1,5 +1,9 @@
 { config, pkgs, lib, inputs, ... }:
 
+let
+  wallpaper-switcher = import ./scripts/wallpaper-switcher.nix { inherit pkgs; };
+in
+
 { 
   imports = [
 
@@ -33,7 +37,7 @@
     };
      
      # Scripts:
-    environment.systemPackages = [ (import ./scripts/wallpaper-switcher.nix ) ];
+    environment.systemPackages = [ wallpaper-switcher ];
 
     home-manager.users.chrrltx = { pkgs, ... }: {
      
@@ -70,13 +74,13 @@
        # Additional Packages:
       home.packages = with pkgs; [ 
       
-        mako # Notifications
+        #mako # Notifications
         libnotify # Notifications
-	swaynotificationcenter 
 	pavucontrol # Audio Controls
 	playerctl # Media Controls
 	wireplumber # Audio Controls
 	wl-clipboard # Clipboard
+	swaynotificationcenter
 
       ];
 

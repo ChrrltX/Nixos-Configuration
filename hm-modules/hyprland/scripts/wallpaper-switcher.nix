@@ -1,6 +1,6 @@
-{ config, pkgs, lib, ... }:
+{ pkgs }:
 
-pkgs.writeShellScriptBin "wallpaper-switcher" ''
+pkgs.writeShellScript "wallpaper-switcher" ''
   
   DIR=$HOME/nixos/themes/wallpapers/
 
@@ -19,14 +19,14 @@ pkgs.writeShellScriptBin "wallpaper-switcher" ''
   swww query || swww-daemon
 
   main() {
-  choice=$(menu | ${wofi_command} | cut -d. -f1)
+  choice=$(menu | ''${wofi_command} | cut -d. -f1)
   case $choice in
   1)
-      swww img ${DIR}/dark-cat.png --transition-fps 144 --transition-type any ->
+      swww img ''${DIR}/dark-cat.png --transition-fps 144 --transition-type any ->
       return
       ;;
   2)
-      swww img ${DIR}/green-cat.png --transition-fps 144 --transition-type any >
+      swww img ''${DIR}/green-cat.png --transition-fps 144 --transition-type any >
       return
       ;;
   esac

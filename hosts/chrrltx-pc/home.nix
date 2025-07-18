@@ -47,6 +47,13 @@
         init.defaultBranch = "main";
       };
     }; 
+
+    home.packages = with pkgs; [
+      
+      prismlauncher
+      logmein-hamachi
+
+    ];
     
     home.username = "chrrltx";
 
@@ -55,4 +62,5 @@
     home.stateVersion = "25.05";
 
   };
+
 }
