@@ -129,7 +129,7 @@
       style = ''
         
 	* {
-	  font-family: 'JetBrainsMono Nerd Font';
+	  font-family: "SF Pro Display", "JetBrainsMono Nerd Font Propo";
 	  font-size: 15px;
 	  font-weight: bold;
 	}  
