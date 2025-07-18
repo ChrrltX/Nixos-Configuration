@@ -7,8 +7,8 @@
       
       settings = {
          
-	 # Bind Wofi:
-        "$menu" = "wofi --show drun";
+	 # Bind Rofi:
+        "$menu" = "rofi --show drun";
 
         bind = [ "$mod, Space, exec, $menu" ];
 
@@ -16,10 +16,10 @@
 
     };  
 
-    programs.wofi = {
+    programs.rofi = {
 
       enable = true;
-      package = pkgs.wofi;
+      package = pkgs.rofi;
       #settings = { };
     
     };
