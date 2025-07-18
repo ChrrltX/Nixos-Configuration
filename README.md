@@ -1,2 +1,0 @@
-## My NixOS Configurations
-> WIP
