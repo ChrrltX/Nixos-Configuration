@@ -65,6 +65,7 @@ in
 	    
 	    "swww-daemon"
 	    "waybar"
+	    "lxqt-policykit-agent"
 	  
 	  ];
 

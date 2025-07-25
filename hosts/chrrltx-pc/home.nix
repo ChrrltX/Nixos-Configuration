@@ -5,9 +5,10 @@
    
    # Desktops, Display Managers:
 
-  gnome.enable = false;
+  gnome.enable = true;
   hyprland.enable = true;
-
+  
+  gdm.enable = true;
   sddm.enable = false;
 
    # Hardware:

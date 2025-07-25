@@ -21,8 +21,15 @@
     programs.wofi = {
       
       enable = true;
+      
+      settings = {
+      
+        promt = "Applications:";
+	allow_images = true;
+	image_size = 50;
+	matching = "fuzzy";
 
-      };
+      };	
 
       style = ''
         

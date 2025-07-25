@@ -11,6 +11,7 @@
      # Display Managers:
     
     ./display-managers/sddm.nix
+    ./display-managers/gdm.nix
 
      # Packages:
 

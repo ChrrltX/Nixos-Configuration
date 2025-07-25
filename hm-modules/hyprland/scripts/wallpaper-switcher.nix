@@ -4,7 +4,7 @@ pkgs.writeShellScriptBin "wallpaper-switcher" ''
   
   DIR=$HOME/nixos/themes/wallpapers/
 
-  rofi_command="rofi --show dmenu \
+  wofi_command="wofi --show dmenu \
                         --prompt 'choose..'
                         --width=300 --height=400 \
                         --cache-file=/dev/null \
@@ -52,7 +52,7 @@ pkgs.writeShellScriptBin "wallpaper-switcher" ''
   swww query || swww-daemon
 
   main() {
-  choice=$(menu | ''${rofi_command} | cut -d. -f1)
+  choice=$(menu | ''${wofi_command} | cut -d. -f1)
   case $choice in
   1)
       swww img ''${DIR}/dark-cat.png --transition-fps 144 --transition-type any --transition-duration 3
