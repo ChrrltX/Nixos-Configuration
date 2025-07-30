@@ -12,7 +12,8 @@
 	   # Gaps Between Windows:
 	  gaps_in = "5";
 	  gaps_out = "18";
-	  border_size = "2";
+	  border_size = "3";
+	  "col.active_border" = lib.mkForce "rgba(140,111,255,1)";
 
 	  resize_on_border = false;
 	  allow_tearing = true;
@@ -27,8 +28,8 @@
 	  rounding_power = "2";
 	   
 	   # Window Opacity:
-	  active_opacity = "0.85";
-	  inactive_opacity = "0.8";
+	  active_opacity = "1";
+	  inactive_opacity = "0.85";
 
 	  shadow = {
 	    

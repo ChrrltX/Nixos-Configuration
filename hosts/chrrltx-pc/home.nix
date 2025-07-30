@@ -36,6 +36,7 @@
   cava.enable = true;
   btop.enable = true;
   tree.enable = true;
+  nvf.enable = true;
 
   home-manager.users.chrrltx = { pkgs, ... }: {
     

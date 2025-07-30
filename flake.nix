@@ -28,20 +28,12 @@
       url = "github:danth/stylix"; 
       inputs.nixpkgs.follows = "nixpkgs";
     };  
-     
-     # AGS:
-    astal = {
-      url = "github:aylur/astal";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    ags = {
-      url = "github:aylur/ags";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.astal.follows = "astal";
-    };    
 
+     # NVF:
+    nvf.url = "github:notashelf/nvf"; 
+     
      # Spicetify:
-   spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
 
   };
 
@@ -53,8 +45,7 @@
     hyprland,
     hyprland-plugins,
     stylix,
-    ags,
-    astal,
+    nvf,
     spicetify-nix,
     ...
     
@@ -74,7 +65,7 @@
 #	 disko.nixosModules.disko
 	 stylix.nixosModules.stylix
          spicetify-nix.nixosModules.default
-#	 ags.nixosModules.default
+	 nvf.nixosModules.default
 
          {
            networking.hostName = "NixPC";

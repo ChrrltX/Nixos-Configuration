@@ -26,6 +26,7 @@
     ./packages/utility/btop.nix
     ./packages/utility/cava.nix
     ./packages/utility/tree.nix
+    ./packages/utility/nvf.nix
 
   ];  
 }
