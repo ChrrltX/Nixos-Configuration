@@ -19,7 +19,6 @@
      
      # Utility:
 
-    ./packages/utility/neovim.nix
     ./packages/utility/kitty.nix
     ./packages/utility/neofetch.nix
     ./packages/utility/nh.nix
@@ -27,6 +26,7 @@
     ./packages/utility/cava.nix
     ./packages/utility/tree.nix
     ./packages/utility/nvf.nix
+    ./packages/utility/zsh.nix
 
   ];  
 }

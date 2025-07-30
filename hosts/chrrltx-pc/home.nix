@@ -30,13 +30,13 @@
    
    # CLI:
 
-  neovim.enable = true;
   neofetch.enable = true;
   nh.enable = true;
   cava.enable = true;
   btop.enable = true;
   tree.enable = true;
   nvf.enable = true;
+  zsh.enable = true;
 
   home-manager.users.chrrltx = { pkgs, ... }: {
     

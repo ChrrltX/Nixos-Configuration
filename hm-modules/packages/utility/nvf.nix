@@ -7,29 +7,52 @@
   };
   
   config = lib.mkIf config.nvf.enable {
-  
-    vim = {
+
+    #home-manager.users.chrrltx = { pkgs, ... }: {  
+
+      programs.nvf = {
       
-      theme.enable = true;
+        enable = true;
 
-      statusline.lualine.enable = true;
-      telescope.enable = true;
-      autocomplete.nvim-cmp.enable = true;
+        settings = {
 
-      launguages = {
-
-        enableLSP = true;
-
-	nix.enable = true;
-	python.enable = true;
-	clang.enable = true;
-	lua.enable = true;
-	ts.enable = true;
-	rust.enable = true;
+          vim = {
       
+            theme.enable = true;
+
+            statusline.lualine.enable = true;
+            telescope.enable = true;
+            autocomplete.nvim-cmp.enable = true;
+            spellcheck.enable = true;
+
+            presence = {
+              neocord.enable = true;
+            };  
+
+            dashboard = {
+              alpha.enable = true;
+            };  
+
+            filetree.neo-tree = {
+              enable = true;
+              setupOpts.enable_git_status = true;
+            }; 
+
+            languages = {
+              enableLSP = true;
+    	      nix.enable = true;
+	      python.enable = true;
+	      clang.enable = true;
+	      lua.enable = true;
+	      ts.enable = true;
+	      rust.enable = true;
+            };
+
+          };
+
+        };
+
       };
-
-    };
-
+    #};  
   };  
 }
