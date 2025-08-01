@@ -39,7 +39,7 @@
   users.users.chrrltx = {
     isNormalUser = true;
     description = "ChrrltX";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
   };
 
    # Unfree Packages:

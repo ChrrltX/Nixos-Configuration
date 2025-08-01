@@ -13,6 +13,9 @@
     ./display-managers/sddm.nix
     ./display-managers/gdm.nix
 
+     # Virtualisation
+    ./virtualisation/virt-manager.nix 
+
      # Packages:
 
     ./packages/steam.nix

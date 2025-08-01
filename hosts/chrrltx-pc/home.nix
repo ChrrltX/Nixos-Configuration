@@ -27,6 +27,7 @@
   #spotify.enable = true;
   kitty.enable = true;
   openrgb.enable = true;
+  virt-manager.enable = true;
    
    # CLI:
 
