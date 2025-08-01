@@ -10,11 +10,12 @@
 
     home-manager.users.chrrltx = { pkgs, ... }: {
       home.packages = with pkgs; [ neofetch ];
-    };
 
-    programs.zsh = {
-      initExtra = "neofetch";
-    };
+      programs.zsh = {
+        initExtra = "neofetch";
+      };
+
+    };  
 
   };  
 }

@@ -39,7 +39,7 @@
   zsh.enable = true;
   bat.enable = true;
   fzf.enable = true;
-  exa.enable = true;
+  eza.enable = true;
 
   home-manager.users.chrrltx = { pkgs, ... }: {
     
