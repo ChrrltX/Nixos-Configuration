@@ -30,7 +30,7 @@
    
    # CLI:
 
-  neofetch.enable = true;
+  fastfetch.enable = true;
   nh.enable = true;
   cava.enable = true;
   btop.enable = true;

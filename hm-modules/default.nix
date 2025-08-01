@@ -20,7 +20,7 @@
      # Utility:
 
     ./packages/utility/kitty.nix
-    ./packages/utility/neofetch.nix
+    ./packages/utility/fastfetch.nix
     ./packages/utility/nh.nix
     ./packages/utility/btop.nix
     ./packages/utility/cava.nix
