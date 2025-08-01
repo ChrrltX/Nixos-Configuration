@@ -7,9 +7,12 @@
   };
   
   config = lib.mkIf config.zsh.enable {
-  
-    home-manager.users.chrrltx = { pkgs, ... }: {
+    
+    programs.zsh.enable = true;
+    users.users.chrrltx.shell = pkgs.zsh;
 
+    home-manager.users.chrrltx = { pkgs, ... }: {
+      
       home.packages = with pkgs; [ zsh-powerlevel10k ];
       
       programs.zsh = {
@@ -27,6 +30,21 @@
           clean = "nh clean all --keep 3";
           clean-dry = "nh clean all --keep 3 --dry";
         };
+      
+        plugins = [
+
+           # Powerlevel10k Theme:
+          {                                                                                   
+            name = "powerlevel10k";                                                           
+            src = pkgs.zsh-powerlevel10k;                                                     
+            file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";                         
+          }
+
+        ];
+
+        initExtra = ''
+          source ~/.p10k.zsh
+        '';
 
         oh-my-zsh = {
           enable = true;
@@ -34,12 +52,7 @@
             "git"
             "colored-man-pages"
           ];
-          #theme = "powerlevel10k";
         };
-        
-        initExtra = ''
-          source ${pkgs.zsh-powerlevel10k}/share/zsh/themes/powerlevel10k.zsh-theme;
-        '';
 
         history.size = 10000;
         history.ignoreAllDups = true;

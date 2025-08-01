@@ -157,6 +157,7 @@
           "$mod, V, togglefloating,"
 	  "$mod, F, fullscreen,"
 	  "$mod, W, exec, wallpaper-switcher"
+          "$mod, ESC, exec, shutdown now"
 
 	   # Executables:
 	  "$mod, Tab, exec, $terminal"

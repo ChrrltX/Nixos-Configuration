@@ -27,6 +27,9 @@
     ./packages/utility/tree.nix
     ./packages/utility/nvf.nix
     ./packages/utility/zsh.nix
+    ./packages/utility/bat.nix
+    ./packages/utility/fzf.nix
+    ./packages/utility/exa.nix
 
   ];  
 }
