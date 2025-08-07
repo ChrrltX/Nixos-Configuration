@@ -148,7 +148,7 @@
 	"$terminal" = "kitty";
 	"$browser" = "brave";
         "$files" = "nautilus";
-        "$screenshot" = ''grim -g "$(slurp)" - | convert - -shave 1x1 PNG:- | swappy -f -'';
+        "$screenshot" = ''grim -g "$(slurp -w 0)" - | swappy -f -'';
 
 	bind = [
 	  
