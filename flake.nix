@@ -22,6 +22,12 @@
       url = "github:hyprwm/Hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
     };
+     
+     # Caelestia Shell:
+    caelestia-shell = {
+      url = "github:your-repo/caelestia-shell-nixos";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };    
     
      # Stylix:
     stylix = {
@@ -44,6 +50,7 @@
 #    disko,
     hyprland,
     hyprland-plugins,
+    caelestia-shell,
     stylix,
     nvf,
     spicetify-nix,
@@ -76,6 +83,16 @@
            home-manager.useGlobalPkgs = true;
            home-manager.useUserPackages = true;
            #home-manager.users.chrrltx = ./hosts/chrrltx-pc/home.nix;
+         }
+
+         caelestia-shell.nixosModules.default
+         {
+           services.caelestia-shell.enable = true;
+           # Optional: customize configuration
+           services.caelestia-shell.config = {
+             bar.workspaces.shown = 5;
+             dashboard.weatherLocation = "40.7128,-74.0060"; # NYC coordinates
+           };
          }
  
        ];

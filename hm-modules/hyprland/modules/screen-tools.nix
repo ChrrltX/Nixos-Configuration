@@ -9,6 +9,10 @@
       grim
       slurp
       swappy
+
+       # Screen Recording:
+      wf-recorder 
+      vlc
       
     ];
 
