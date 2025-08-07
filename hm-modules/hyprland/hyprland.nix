@@ -11,6 +11,7 @@ in
     ./modules/monitors.nix
     ./modules/waybar.nix
     ./modules/wofi.nix
+    ./modules/screen-tools.nix
 
   ];  
 

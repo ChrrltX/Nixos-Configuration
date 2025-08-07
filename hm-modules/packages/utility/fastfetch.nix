@@ -194,7 +194,7 @@
           ];
         
         }; 
-         # Inspired by: https://github.com/wimpysworld
+         # Inspired by: https://github.com/wimpysworld/nix-config/tree/main
       };
     
     };  

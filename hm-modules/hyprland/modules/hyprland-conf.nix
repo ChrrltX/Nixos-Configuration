@@ -147,6 +147,8 @@
         "$mod" = "SUPER";
 	"$terminal" = "kitty";
 	"$browser" = "brave";
+        "$files" = "nautilus";
+        "$screenshot" = ''grim -g "$(slurp)" - | convert - -shave 1x1 PNG:- | swappy -f -'';
 
 	bind = [
 	  
@@ -154,10 +156,9 @@
 	  "$mod, Q, killactive,"
 	  "$mod SHIFT, Q, forcekillactive"
           "$mod, Backspace, exit,"
-          "$mod, V, togglefloating,"
-	  "$mod, F, fullscreen,"
-	  "$mod, W, exec, wallpaper-switcher"
-          "$mod, ESC, exec, shutdown now"
+          "$mod SHIFT, V, togglefloating,"
+	  "$mod SHIFT, F, fullscreen,"
+          "$mod SHIFT, S, exec, $screenshot,"
 
 	   # Executables:
 	  "$mod, Tab, exec, $terminal"
@@ -165,6 +166,8 @@
 	  "$mod, S, exec, steam"
 	  "$mod, D, exec, vesktop"
 	  "$mod, R, exec, obsidian"
+          "$mod, W, exec, wallpaper-switcher"
+          "$mod, F, exec, $files"
           
 	   # Move Focus:
 	  "$mod, left, movefocus, l"

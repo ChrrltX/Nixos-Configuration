@@ -58,6 +58,7 @@
       
       prismlauncher
       logmein-hamachi
+      nautilus
 
     ];
     

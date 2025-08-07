@@ -55,7 +55,7 @@
 
       #name = "Bibata-Modern-Ice";
       name = "GoogleDot-White";
-      #name = "Oreo-Spark-White";
+      #name = "Oreo-Spark-Lite";
       
       size = 22;
     
