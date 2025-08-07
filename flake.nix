@@ -25,7 +25,7 @@
      
      # Caelestia Shell:
     caelestia-shell = {
-      url = "github:your-repo/caelestia-shell-nixos";
+      url = "github:miliu2cc/caelestia-shell-nixos";
       inputs.nixpkgs.follows = "nixpkgs";
     };    
     
