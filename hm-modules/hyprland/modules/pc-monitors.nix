@@ -1,7 +1,6 @@
 { config, pkgs, lib, inputs, ... }:
 
 { 
-  {
   options = {
     pc-monitors.enable = 
       lib.mkEnableOption "enables pc-monitors";

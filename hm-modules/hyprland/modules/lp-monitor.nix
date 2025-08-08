@@ -1,7 +1,6 @@
 { config, pkgs, lib, inputs, ... }:
 
 { 
-  {
   options = {
     lp-monitor.enable = 
       lib.mkEnableOption "enables lp-monitor";
