@@ -16,20 +16,25 @@
 
   amd.enable = false;
 
-   # Themes:
+   # Customization:
+
   stylix.enable = true;
   services.caelestia-shell.enable = false;
+  waybar.enable = true;
+
+   # Gaming:
+  steam.enable = true;
+  prismlauncher.enable = true;
    
    # Apps:
 
-  steam.enable = true;
   brave.enable = true;
   obsidian.enable = true;
   vesktop.enable = true;
   #spotify.enable = true;
   kitty.enable = true;
-  openrgb.enable = false;
   virt-manager.enable = false;
+  nautilus.enable = true;
    
    # CLI:
 
@@ -56,11 +61,7 @@
       };
     }; 
 
-    home.packages = with pkgs; [
-
-      nautilus
-
-    ];
+    #home.packages = with pkgs; [ ];
     
     home.username = "chrrltx";
 

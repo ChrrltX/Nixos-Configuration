@@ -10,6 +10,9 @@
    
       # Packages:
      
+     # Gaming:
+    ./packages/gaming/prismlauncher.nix 
+     
      # Media: 
 
     ./packages/media/brave.nix
@@ -30,6 +33,7 @@
     ./packages/utility/bat.nix
     ./packages/utility/fzf.nix
     ./packages/utility/eza.nix
+    ./packages/utility/nautilus.nix
 
   ];  
 }

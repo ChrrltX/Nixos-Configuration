@@ -15,22 +15,28 @@
    # Hardware:
 
   amd.enable = true;
+  openrgb.enable = true;
 
-   # Themes:
+   # Customization:
+
   stylix.enable = true;
   services.caelestia-shell.enable = true;
-  waybar.enable = true;
+  waybar.enable = false;
+
+   # Gaming:
+  
+  steam.enable = true;
+  prismlauncher.enable = true;
    
    # Apps:
 
-  steam.enable = true;
   brave.enable = true;
   obsidian.enable = true;
   vesktop.enable = true;
   #spotify.enable = true;
   kitty.enable = true;
-  openrgb.enable = true;
   virt-manager.enable = true;
+  nautilus.enable = true;
    
    # CLI:
 
@@ -57,13 +63,7 @@
       };
     }; 
 
-    home.packages = with pkgs; [
-      
-      prismlauncher
-      logmein-hamachi
-      nautilus
-
-    ];
+    #home.packages = with pkgs; [ ];
     
     home.username = "chrrltx";
 
