@@ -16,6 +16,8 @@
 
   amd.enable = true;
   openrgb.enable = true;
+  pc-monitors.enable = true;
+  lp-monitor.enable = false;
 
    # Customization:
 

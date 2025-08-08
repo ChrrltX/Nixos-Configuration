@@ -8,7 +8,8 @@ in
   imports = [
 
     ./modules/hyprland-conf.nix
-    ./modules/monitors.nix
+    ./modules/pc-monitors.nix
+    ./modules/lp-monitor.nix
     ./modules/waybar.nix
     ./modules/wofi.nix
     ./modules/screen-tools.nix

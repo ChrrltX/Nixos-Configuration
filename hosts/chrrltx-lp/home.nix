@@ -15,6 +15,8 @@
    # Hardware:
 
   amd.enable = false;
+  lp-monitor.enable = true;
+  pc-monitors.enable = false;
 
    # Customization:
 
