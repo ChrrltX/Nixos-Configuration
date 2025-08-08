@@ -20,6 +20,7 @@
 
     ./packages/steam.nix
     ./packages/openrgb.nix
+    ./packages/plymouth.nix
   
   ];
 }

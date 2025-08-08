@@ -24,6 +24,7 @@
   stylix.enable = true;
   services.caelestia-shell.enable = true;
   waybar.enable = false;
+  plymouth.enable = true;
 
    # Gaming:
   

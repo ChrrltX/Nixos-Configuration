@@ -23,6 +23,7 @@
   stylix.enable = true;
   services.caelestia-shell.enable = false;
   waybar.enable = true;
+  plymouth.enable = true;
 
    # Gaming:
   steam.enable = true;
