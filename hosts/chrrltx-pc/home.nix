@@ -19,6 +19,10 @@
   pc-monitors.enable = true;
   lp-monitor.enable = false;
 
+   # Security:
+  
+  proton-vpn.enable = true;
+
    # Customization:
 
   stylix.enable = true;

@@ -21,6 +21,7 @@
     ./packages/steam.nix
     ./packages/openrgb.nix
     ./packages/plymouth.nix
+    ./packages/proton-vpn.nix
   
   ];
 }

@@ -17,6 +17,10 @@
   amd.enable = false;
   lp-monitor.enable = true;
   pc-monitors.enable = false;
+   
+   # Security:
+  
+  proton-vpn.enable = true;
 
    # Customization:
 
