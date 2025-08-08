@@ -7,29 +7,31 @@
   };
   
   config = lib.mkIf config.plymouth.enable {
-  
+    
+    stylix.targets.plymouth.enable = false;
+
     boot = {
 
       plymouth = {
         
         enable = true;
         
-        theme = "Cuts Alt";
+        theme = "cuts_alt";
         
         themePackages = with pkgs; [
           (adi1090x-plymouth-themes.override {
             selected_themes = [ 
               
-              "Black HUD"
-              "Blockchain"
-              "Circuit"
-              "Connect"
-              "Cuts"
-              "Cuts Alt"
-              "Green Loader"
-              "Hud 3"
-              "Loader"
-              "Spinner Alt"
+              "black_hud"
+              "blockchain"
+              "circuit"
+              "connect"
+              "cuts"
+              "cuts_alt"
+              "green_loader"
+              "hud_3"
+              "loader"
+              "spinner_alt"
 
             ];
           })
