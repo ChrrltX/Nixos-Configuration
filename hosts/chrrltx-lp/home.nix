@@ -6,7 +6,7 @@
    
    # Desktops, Display Managers:
 
-  gnome.enable = true;
+  gnome.enable = false;
   hyprland.enable = true;
   
   gdm.enable = true;
@@ -14,7 +14,7 @@
 
    # Hardware:
 
-  amd.enable = true;
+  amd.enable = false;
 
    # Themes:
   stylix.enable = true;
@@ -27,8 +27,8 @@
   vesktop.enable = true;
   #spotify.enable = true;
   kitty.enable = true;
-  openrgb.enable = true;
-  virt-manager.enable = true;
+  openrgb.enable = false;
+  virt-manager.enable = false;
    
    # CLI:
 
@@ -56,9 +56,7 @@
     }; 
 
     home.packages = with pkgs; [
-      
-      prismlauncher
-      logmein-hamachi
+
       nautilus
 
     ];

@@ -25,7 +25,7 @@
      
      # Caelestia Shell:
     caelestia-shell = {
-      url = "github:miliu2cc/caelestia-shell-nixos";
+      url = "github:kochkaev/caelestia-shell-nixos";
       inputs.nixpkgs.follows = "nixpkgs";
     };    
     
@@ -88,18 +88,53 @@
          caelestia-shell.nixosModules.default
          {
            services.caelestia-shell.enable = true;
-           # Optional: customize configuration
            services.caelestia-shell.config = {
+              # Config:
              bar.workspaces.shown = 5;
-             dashboard.weatherLocation = "40.7128,-74.0060"; # NYC coordinates
+             dashboard.weatherLocation = "49.18251498377868,16.60457334096215";
            };
          }
  
        ];
      }; 
    
-#   NixLP = nixpkgs.lib.nixosSystem {
-  
+     NixLP = nixpkgs.lib.nixosSystem {
+       system = "x86_64-linux";
+       modules = [
+
+         ./hosts/chrrltx-lp/configuration.nix
+         ./nixos-modules
+         ./hm-modules
+         ./themes/default.nix
+
+	 stylix.nixosModules.stylix
+         spicetify-nix.nixosModules.default
+	 nvf.nixosModules.default
+
+         {
+           networking.hostName = "NixLP";
+         }
+
+         home-manager.nixosModules.home-manager
+         {
+           home-manager.useGlobalPkgs = true;
+           home-manager.useUserPackages = true;
+           #home-manager.users.chrrltx = ./hosts/chrrltx-pc/home.nix;
+         }
+
+         caelestia-shell.nixosModules.default
+         {
+           services.caelestia-shell.enable = true;
+           services.caelestia-shell.config = {
+              # Config:
+             bar.workspaces.shown = 5;
+             dashboard.weatherLocation = "49.18251498377868,16.60457334096215";
+           };
+         }
+
+       ];  
+     };
+     
     };
   };
 }

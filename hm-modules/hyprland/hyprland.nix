@@ -9,7 +9,7 @@ in
 
     ./modules/hyprland-conf.nix
     ./modules/monitors.nix
-    ./modules/waybar.nix
+    #./modules/waybar.nix
     ./modules/wofi.nix
     ./modules/screen-tools.nix
 
