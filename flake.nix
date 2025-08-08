@@ -73,6 +73,7 @@
 	 stylix.nixosModules.stylix
          spicetify-nix.nixosModules.default
 	 nvf.nixosModules.default
+         caelestia-shell.nixosModules.default
 
          {
            networking.hostName = "NixPC";
@@ -85,16 +86,6 @@
            #home-manager.users.chrrltx = ./hosts/chrrltx-pc/home.nix;
          }
 
-         caelestia-shell.nixosModules.default
-         {
-           services.caelestia-shell.enable = true;
-           services.caelestia-shell.config = {
-              # Config:
-             bar.workspaces.shown = 5;
-             dashboard.weatherLocation = "49.18251498377868,16.60457334096215";
-           };
-         }
- 
        ];
      }; 
    
@@ -110,6 +101,7 @@
 	 stylix.nixosModules.stylix
          spicetify-nix.nixosModules.default
 	 nvf.nixosModules.default
+         caelestia-shell.nixosModules.default
 
          {
            networking.hostName = "NixLP";
@@ -120,16 +112,6 @@
            home-manager.useGlobalPkgs = true;
            home-manager.useUserPackages = true;
            #home-manager.users.chrrltx = ./hosts/chrrltx-pc/home.nix;
-         }
-
-         caelestia-shell.nixosModules.default
-         {
-           services.caelestia-shell.enable = true;
-           services.caelestia-shell.config = {
-              # Config:
-             bar.workspaces.shown = 5;
-             dashboard.weatherLocation = "49.18251498377868,16.60457334096215";
-           };
          }
 
        ];  

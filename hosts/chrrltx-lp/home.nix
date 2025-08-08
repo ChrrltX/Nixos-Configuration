@@ -18,6 +18,7 @@
 
    # Themes:
   stylix.enable = true;
+  services.caelestia-shell.enable = false;
    
    # Apps:
 

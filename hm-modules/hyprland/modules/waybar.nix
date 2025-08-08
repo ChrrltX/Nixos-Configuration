@@ -1,6 +1,13 @@
 { config, pkgs, lib, ... }:
 
-{
+{ 
+  options = {
+    waybar.enable = 
+      lib.mkEnableOption "enables waybar";
+  };
+  
+  config = lib.mkIf config.waybar.enable {
+
   home-manager.users.chrrltx = { pkgs, ... }: {
     
     stylix.targets.waybar.enable = true;
@@ -289,5 +296,6 @@
       # Inspired by: https://github.com/elifouts/Dotfiles/tree/main
 
     };  
-  };  
+  };
+  };
 }
