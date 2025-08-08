@@ -12,8 +12,8 @@
     
     environment.systemPackages = with pkgs; [
       
-      "wireguard-tools" 
-      "protonvpn-gui"
+      wireguard-tools 
+      protonvpn-gui
 
     ];
 
