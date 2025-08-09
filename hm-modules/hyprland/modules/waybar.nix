@@ -46,6 +46,7 @@
 	    "group/expand"
 	    "pulseaudio" 
 	    "network"
+            "battery"
 
 	  ];
 
@@ -83,7 +84,28 @@
 	    tooltip-format-wifi = "{essid} ({signalStrength}%) ";
 	    tooltip-format-ethernet = "{ifname} ";
 	    on-click = "kitty nmtui";
-	  }; 
+	  };
+
+          "battery" = {
+            interval = 30;
+            states = {
+              good = 95;
+              warning = 30;
+              critical = 20;
+            };
+            format = "{capacity}% {icon}";
+            format-charging = "{capacity}% 󰂄";
+            format-plugged = "{capacity}% 󰂄 ";
+            format-alt = "{time} {icon}";
+            format-icons = [
+              "󰁻"
+              "󰁼"
+              "󰁾"
+              "󰂀"
+              "󰂂"
+              "󰁹"
+            ];
+          };          
 
           "custom/expand" = {
 	    format = "";
@@ -247,6 +269,29 @@
 	  transition: all .3s ease;
 	  color:@color7;
 	}
+
+        #battery {
+          padding: 0px 5px;
+          transition: all .3s ease;
+          color:@color7;
+        }
+
+        #battery.charging {
+          color: #26A65B;
+        }
+
+        #battery.warning:not(.charging) {
+          color: #ffbe61;
+        }
+
+        #battery.critical:not(.charging) {
+          color: #f53c3c;
+          animation-name: blink;
+          animation-duration: 0.5s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }        
 
 	#group-expand {
           padding: 0px 5px;
