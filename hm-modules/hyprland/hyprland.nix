@@ -14,6 +14,7 @@ in
     ./modules/wofi.nix
     ./modules/screen-tools.nix
     ./modules/caelestia.nix
+    ./modules/hypridle.nix
 
   ];  
 
@@ -69,6 +70,7 @@ in
 	    "swww-daemon"
 	    "waybar"
 	    "lxqt-policykit-agent"
+            "hyprlock || hyprctl dispatch exit"
 	  
 	  ];
 
