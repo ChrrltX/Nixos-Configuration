@@ -17,6 +17,7 @@
   amd.enable = false;
   lp-monitor.enable = true;
   pc-monitors.enable = false;
+  bluetooth.enable = true;
    
    # Security:
   

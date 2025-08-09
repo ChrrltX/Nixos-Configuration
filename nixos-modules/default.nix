@@ -7,6 +7,7 @@
 
     #./hardware/nvidia.nix
     ./hardware/amd.nix
+    ./hardware/bluetooth.nix
 
      # Display Managers:
     
