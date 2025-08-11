@@ -39,7 +39,10 @@
     nvf.url = "github:notashelf/nvf"; 
      
      # Spicetify:
-    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+    spicetify-nix = {
+      url = "github:Gerg-L/spicetify-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
   };
 
@@ -62,6 +65,7 @@
    
      NixPC = nixpkgs.lib.nixosSystem {
        system = "x86_64-linux";
+       specialArgs = { inherit inputs; };
        modules = [
 
          ./hosts/chrrltx-pc/configuration.nix
@@ -91,6 +95,7 @@
    
      NixLP = nixpkgs.lib.nixosSystem {
        system = "x86_64-linux";
+       specialArgs = { inherit inputs; };
        modules = [
 
          ./hosts/chrrltx-lp/configuration.nix

@@ -231,6 +231,7 @@
 	  ",XF86AudioPrev, exec, playerctl previous"
 	  ",XF86AudioPlay, exec, playerctl play-pause"
 	  ",XF86AudioPause, exec, playerctl play-pause"
+          "$mod ALT, P, exec, playerctl play-pause"
 
 	];
          

@@ -40,7 +40,7 @@
   brave.enable = true;
   obsidian.enable = true;
   vesktop.enable = true;
-  #spotify.enable = true;
+  spotify.enable = true;
   kitty.enable = true;
   virt-manager.enable = true;
   nautilus.enable = true;
