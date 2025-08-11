@@ -33,7 +33,6 @@
 	    
 	    "custom/notification"
 	    "hyprland/workspaces"
-	    "tray"
 
 	  ];
 	  modules-center = [
@@ -45,6 +44,7 @@
 	    
 	    "group/expand"
 	    "pulseaudio" 
+            "bluetooth"
 	    "network"
             "battery"
 
@@ -53,14 +53,14 @@
 	   # Modules:
 	  
           "hyprland/workspaces" = {
-            format = "{name}";
+            format = "{icon}";
 	    format-icons = {
 	      active = "";
 	      default = "";
 	      empty = "";
 	    };  
 	    persistent-workspaces = {
-	      "*" = 3;
+	      "*" = 5;
 	    };  
 	  };
 
@@ -74,6 +74,16 @@
           "clock" = {
 	    format = "{:%I:%M:%S %p}";
 	    interval = 1;
+            tooltip-format = "<tt>{calendar}</tt>";
+            calendar = {
+              format = {
+                today = "<span color='#fAfBfC'><b>{}</b></span>";
+              };
+            };
+            actions = {
+              on-click-right = "shift_down";
+              on-click = "shift_up";
+            };
 	  };
 
 	  "network" = {
@@ -85,6 +95,19 @@
 	    tooltip-format-ethernet = "{ifname} ";
 	    on-click = "kitty nmtui";
 	  };
+
+          "bluetooth" = {
+            format-on = "󰂯";
+            format-off = "BT-off";
+            format-disabled = "󰂲";
+            format-connected-battery = "{device_battery_percentage}% 󰂯";
+            format-alt = "{device_alias} 󰂯";
+            tooltip-format = "{controller_alias}\t{controller_address}\n\n{num_connections} connected";
+            tooltip-format-connected = "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}";
+            tooltip-format-enumerate-connected = "{device_alias}\n{device_address}";
+            tooltip-format-enumerate-connected-battery = "{device_alias}\n{device_address}\n{device_battery_percentage}%";
+            on-click-right = "blueman-manager";
+          };          
 
           "battery" = {
             interval = 30;
@@ -129,6 +152,7 @@
 	      "cpu"
 	      "memory"
 	      "temperature"
+              "tray"
 	      "custom/endpoint"
 	    ];
 	  };
@@ -171,24 +195,21 @@
 	  padding:7px;
 	  margin:10 0 5 10;
 	  border-radius:10px;
-	  background: rgba(30, 30, 46, 0.9);
-	  box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
+	  background: rgba(30, 30, 46, 0.8);
 	}
 
 	.modules-center {
 	  padding:7px;
 	  margin:10 0 5 0;
 	  border-radius:10px;
-	  background: rgba(30, 30, 46, 0.9);
-	  box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
+	  background: rgba(30, 30, 46, 0.8);
 	}
         
         .modules-right {
 	  padding:7px;
 	  margin: 10 10 5 0;
 	  border-radius:10px;
-	  background: rgba(30, 30, 46, 0.9);
-	  box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
+	  background: rgba(30, 30, 46, 0.8);
 	}  
 
 	tooltip {
@@ -270,6 +291,12 @@
 	  color:@color7;
 	}
 
+        #bluetooth {
+          padding: 0px 5px;
+          transition: all .3s ease;
+          color:@color7;
+        }
+
         #battery {
           padding: 0px 5px;
           transition: all .3s ease;
@@ -339,6 +366,7 @@
       '';
 
       # Inspired by: https://github.com/elifouts/Dotfiles/tree/main
+      # So Go Check Them Out!
 
     };  
   };

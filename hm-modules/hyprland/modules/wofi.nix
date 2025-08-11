@@ -24,59 +24,127 @@
       
       settings = {
       
-        promt = "Applications:";
+        promt = "Search";
 	allow_images = true;
-	image_size = 50;
+        width = 500;
+        height = 400;
+        show = "Search";
+        term = "kitty";
+        hide_scroll = true;
+        print_command = true;
+        insensitive = true;
+        columns = 1;
+        no_actions = true;
 	matching = "fuzzy";
 
       };	
 
       style = ''
         
-	* {
-	  border: 0;
-	  margin: 0;
-	  padding: 0;
-	  spacing: 0;
-	}
+        @keyframes fadeIn {
+          0% {
+          }
+          100% {
+          }
+        }
+        
+        * {
+          all:unset;
+          font-family: 'JetBrainsMono Nerd Font Mono', monospace;
+          font-size: 18px;
+          outline: none;
+          border: none;
+          border-radius: 10px;
+          text-shadow:none;
+          background-color: rgba(30, 30, 46, 0.5);
+        }
 
-	window {
-	  width: 45%;
-	}
+        window {
+          all:unset;
+          padding: 20px;
+          border-radius: 10px;
+          background-color: rgba(30, 30, 46, 0.5);
+        }
+        
+        #inner-box {
+          margin: 2px;
+          padding: 5px
+          border: none;
+        }
+        
+        #outer-box {  
+          
+          border: none;
+        }
+        
+        #scroll {
+          margin: 0px;
+          border: none;
+        }
+        
+        #input {
+          all:unset;
+          margin-left:20px;
+          margin-right:20px;
+          margin-top:20px;
+          padding: 20px;
+          border: none;
+          outline: none;
+          color: @text;
+          box-shadow: 1px 1px 5px rgba(0,0,0, .5);
+          border-radius:10;
+          background-color: rgba(30, 30, 46, 0.5);
+        }
+        
+        #input image {
+          border: none;
+          color: rgb(243, 139, 168);
+          padding-right:10px;
+        }
+        
+        #input * {
+          border: none;
+          outline: none;
+        }
 
-	element {
-          padding: 12;
-	}
-
-	element-text {
-	  vertical-align: 0.5;
-	}
-
-	element-icon {
-	  size: 30;
-	}
-
-	entry {
-	  padding: 12;
-	}
-
-	inputbar {
-	  children: [promt, entry];
-	}
-
-	listview {
-	  columns: 1;
-	  lines: 8;
-	}
-
-	mainbox {
-	  children: [inputbar, listview];
-	}
-
-	promt {
-	  enabled: true;
-	  padding: 12 0 0 12;
-	}
+        #input:focus {
+          outline: none;
+          border: none;
+          border-radius:10;
+        }
+        
+        #text {
+          margin: 5px;
+          border: none;
+          color: @text;
+          outline: none;
+        }
+        
+        #entry {
+          border: none;
+          margin: 5px;
+          padding: 10px;
+        }
+        
+        #entry arrow {
+          border: none;
+          color: rgb(180, 190, 254);
+        }
+        
+        #entry:selected {
+          box-shadow: 1px 1px 5px rgba(255,255,255, .03);
+          border: none;
+          border-radius: 20px;
+          background-color: rgb(203, 166, 247);
+        }
+        
+        #entry:selected #text {
+          color: @text;
+        }
+        
+        #entry:drop(active) {
+          background-color: rgb(180, 190, 254) !important;
+        }
 
       '';
     };   
