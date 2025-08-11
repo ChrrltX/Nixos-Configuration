@@ -6,7 +6,7 @@
    
    # Desktops, Display Managers:
 
-  gnome.enable = false;
+  gnome.enable = true;
   hyprland.enable = true;
   
   gdm.enable = true;
@@ -22,6 +22,7 @@
    # Security:
   
   proton-vpn.enable = true;
+  hypridle.enable = false;
 
    # Customization:
 

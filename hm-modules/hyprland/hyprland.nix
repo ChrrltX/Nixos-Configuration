@@ -70,7 +70,7 @@ in
 	    "swww-daemon"
 	    "waybar"
 	    "lxqt-policykit-agent"
-            "hyprlock || hyprctl dispatch exit"
+            "protonvpn-app"
 	  
 	  ];
 
