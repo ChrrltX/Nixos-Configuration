@@ -31,13 +31,14 @@
 
 	  modules-left = [
 	    
-	    "custom/notification"
 	    "hyprland/workspaces"
+            "custom/i-lov-mari"
 
 	  ];
 	  modules-center = [
 	    
 	    "clock"
+            "cava"
 
 	  ];  
 	  modules-right = [ 
@@ -64,13 +65,35 @@
 	    };  
 	  };
 
-	  "custom/notification" = {
-	    tooltip = false;
-	    format = "";
-	    on-click = "swaync-client -t -sw";
-	    escape = true;
-	  };
+          "custom/i-lov-mari" = {
+            format = "I Lov Mari";
+          };
 
+          "cava" = {
+            format = "{icon}";
+            bars = 15;
+            autosens = 1;
+            framerate = 144;
+            method = "pulse";
+            source = "auto";
+            hide_on_silence = true;
+            monstercat = true;
+            waves = true;
+            format-icons = [
+              "▁" 
+              "▂" 
+              "▃" 
+              "▄" 
+              "▅" 
+              "▆" 
+              "▇" 
+              "█" 
+            ];
+            bar_delimiter = 0;
+            sleep_timer = 2;
+            input_delay = 1;
+          };  
+            
           "clock" = {
 	    format = "{:%I:%M:%S %p}";
 	    interval = 1;
@@ -86,10 +109,30 @@
             };
 	  };
 
+          "pulseaudio" = {
+            format = "{volume}% {icon}";
+            format-icons = [
+              ""
+              ""
+            ];
+            format-muted = "";
+            scroll-step = 2;
+            on-click = "pavucontrol";
+            tooltip = false;
+          };        
+
 	  "network" = {
-	    format-wifi = "";
-	    format-ethernet = "";
-	    format-disconnected = "";
+            format = "{icon}";
+            format-icons = {
+              wifi = [
+                "󰤟"
+                "󰤢"
+                "󰤥"
+                "󰤨"
+              ];
+              ethernet = "";
+              disconnected = ""; 
+            };
 	    tooltip-format-disconnected = "Disconnected";
 	    tooltip-format-wifi = "{essid} ({signalStrength}%) ";
 	    tooltip-format-ethernet = "{ifname} ";
@@ -217,16 +260,11 @@
 	  color: @color7;
 	}
 
-	#custom-notification:hover, #network:hover, #cpu:hover, #memory:hover, #temperature:hover {
-	  transition: all .3s ease;
-	  color:@color9;
-	}
-
-	#custom-notification {
-	  padding: 0px 5px;
-	  transition: all .3s ease;
-	  color:@color7;
-	}
+        #custom-i-lov-mari {
+          padding: 0px 5px;
+          transition: all .3s ease;
+          color: @color7;
+        }  
 
 	#clock {
 	  padding: 0px 5px;
@@ -284,6 +322,12 @@
 	  border: none;
 	  text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
 	}
+
+        #cava {
+          padding: 0px 5px;
+          transition: all .3s ease;
+          color: @color7;
+        }  
 
 	#network {
 	  padding: 0px 5px;
