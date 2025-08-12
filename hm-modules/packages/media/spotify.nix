@@ -22,8 +22,8 @@
         hidePodcasts
         shuffle
         fullAppDisplay
-        #genre
         fullAlbumDate
+        oneko
 
       ];
 
@@ -36,8 +36,13 @@
 
       enabledSnippets = with spicePkgs.snippets; [
         
-        rotatingCoverart
         pointer
+        oneko
+        roundedImages
+        "smoothProgress/VolumeBar"
+        hideAudiobooksButton
+        hidePodcastButton
+        spinningCdCoverArt
       
       ];  
 

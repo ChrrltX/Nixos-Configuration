@@ -6,7 +6,7 @@
    
    # Desktops, Display Managers:
 
-  gnome.enable = true;
+  gnome.enable = false;
   hyprland.enable = true;
   
   gdm.enable = true;
@@ -14,15 +14,13 @@
 
    # Hardware:
 
-  amd.enable = false;
   lp-monitor.enable = true;
-  pc-monitors.enable = false;
   bluetooth.enable = true;
    
    # Security:
   
   proton-vpn.enable = true;
-  hypridle.enable = false;
+  hypridle.enable = true;
 
    # Customization:
 

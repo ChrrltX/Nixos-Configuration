@@ -86,6 +86,7 @@ in
 	playerctl # Media Controls
 	wireplumber # Audio Controls
 	wl-clipboard # Clipboard
+        brightnessctl # Brightness Control
 	swaynotificationcenter
 	swww
 
