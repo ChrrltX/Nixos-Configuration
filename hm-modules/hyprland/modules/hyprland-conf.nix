@@ -31,6 +31,18 @@
 	  active_opacity = "1";
 	  inactive_opacity = "0.85";
 
+           # Blur:
+          blur = {
+            
+            enabled = true;
+            
+            size = 5;
+            passes = 2;
+            new_optimizations = true;
+            popups = true;
+          
+          }; 
+
 	  shadow = {
 	    
 	    enabled = true;
@@ -40,15 +52,6 @@
 
 	  };
 
-	  blur = {
-	    
-	    enabled = true;
-
-	    size = "3";
-	    passes = "1";
-	    vibrancy = "0.1696";
-
-	  };
 	};  
 
         animations = {
@@ -133,7 +136,7 @@
         
           workspace_swipe = true;
           workspace_swipe_distance = "700";
-          workspace_swipe_fingers = "3";
+          workspace_swipe_fingers = "2";
           workspace_swipe_min_fingers = true;
           workspace_swipe_cancel_ratio = "0.2";
           workspace_swipe_min_speed_to_force = "5";
@@ -219,18 +222,26 @@
 	  ",XF86AudioRaiseVolume, exec, progress-osd --volume +2%"
           ",XF86AudioLowerVolume, exec, progress-osd --volume -2%"
 
+          "$mod ALT, up, exec, progress-osd --volume +2%"
+          "$mod ALT, down, exec, progress-osd --volume -2%"
+
 	];
 
 	bindl = [
            
 	   # Mute Volume:
           ",XF86AudioMute, exec, progress-osd --volume-toggle"
+
+          "$mod ALT, M, exec, progress-osd --volume-toggle"
            
 	   # Media Controls:
 	  ",XF86AudioNext, exec, playerctl next"
 	  ",XF86AudioPrev, exec, playerctl previous"
 	  ",XF86AudioPlay, exec, playerctl play-pause"
 	  ",XF86AudioPause, exec, playerctl play-pause"
+          
+          "$mod ALT, right, exec, playerctl next"
+          "$mod ALT, left, exec, playerctl previous"
           "$mod ALT, P, exec, playerctl play-pause"
 
 	];
@@ -271,13 +282,6 @@
 	  "immediate, title:.*\.exe"
 
 	];
-
-	workspace = [
-          
-	  "10, border:false, rounding:false"
-
-	];
-
       
       };
 
