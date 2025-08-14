@@ -15,6 +15,8 @@ in
     ./modules/screen-tools.nix
     ./modules/caelestia.nix
     ./modules/hypridle.nix
+    ./modules/hyprlock.nix
+    ./modules/hyprsunset.nix
 
   ];  
 
@@ -71,6 +73,7 @@ in
 	    "waybar"
 	    "lxqt-policykit-agent"
             "protonvpn-app"
+            "hyprsunset"
 	  
 	  ];
 

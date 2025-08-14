@@ -21,6 +21,11 @@
   
   proton-vpn.enable = true;
   hypridle.enable = true;
+  hyprlock.enable = true;
+
+   # QOL:
+  
+  hyprsunset.enable = true;
 
    # Customization:
 
