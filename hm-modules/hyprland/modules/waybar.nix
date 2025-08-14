@@ -31,20 +31,22 @@
 
 	  modules-left = [
 	    
+            #"custom/nixos"
 	    "hyprland/workspaces"
-            "custom/i-lov-mari"
+            "mpris"
+            "cava"
 
 	  ];
 	  modules-center = [
 	    
 	    "clock"
-            "cava"
 
 	  ];  
 	  modules-right = [ 
 	    
 	    "group/expand"
-	    "pulseaudio" 
+	    "pulseaudio"
+            "pulseaudio/slider"
             "bluetooth"
 	    "network"
             "battery"
@@ -52,13 +54,18 @@
 	  ];
 
 	   # Modules:
+
+          "custom/nixos" = {
+            format = "";
+          };
 	  
           "hyprland/workspaces" = {
             format = "{icon}";
 	    format-icons = {
-	      active = "";
+	      #active = "";
+              active = "";
 	      default = "";
-	      empty = "";
+	      empty = "";
 	    };  
 	    persistent-workspaces = {
 	      "*" = 5;
@@ -92,6 +99,26 @@
             bar_delimiter = 0;
             sleep_timer = 2;
             input_delay = 1;
+          }; 
+
+          "mpris" = {
+            format = "| {status_icon} {dynamic} {player_icon}";
+            format-paused = "| {status_icon} <i>{dynamic}</i> {player_icon}";
+            player = "playerctld";
+            player-icons = {
+              mpv = "";  
+              spotify = "";
+              brave = "";
+            };
+            status-icons = {
+              paused = "";
+              playing = "";
+            };  
+            dynamic-len = 15;
+            ellipsis = "...";
+            on-click = "playerctl play-pause";
+            on-click-middle = "playerctl previous";
+            on-click-right = "playerctl next";
           };  
             
           "clock" = {
@@ -120,6 +147,12 @@
             on-click = "pavucontrol";
             tooltip = false;
           };        
+
+          "pulseaudio/slider" = {
+            min = 0;
+            max = 50;
+            orientation = "horizontal";
+          };
 
 	  "network" = {
             format = "{icon}";
@@ -175,7 +208,7 @@
 
           "custom/expand" = {
 	    format = "";
-	    tooltip = false;
+	    tooltip = "Show Tray";
 	  };
 
 	  "custom/endpoint" = {
@@ -192,9 +225,10 @@
 	    };
 	    modules = [
 	      "custom/expand" 
-	      "cpu"
-	      "memory"
-	      "temperature"
+	      "custom/i-lov-mari"
+              #"cpu"
+	      #"memory"
+	      #"temperature"
               "tray"
 	      "custom/endpoint"
 	    ];
@@ -266,6 +300,12 @@
           color: @color7;
         }  
 
+        #custom-nixos {
+          padding: 0px 5px;
+          transition: all .3s ease;
+          color: rgba(116, 199, 236, 1);
+        }
+
 	#clock {
 	  padding: 0px 5px;
 	  color:@color7;
@@ -280,50 +320,68 @@
 	  transition: all .3s ease;
 	}  
 
+        #pulseaudio-slider slider {
+          padding: 0px 0px;
+          transition: all .3s ease;
+          min-height: 0px;
+          min-width: 0px;
+          border: none;
+          box-shadow: none;
+          background-color: white;
+        }
+
+        #pulseaudio-slider trough {
+          padding: 0px 0px;
+          transition: all .3s ease;
+          min-height: 10px;
+          min-width: 100px;
+          border-radius: 5px;
+          background-color: rgba(30, 30, 46, 1);
+        }
+
+        #pulseaudio-slider highlight {
+          padding: 0px 0px;
+          transition: all .3s ease;
+          min-width: 10px;
+          border-radius: 5px;
+          background-color: rgba(203, 166, 247, 1);
+        }
+
 	#workspaces {
 	  padding: 0px 5px;
 	}
 
 	#workspaces button {
-	  all:unset;
 	  padding: 0px 5px;
-	  color: alpha(@color9,.4);
 	  transition: all .2s ease;
+          color: white;
 	}
 
-	#workspaces button:hover {
-	  color:rgba(0,0,0,0);
-	  border: none;
-	  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
-	  transition: all 1s ease;
-	}
+        #workspaces button:hover {
+          color: rgba(255, 255, 255, 0.3);
+          transition: all 1s ease;
+        }  
 
 	#workspaces button.active {
-	  color: @color9;
-	  border: none;
-	  text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+          padding: 0px 5px;
+	  color: rgba(203, 166, 247, 1);
 	}
 
         #workspaces button.empty {
-	  color: rgba(144, 144, 144, 1);
-	  border: none;
-	  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
-	}
-
-        #workspaces button.empty:hover {
-	  color: rgba(0,0,0,0);
-	  border: none;
-	  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
-	  transition: all 1s ease;
+	  color: rgba(108, 112, 134, 1);
 	}
 
 	#workspaces button.empty.active {
-	  color: @color9;
-	  border: none;
-	  text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+	  color: rgba(203, 166, 247, 1);
 	}
 
         #cava {
+          padding: 0px 5px;
+          transition: all .3s ease;
+          color: @color7;
+        }  
+
+        #mpris {
           padding: 0px 5px;
           transition: all .3s ease;
           color: @color7;

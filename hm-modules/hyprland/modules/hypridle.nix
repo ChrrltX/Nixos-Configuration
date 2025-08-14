@@ -9,7 +9,6 @@
   config = lib.mkIf config.hypridle.enable {
     
     security.pam.services.hyprlock = {};
-    #security.pam.services.hyprlock.rules.auth.fprintd.control = "required";   
 
     home-manager.users.chrrltx = { pkgs, ... }: {
 
@@ -23,17 +22,33 @@
           general = {
           
             lock_cmd = "pidof hyprlock || hyprlock";
-            before_sleep_cmd = "hyprlock";
-            after_sleep_cmd = "hyprctl dispatch dpms on";
+            ignore_dbus_inhibit = "/opt/spotify/spotify";
 
           };
         
           listener = [
             
-            { timeout = 300; on-timeout = "hyprlock"; }
-            { timeout = 420; on-timeout = "brightnessctl -s set 10"; on-resume = "brightnessctl -r"; }
-            { timeout = 900; on-timeout = "hyprctl dispatch dpms off"; on-resume = "hyprctl dispatch dpms on && brightnessctl -r"; }
-            { timeout = 1800; on-timeout = "systemctl suspend"; }
+            { 
+              timeout = 300; 
+              on-timeout = "loginctl lock-session";
+            }
+
+            { 
+              timeout = 420; 
+              on-timeout = "brightnessctl -s set 10"; 
+              on-resume = "brightnessctl -r"; 
+            }
+            
+            { 
+              timeout = 900; 
+              on-timeout = "hyprctl dispatch dpms off"; 
+              on-resume = "hyprctl dispatch dpms on && brightnessctl -r"; 
+            }
+            
+            { 
+              timeout = 1200; 
+              on-timeout = "systemctl suspend"; 
+            }
 
           ];
 
@@ -49,7 +64,6 @@
         
           general = {
           
-            grace = 300;
             hide_cursor = true;
           
           };
