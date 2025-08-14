@@ -64,64 +64,72 @@
         
           general = {
           
-            hide_cursor = true;
+            no_fade_in = false;
+            no_fade_out = false;
+            hide_cursor = false;
+            grace = 0;
+            disable_loading_bar = true;
           
           };
         
           background = {
 
               path = "screenshot";
-              blur_passes = 3;
-              blur_size = 8;
+              blur_passes = 2;
+              contrast = 1;
+              brightness = 0.5;
+              vibrancy = 0.2;
+              vibrancy_darkness = 0.2;
           
           };
         
           input-field = {
             
-              size = "20%, 5%";
-              position = "0, -80";
-              monitor = "";
-              dots_center = true;
-              fade_on_empty = false;
-              #font_color = "rgb(202, 211, 245)";
-              #inner_color = "rgb(91, 96, 120)";
-              #outer_color = "rgb(24, 25, 38)";
-              outline_thickness = 5;
-              placeholder_text = ''<span foreground="##cad3f5">Password...</span>'';
-              shadow_passes = 2;
+            size = "20%, 5%";
+            outline_thickness = 2;
+            fade_on_empty = false;
+            shadow_passes = 2;
+            shadow_size = 2;
+            rounding = 20;
+            placeholder_text = "<i> Logged in as $USER</i>";
+            fail_text = "<b>Wrong Password</b>";
+            fail_timeout = 300;
+            position = "0, -100";
+            halign = "center";
+            valign = "center";
             
           };
 
-           # Time:
-          label = {
-            monitor = "";
-            text = "$TIME";
-            font_size = 90;
-            position = "-30, 0";
-            halign = "center";
-            valign = "top";
-          };
+           # Widgets:
 
-           # Date:
-          #label = {
-            #monitor = "";
-            #text = '' cmd[update:60000] date +"%A, %d %B %Y" '';
-            #font_size = 25;
-            #position = "-30, -150";
-            #halign = "right";
-            #valign = "top";
-          #};
-           
-           # KB Layout:
-          #label = {
-            #monitor = "";
-            #text = "$LAYOUT[en,cz]";
-            #font_size = 24;
-            #onclick = "hyprctl switchxkblayout all next";
-            #position = "250, -20";
-            #halign = "center";
-            #valign = "center";
-          #};
+          label = [
+          { # Date:
+            monitor = "";
+            text = '' cmd[update:1000] echo "$(date +"%A, %B %d")" '';
+            font_size = 22;
+            position = "0, 200";
+            halign = "center";
+            valign = "center";
+          }
+          { # Time:
+            monitor = "";
+            text = '' cmd[update:1000] echo "$(date +"%-I:%M")" '';
+            font_size = 95;
+            font_family = lib.mkForce "JetBrains Mono Extrabold";
+            position = "0, 300";
+            halign = "center";
+            valign = "center";  
+          }
+          { # Keyboard Layout:
+            monitor = "";
+            text = '' Layout: $LAYOUT '';
+            font_size = 24;
+            onclick = "hyprctl switchxkblayout all next";
+            position = "0, 300";
+            halign = "center";
+            valign = "bottom";         
+          }
+          ];
 
         };
       };   
