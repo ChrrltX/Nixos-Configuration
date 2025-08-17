@@ -7,7 +7,7 @@
       
       settings = {
          
-	 # Bind Rofi:
+	 # Bind Wofi:
         "$menu" = "wofi --show drun";
 
         bind = [ "$mod, Space, exec, $menu" ];
@@ -16,7 +16,7 @@
 
     };  
 
-    stylix.targets.wofi.enable = true;
+    stylix.targets.wofi.enable = false;
 
     programs.wofi = {
       
@@ -57,6 +57,7 @@
           border-radius: 10px;
           text-shadow:none;
           background-color: rgba(30, 30, 46, 0.5);
+          color: rgba(30, 30, 46, 0.5);
         }
 
         window {
@@ -70,16 +71,18 @@
           margin: 2px;
           padding: 5px
           border: none;
+          background-color: rgba(30, 30, 46, 0.5);
         }
         
         #outer-box {  
-          
+          background-color: rgba(30, 30, 46, 0.5);
           border: none;
         }
         
         #scroll {
           margin: 0px;
           border: none;
+          background-color: transparent;
         }
         
         #input {
@@ -93,7 +96,7 @@
           color: @text;
           box-shadow: 1px 1px 5px rgba(0,0,0, .5);
           border-radius:10;
-          background-color: rgba(30, 30, 46, 0.5);
+          background-color: rgba(30, 30, 46, 0.7);
         }
         
         #input image {
@@ -118,24 +121,28 @@
           border: none;
           color: @text;
           outline: none;
+          background-color: transparent;
         }
         
         #entry {
           border: none;
           margin: 5px;
           padding: 10px;
+          background-color: rgba(30, 30, 46, 0.5);
+          color: rgba(30, 30, 46, 0.5);
         }
         
         #entry arrow {
           border: none;
           color: rgb(180, 190, 254);
+          background-color: rgba(30, 30, 46, 0.5);
         }
         
         #entry:selected {
-          box-shadow: 1px 1px 5px rgba(255,255,255, .03);
           border: none;
           border-radius: 20px;
           background-color: rgb(203, 166, 247);
+          color: transparent;
         }
         
         #entry:selected #text {
@@ -145,6 +152,10 @@
         #entry:drop(active) {
           background-color: rgb(180, 190, 254) !important;
         }
+
+        #img {
+          background-color: transparent;
+        }  
 
       '';
     };   
