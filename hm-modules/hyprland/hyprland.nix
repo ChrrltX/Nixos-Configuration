@@ -7,16 +7,28 @@ in
 { 
   imports = [
 
-    ./modules/hyprland-conf.nix
-    ./modules/pc-monitors.nix
-    ./modules/lp-monitor.nix
+     # Hyprland Config:
+    ./modules/hypr-conf/general.nix
+    ./modules/hypr-conf/binds.nix
+    ./modules/hypr-conf/animations.nix
+    ./modules/hypr-conf/input.nix
+    ./modules/hypr-conf/windowrules.nix
+     
+     # Monitors:
+    ./modules/monitors/pc-monitors.nix
+    ./modules/monitors/lp-monitor.nix
+
+     # Extensions:
     ./modules/waybar.nix
     ./modules/wofi.nix
     ./modules/screen-tools.nix
-    ./modules/caelestia.nix
     ./modules/hypridle.nix
     ./modules/hyprlock.nix
-    ./modules/hyprsunset.nix
+    #./modules/hyprsunset.nix
+    ./modules/power-profiles.nix
+
+     # Other:
+    ./modules/caelestia.nix    
 
   ];  
 
@@ -39,7 +51,6 @@ in
      # Enable Hyprland:
     programs.hyprland = {
       enable = true;
-      #package = inputs.hyprland.packages."${pkgs.system}".hyprland;
     };
      
      # Scripts:
@@ -90,7 +101,6 @@ in
 	wireplumber # Audio Controls
 	wl-clipboard # Clipboard
         brightnessctl # Brightness Control
-	swaynotificationcenter
 	swww
 
       ];
