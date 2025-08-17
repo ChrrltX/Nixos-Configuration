@@ -8,24 +8,30 @@
   
   config = lib.mkIf config.hyprsunset.enable {
 
-    services.hyprsunset.enable = true;
+    home-manager.users.chrrltx = { pkgs, ... }: {
 
-    services.hyprsunset.transitions = {
+      services.hyprsunset.enable = true;
 
-      night = {
-        start = "20:00";
-        end = "07:00";
-        temperature = 5000;
-        gamma = 0.8;
-      };
+      services.hyprsunset.transitions = {
 
-      day = {
-        start = "07:00";
-        end = "20:00";
-        identity = true;
+        night = {
+          calendar = "*-*-* 20:00:00";
+          requests = [
+            [ "temperature" "5000" ]
+            [ "gamma 80" ]
+          ];  
+        };
+       
+        day = {
+          calendar = "*-*-* 07:00:00";
+          requests = [ 
+            [ "tempeature" "6500" ]
+            [ "gamma 100" ]
+          ];  
+        };
+       
       };
 
     };
-
   };  
 }

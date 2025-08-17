@@ -10,7 +10,7 @@
 
   home-manager.users.chrrltx = { pkgs, ... }: {
     
-    stylix.targets.waybar.enable = true;
+    stylix.targets.waybar.enable = false;
 
     programs.waybar = {
       
@@ -31,7 +31,7 @@
 
 	  modules-left = [
 	    
-            #"custom/nixos"
+            "custom/nixos"
 	    "hyprland/workspaces"
             "mpris"
             "cava"
@@ -305,6 +305,11 @@
           transition: all .3s ease;
           color: rgba(116, 199, 236, 1);
         }
+
+        #custom-nixos:hover {
+          color: rgba(0, 0, 0, 0);
+          transition: all .3s ease;
+        }  
 
 	#clock {
 	  padding: 0px 5px;
