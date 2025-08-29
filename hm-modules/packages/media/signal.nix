@@ -9,7 +9,7 @@
   config = lib.mkIf config.signal.enable {
   
     home-manager.users.chrrltx = { pkgs, ... }: {
-      programs.signal-desktop.enable = true;
+      home.packages = with pkgs; [ signal-desktop ];
     };
 
   };  

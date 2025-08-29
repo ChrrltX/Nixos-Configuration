@@ -9,7 +9,7 @@
   config = lib.mkIf config.vintage-story.enable {
   
     home-manager.users.chrrltx = { pkgs, ... }: {
-      home.packages = with pkgs [ vintagestory ];
+      home.packages = with pkgs; [ vintagestory ];
     };
 
   };  
