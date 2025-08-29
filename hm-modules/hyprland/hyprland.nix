@@ -24,7 +24,7 @@ in
     ./modules/screen-tools.nix
     ./modules/hypridle.nix
     ./modules/hyprlock.nix
-    #./modules/hyprsunset.nix
+    ./modules/hyprsunset.nix
     ./modules/power-profiles.nix
 
      # Other:

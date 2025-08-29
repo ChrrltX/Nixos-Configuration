@@ -22,18 +22,25 @@
    # Security:
   
   proton-vpn.enable = true;
+  hypridle.enable = false;
+  hyprlock.enable = false;
+   
+   # QOL:
+
+  hyprsunset.enable = true;
 
    # Customization:
 
   stylix.enable = true;
-  services.caelestia-shell.enable = true;
-  waybar.enable = false;
+  services.caelestia-shell.enable = false;
+  waybar.enable = true;
   plymouth.enable = true;
 
    # Gaming:
   
   steam.enable = true;
   prismlauncher.enable = true;
+  vintage-story.enable = true;
    
    # Apps:
 
@@ -44,6 +51,8 @@
   kitty.enable = true;
   virt-manager.enable = true;
   nautilus.enable = true;
+  signal.enable = true;
+  kde-connect.enable = true;
    
    # CLI:
 
@@ -57,6 +66,10 @@
   bat.enable = true;
   fzf.enable = true;
   eza.enable = true;
+ 
+  nixpkgs.config.permittedInsecurePackages = [
+    "dotnet-runtime-7.0.20"
+  ];
 
   home-manager.users.chrrltx = { pkgs, ... }: {
     
@@ -70,7 +83,7 @@
       };
     }; 
 
-    #home.packages = with pkgs; [ ];
+    #home.packages = with pkgs; [];
     
     home.username = "chrrltx";
 

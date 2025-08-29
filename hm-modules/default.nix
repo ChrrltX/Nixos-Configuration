@@ -11,7 +11,8 @@
       # Packages:
      
      # Gaming:
-    ./packages/gaming/prismlauncher.nix 
+    ./packages/gaming/prismlauncher.nix
+    ./packages/gaming/vintage-story.nix
      
      # Media: 
 
@@ -19,6 +20,7 @@
     ./packages/media/obsidian.nix
     ./packages/media/vesktop.nix
     ./packages/media/spotify.nix
+    ./packages/media/signal.nix
      
      # Utility:
 
@@ -34,6 +36,7 @@
     ./packages/utility/fzf.nix
     ./packages/utility/eza.nix
     ./packages/utility/nautilus.nix
+    ./packages/utility/kde-connect.nix
 
   ];  
 }
