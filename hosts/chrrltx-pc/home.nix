@@ -7,34 +7,37 @@
    # Desktops, Display Managers:
 
   gnome.enable = true;
-  hyprland.enable = true;
   
   gdm.enable = true;
   sddm.enable = false;
 
-   # Hardware:
+   # Hyprland:
+  hyprland.enable = true;
+  pc-monitors.enable = true;
+  lp-monitor.enable = false;
+
+  dynamic-cursors.enable = true;
+  
+  hypridle.enable = false;
+  hyprlock.enable = false;
+  hyprsunset.enable = true;
+  waybar.enable = true;
+  waybar-2.enable = false;
+
+  services.caelestia-shell.enable = false;
+
+  # Hardware:
 
   amd.enable = true;
   openrgb.enable = true;
-  pc-monitors.enable = true;
-  lp-monitor.enable = false;
 
    # Security:
   
   proton-vpn.enable = true;
-  hypridle.enable = false;
-  hyprlock.enable = false;
-   
-   # QOL:
-
-  hyprsunset.enable = true;
 
    # Customization:
 
   stylix.enable = true;
-  services.caelestia-shell.enable = false;
-  waybar.enable = false;
-  waybar-2.enable = true;
   plymouth.enable = true;
 
    # Gaming:

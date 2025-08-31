@@ -13,6 +13,9 @@ in
     ./modules/hypr-conf/animations.nix
     ./modules/hypr-conf/input.nix
     ./modules/hypr-conf/windowrules.nix
+
+    # Plugins:
+    ./modules/plugins/dynamic-cursors.nix
      
      # Monitors:
     ./modules/monitors/pc-monitors.nix
