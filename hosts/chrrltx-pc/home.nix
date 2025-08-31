@@ -17,6 +17,7 @@
   lp-monitor.enable = false;
 
   dynamic-cursors.enable = true;
+  hyprtrails.enable = true;
   
   hypridle.enable = false;
   hyprlock.enable = false;

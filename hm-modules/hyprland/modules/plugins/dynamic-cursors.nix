@@ -11,9 +11,24 @@
     home-manager.users.chrrltx = { pkgs, ... }: {
      
        # Hyprland:
-      wayland.windowManager.hyprland.plugins = [
-        inputs.hyprland-plugins.packages.${pkgs.stdenv.hostPlatform.system}.hypr-dynamic-cursors
-      ];
+      wayland.windowManager.hyprland = {
+        
+        plugins = [
+          pkgs.hyprlandPlugins.hypr-dynamic-cursors
+        ];
+
+        settings = {
+          
+          "plugin:dynamic-cursors" = {
+            shake = {
+              enabled = true;
+            };  
+          };
+
+        };
+
+      };  
+
     };
   };  
 }

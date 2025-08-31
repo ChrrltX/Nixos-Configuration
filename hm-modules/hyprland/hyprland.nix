@@ -16,6 +16,7 @@ in
 
     # Plugins:
     ./modules/plugins/dynamic-cursors.nix
+    ./modules/plugins/hyprtrails.nix
      
      # Monitors:
     ./modules/monitors/pc-monitors.nix
