@@ -19,7 +19,9 @@ in
     ./modules/monitors/lp-monitor.nix
 
      # Extensions:
-    ./modules/waybar.nix
+    ./modules/waybar/waybar.nix
+    ./modules/waybar/waybar-2.nix
+
     ./modules/wofi.nix
     ./modules/screen-tools.nix
     ./modules/hypridle.nix
