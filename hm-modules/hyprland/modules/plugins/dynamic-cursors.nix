@@ -21,7 +21,7 @@
           
           "plugin:dynamic-cursors" = {
             shake = {
-              enabled = true;
+              enabled = false;
             };  
           };
 

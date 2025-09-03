@@ -74,6 +74,7 @@
 
           "custom/i-lov-mari" = {
             format = "I Lov Mari";
+            # Hidden Letter: V
           };
 
           "cava" = {

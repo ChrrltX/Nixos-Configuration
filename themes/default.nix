@@ -49,12 +49,12 @@
      # Cursor:
     cursor = {
        
-      #package = pkgs.bibata-cursors;
-      package = pkgs.google-cursor;
+      package = pkgs.bibata-cursors;
+      #package = pkgs.google-cursor;
       #package = pkgs.oreo-cursors-plus;
 
-      #name = "Bibata-Modern-Ice";
-      name = "GoogleDot-White";
+      name = "Bibata-Modern-Ice";
+      #name = "GoogleDot-White";
       #name = "Oreo-Spark-Lite";
       
       size = 22;
