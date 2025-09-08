@@ -50,6 +50,7 @@
    # Apps:
 
   brave.enable = true;
+  zen-browser.enable = true;
   obsidian.enable = true;
   vesktop.enable = true;
   spotify.enable = true;
@@ -88,7 +89,7 @@
       };
     }; 
 
-    #home.packages = with pkgs; [];
+    home.packages = with pkgs; [ python3Full ];
     
     home.username = "chrrltx";
 

@@ -21,6 +21,7 @@
     ./packages/media/vesktop.nix
     ./packages/media/spotify.nix
     ./packages/media/signal.nix
+    ./packages/media/zen-browser.nix
      
      # Utility:
 
