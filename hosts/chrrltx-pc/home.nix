@@ -40,6 +40,8 @@
 
   stylix.enable = true;
   plymouth.enable = true;
+  bibata-white.enable = true;
+  catppuccin-mocha.enable = true;
 
    # Gaming:
   
