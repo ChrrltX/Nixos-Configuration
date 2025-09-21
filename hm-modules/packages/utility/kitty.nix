@@ -13,6 +13,7 @@
       programs.kitty = {
         enable = true;
         settings = {
+          window_margin_width = 20;
           confirm_os_window_close = "0";
 	  cursor_trail = "1";
         };

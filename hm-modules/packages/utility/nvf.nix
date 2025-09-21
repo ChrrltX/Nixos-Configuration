@@ -23,7 +23,7 @@
             statusline.lualine.enable = true;
             telescope.enable = true;
             autocomplete.nvim-cmp.enable = true;
-            spellcheck.enable = true;
+            #spellcheck.enable = true;
 
             presence = {
               neocord.enable = true;

@@ -22,8 +22,8 @@
   hypridle.enable = false;
   hyprlock.enable = false;
   hyprsunset.enable = true;
-  waybar.enable = true;
-  waybar-2.enable = false;
+  waybar.enable = false;
+  waybar-2.enable = true;
 
   services.caelestia-shell.enable = false;
 

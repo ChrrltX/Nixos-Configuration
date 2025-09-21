@@ -1,6 +1,17 @@
 { config, pkgs, lib, ... }:
 
-{
+{ 
+  imports = [
+      
+     # Themes: 
+    ./themes/catppuccin-mocha.nix
+     
+     # Cursors:
+    ./cursors/bibata-white.nix
+    ./cursors/white-dot.nix
+  
+  ];
+
   stylix = {
 
     autoEnable = true;
@@ -20,7 +31,7 @@
     opacity = {
         
       applications = 1;
-      terminal = 0.8;
+      terminal = 0.95;
       popups = 0.85;
 
     };	

@@ -8,7 +8,7 @@
 	 # Definitions:
         "$mod" = "SUPER";
 	"$terminal" = "kitty";
-	"$browser" = "brave";
+	"$browser" = "zen-twilight";
         "$files" = "nautilus";
         "$screenshot" = ''grim -g "$(slurp -w 0)" - | swappy -f -'';
 
@@ -24,7 +24,7 @@
 
 	   # Executables:
 	  "$mod, Tab, exec, $terminal"
-	  "$mod, B, exec, $browser"
+	  "$mod, Z, exec, $browser"
 	  "$mod, S, exec, steam"
 	  "$mod, D, exec, vesktop"
 	  "$mod, R, exec, obsidian"
