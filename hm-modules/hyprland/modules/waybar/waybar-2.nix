@@ -288,7 +288,7 @@
 
         #group-expand-right {
           padding: 0px 5px;
-          transition: all .3 ease;
+          transition: all .3s ease;
         }
 
         #custom-expand-right {

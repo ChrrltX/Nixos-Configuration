@@ -31,8 +31,11 @@
 
   stylix.enable = true;
   services.caelestia-shell.enable = false;
-  waybar.enable = true;
+  waybar.enable = false;
+  waybar-2.enable = true;
   plymouth.enable = true;
+  bibata-white.enable = true;
+  catppuccin-mocha.enable = true;
 
    # Gaming:
   steam.enable = true;
@@ -45,7 +48,7 @@
   vesktop.enable = true;
   spotify.enable = true;
   kitty.enable = true;
-  virt-manager.enable = false;
+  virt-manager.enable = true;
   nautilus.enable = true;
    
    # CLI:
@@ -73,7 +76,7 @@
       };
     }; 
 
-    #home.packages = with pkgs; [ ];
+    home.packages = with pkgs; [ virtualbox ];
     
     home.username = "chrrltx";
 
