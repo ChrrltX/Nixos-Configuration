@@ -32,29 +32,53 @@
 
 	  modules-left = [
             "hyprland/workspaces"
-            "custom/expand-right"
+            "custom/separator"
+            "custom/previous"
+            "mpris"
+            "custom/next"
+            "custom/separator"
+            "group/expand-right"
           ];
 	  modules-center = [
             "cava"
+            "custom/separator"
             "clock"
+            #"hyprland/workspaces#ws2"
+            "custom/separator"
             "cava"
 	  ];  
 	  modules-right = [ 
+            "group/expand-left"
+            "custom/separator"
             "pulseaudio"
+            "custom/separator"
             "network"
+            "custom/separator"
             "battery"
+            "group/power"
 	  ];
 
 	   # Modules:
 
+          "custom/space" = {
+            format = "  ";
+            tooltip = false;
+          };  
+
+          "custom/separator" = {
+            format = "|";
+            tooltip = false;
+          };  
+
           "clock" = {
             format = " {:%I:%M %p}";
-            format-alt = " {:%I:%M %p 󰸘 %a, %d %b}";
+            format-alt = " 󰸘 {:%a, %d %b |  %I:%M %p}";
             interval = 1;
             tooltip = false;
           };
 
           "hyprland/workspaces" = {
+            ws = "WS1";
             format = "{name}";
             format-icons = {
               #active = "";
@@ -64,11 +88,26 @@
             };  
             persistent-workspaces = {
               "*" = 5;
+              #"DP-3" = ["1" "2" "3" "4" "5"];
+            };  
+          };
+
+          "hyprland/workspaces#ws2" = {
+            ws = "WS2";
+            format = "{name}";
+            format-icons = {
+              #active = "";
+              active = "";
+              default = "";
+              empty = "";
+            };  
+            persistent-workspaces = {
+              "HDMI-A-1" = ["6" "7" "8" "9" "10"];
             };  
           };
 
           "cava" = {
-             format = "{icon}";
+            format = "{icon}";
             bars = 15;
             autosens = 1;
             framerate = 144;
@@ -89,11 +128,48 @@
             ];
             bar_delimiter = 0;
             sleep_timer = 2;
-            input_delay = 1;           
+            input_delay = 1;  
+            reverse = true;
+            rotate = 180;
           };
 
+          "mpris" = {
+            #format = "| {status_icon} {title}-{artist}-{album} {player_icon}";
+            #format-paused = "| {status_icon} <i>{dynamic}</i> {player_icon}";
+            format = "{status_icon}";
+            format-paused = "{status_icon}";
+            player = "playerctld";
+            player-icons = {
+              mpv = "";  
+              spotify = "";
+              brave = "";
+              zen-twilight = "";
+            };
+            status-icons = {
+              paused = "";
+              playing = "";
+            };  
+            "[format]-len" = 15;
+            ellipsis = "...";
+            on-click = "playerctl play-pause";
+            #on-click-middle = "playerctl previous";
+            #on-click-right = "playerctl next";
+          };
+
+          "custom/previous" = {
+            format = "";
+            on-click = "playerctl previous";
+            tooltip = false;
+          };  
+
+          "custom/next" = {
+            format = "";
+            on-click-right = "playerctl next";
+            tooltip = false;
+          };  
+
           "pulseaudio" = {
-            format = "{volume}% {icon}";
+            format = "{icon} {volume}%";
             format-icons = [
               ""
               ""
@@ -141,8 +217,17 @@
             ];
           };   
 
+          "user" = {
+            format = "{user} Up {work_H}:{work_M}h";
+            avatar = "$HOME/Pictures/Pfps/emilia.png";
+            height = 30;
+            width = 30;
+            icon = true;
+          };
+
           "custom/expand-right" = {
             format = "";
+            #format-alt = "";
             tooltip = false;
           };
 
@@ -151,18 +236,87 @@
             tooltip = false;
           };
 
+          "tray" = {
+            tooltip = false;
+            spacing = 5;
+          };  
+
           "group/expand-right" = {
 	    orientation = "horizontal";
 	    drawer = {
 	      transition-duration = 600;
-	      transition-to-right = true;
+	      transition-left-to-right = true;
 	      click-to-reveal = true;
 	    };
 	    modules = [
+              "custom/expand-right"
               "tray"
-              "custom/endpoint-right"
+              #"custom/endpoint-right"
             ];
-          };  
+          };
+
+          "custom/expand-left" = {
+            format = "";
+            #format-alt = "";
+            tooltip = false;
+          };
+
+          "custom/endpoint-left" = {
+            format = "|";
+            tooltip = false;
+          };
+
+          "group/expand-left" = {
+	    orientation = "horizontal";
+	    drawer = {
+	      transition-duration = 600;
+	      transition-left-to-right = false;
+	      click-to-reveal = true;
+	    };
+	    modules = [
+              "custom/expand-left"
+              #"custom/endpoint-left"
+            ];
+          };
+
+          "group/power" = {
+	    orientation = "horizontal";
+	    drawer = {
+	      transition-duration = 600;
+	      transition-left-to-right = false;
+	      click-to-reveal = false;
+	    };
+	    modules = [
+              "custom/power"
+              "custom/quit"
+              "custom/lock"
+              "custom/reboot"
+            ];
+          };
+
+          "custom/quit" = {
+            format = "󰗼";
+            tooltip = false;
+            on-click = "hyprctl dispatch exit";
+          };
+          
+          "custom/lock" = {
+            format = "󰍁";
+            tooltip = false;
+            on-click = "hyprlock";
+          };
+          
+          "custom/reboot" = {
+            format = "󰜉";
+            tooltip = false;
+            on-click = "reboot";
+          };
+          
+          "custom/power" = {
+            format = "";
+            tooltip = false;
+            on-click = "shutdown now";
+          };
 
 	};
       };
@@ -202,6 +356,16 @@
 
 	tooltip {
 	}
+        
+        #custom-space {
+          padding: 0px 5px;
+          background-color: transparent;
+        }  
+
+        #custom-separator {
+          padding: 0px 5px;
+          color: rgb(108, 112, 134);
+        }
 
         #clock {
           padding: 0px 5px;
@@ -210,7 +374,9 @@
         }  
 
         #clock:hover {
+          transition: all .8s ease;
           color: rgb(147, 153, 178);
+          font-size: 16px;
         }  
 
         #workspaces {
@@ -251,18 +417,68 @@
 
         #cava {
           padding: 0px 5px;
-          transition: all .3s ease;         
+          transition: all .3s ease;
+          background-color: transparent;
         }
+
+        #mpris {
+          padding: 0px 5px;
+          transition: all .3s ease;
+          color: rgb(203, 166, 247);
+          font-size: 20px;
+        }  
+
+        #mpris:hover {
+          transition: all .8s linear;
+          color: rgb(180, 190, 254);
+          font-size: 22px;
+        }  
+
+        #custom-previous {
+          padding: 0px 5px;
+          transition: all .3s ease;
+          color: rgb(203, 166, 247);
+          font-size: 20px;
+        }
+
+        #custom-previous:hover {
+          transition: all .8s linear;
+          color: rgb(180, 190, 254);
+          font-size: 22px;
+        }  
+
+        #custom-next {
+          padding: 0px 5px;
+          transition: all .3s ease;
+          color: rgb(203, 166, 247);
+          font-size: 20px;
+        }  
+
+        #custom-next:hover {
+          transition: all .8s linear;
+          color: rgb(180, 190, 254);
+          font-size: 22px;
+        }  
 
 	#network {
 	  padding: 0px 5px;
 	  transition: all .3s ease;
 	}
 
+        #network:hover {
+          transition: all .3s ease;
+          font-size: 18px;
+        }
+
         #battery {
           padding: 0px 5px;
           transition: all .3s ease;
         }
+
+        #battery:hover {
+          transition: all .3s ease;
+          font-size: 18px;
+        }  
 
         #battery.charging {
           color: rgb(166, 227, 161);
@@ -284,6 +500,16 @@
         #pulseaudio {
           padding: 0px 5px;
           transition: all .3s ease;
+        } 
+
+        #pulseaudio:hover {
+          transition: all .3s ease;
+          font-size: 18px;
+        }  
+
+        #user {
+          padding: 0px 5px;
+          transition: all .3s ease;
         }  
 
         #group-expand-right {
@@ -294,11 +520,101 @@
         #custom-expand-right {
           padding: 0px 5px;
           transition: all .3s ease;
-        }  
+        } 
 
-	#custom-endpoint {
+        #custom-expand-right:hover {
+          color: rgb(180, 190, 254);
+        }
+
+	#custom-endpoint-right {
           padding: 0px 5px;
 	}
+
+	#tray {
+	  padding: 0px 5px;
+	  transition: all .3s ease;
+	}
+
+	#tray menu * {
+	  padding: 0px 5px;
+	  transition: all .3s ease;
+	}
+
+	#tray menu separator {
+	  padding: 0px 5px;
+	  transition: all .3s ease;
+	}  
+
+        #group-expand-right {
+          padding: 0px 5px;
+          transition: all .3s ease;
+        }
+
+        #custom-expand-left {
+          padding: 0px 5px;
+          transition: all .3s ease;
+        } 
+
+        #custom-expand-left:hover {
+          color: rgb(180, 190, 254);
+        }
+
+	#custom-endpoint-left {
+          padding: 0px 5px;
+	}
+
+        #group-power {
+          padding: 0px 5px;
+          transition: all .3s ease;
+        }  
+
+        #custom-quit {
+          padding: 0px 5px;
+          color: rgb(249, 226, 175);
+          font-size: 20px;
+          transition: all .3s ease;
+        }  
+
+        #custom-quit:hover {
+          font-size: 23px;
+          transition: all .3s ease;
+        }  
+        
+        #custom-lock {
+          padding: 0px 5px;
+          color: rgb(250, 179, 135);
+          font-size: 20px;
+          transition: all .3s ease;
+        }
+
+        #custom-lock:hover {
+          font-size: 23px;
+          transition: all .3s ease;
+        }  
+
+        #custom-reboot {
+          padding: 0px 5px;
+          color: rgb(235, 160, 172);
+          font-size: 20px;
+          transition: all .3s ease;
+        }
+
+        #custom-reboot:hover {
+          font-size: 23px;
+          transition: all .3s ease;
+        }  
+
+        #custom-power {
+          padding: 0px 5px;
+          color: rgb(243, 139, 168);
+          font-size: 18px;
+          transition: all .3s ease;
+        }  
+
+        #custom-power:hover {
+          font-size: 21px;
+          transition: all .3s ease;
+        }  
 
       '';
 

@@ -43,27 +43,27 @@
 	  "$mod, 3, workspace, 3"
 	  "$mod, 4, workspace, 4"
 	  "$mod, 5, workspace, 5"
-	  "$mod, 6, workspace, 6"
-	  "$mod, 7, workspace, 7"
-	  "$mod, 8, workspace, 8"
-	  "$mod, 9, workspace, 9"
-	  "$mod, 0, workspace, 10"
+	  "$mod SHIFT, 1, workspace, 6"
+	  "$mod SHIFT, 2, workspace, 7"
+	  "$mod SHIFT, 3, workspace, 8"
+	  "$mod SHIFT, 4, workspace, 9"
+	  "$mod SHIFT, 5, workspace, 10"
 
 	   # Scroll Workspaces:
 	  "$mod, mouse_down, workspace, e+1"
 	  "$mod, mouse_up, workspace, e-1"
 
 	   # Move Windows to Workspaces:
-	  "$mod SHIFT, 1, movetoworkspace, 1"
-          "$mod SHIFT, 2, movetoworkspace, 2"
-	  "$mod SHIFT, 3, movetoworkspace, 3"
-	  "$mod SHIFT, 4, movetoworkspace, 4"
-          "$mod SHIFT, 5, movetoworkspace, 5"
-          "$mod SHIFT, 6, movetoworkspace, 6" 
-          "$mod SHIFT, 7, movetoworkspace, 7"
-          "$mod SHIFT, 8, movetoworkspace, 8"
-          "$mod SHIFT, 9, movetoworkspace, 9"
-          "$mod SHIFT, 0, movetoworkspace, 10" 
+	  "$mod CTRL, 1, movetoworkspace, 1"
+          "$mod CTRL, 2, movetoworkspace, 2"
+	  "$mod CTRL, 3, movetoworkspace, 3"
+	  "$mod CTRL, 4, movetoworkspace, 4"
+          "$mod CTRL, 5, movetoworkspace, 5"
+          "$mod CTRL SHIFT, 1, movetoworkspace, 6" 
+          "$mod CTRL SHIFT, 2, movetoworkspace, 7"
+          "$mod CTRL SHIFT, 3, movetoworkspace, 8"
+          "$mod CTRL SHIFT, 4, movetoworkspace, 9"
+          "$mod CTRL SHIFT, 5, movetoworkspace, 10" 
 
 	];
 
