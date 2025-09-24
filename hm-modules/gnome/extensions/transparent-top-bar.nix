@@ -10,7 +10,7 @@
   
     home-manager.users.chrrltx = { pkgs, ... }: {
       
-      home.packages = [ pkgs.gnomeExtensions.transparent-top-bar ];
+      home.packages = [ pkgs.gnomeExtensions.transparent-top-bar-adjustable-transparency ];
 
     };
 

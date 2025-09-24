@@ -13,13 +13,21 @@
   gnome.enable = true;
 
   blur-shell.enable = true;
-  forge.enable = true;
+  forge.enable = false;
   pano.enable = true;
   rounded-corners.enable = true;
   weather.enable = true;
   bar-organizer.enable = true;
   transparent-bar.enable = true;
   unite.enable = true;
+  just-perfection.enable = true;
+  tiling-shell.enable = true;
+  media-controls.enable = true;
+  tray-icons.enable = true;
+  dock.enable = true;
+  caffeine.enable = true;
+  lock-keys.enable = true;
+  runcat.enable = true;
 
    # Hyprland:
   hyprland.enable = false;

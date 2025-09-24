@@ -11,6 +11,14 @@
     ./extensions/pano.nix
     ./extensions/top-bar-organizer.nix
     ./extensions/unite.nix
+    ./extensions/just-perfection.nix
+    ./extensions/tiling-shell.nix
+    ./extensions/media-controls.nix
+    ./extensions/tray-icons.nix
+    ./extensions/dock.nix
+    ./extensions/caffeine.nix
+    ./extensions/lock-keys.nix
+    ./extensions/runcat.nix
 
   ];
 
