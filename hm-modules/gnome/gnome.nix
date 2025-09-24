@@ -7,7 +7,7 @@
     ./extensions/transparent-top-bar.nix
     ./extensions/rounded-corners.nix
     ./extensions/forge.nix
-    ./extensions/simple-weather.nix
+    ./extensions/weather.nix
     ./extensions/pano.nix
     ./extensions/top-bar-organizer.nix
 
@@ -29,6 +29,10 @@
     home-manager.users.chrrltx = { pkgs, ... }: {
       
       dconf.settings = {
+        
+        "org/gnome/shell" = {
+          disable-user-extensions = false;
+        };  
 
         "org/gnome/desktop/interface" = {
           clock-format = "12h";

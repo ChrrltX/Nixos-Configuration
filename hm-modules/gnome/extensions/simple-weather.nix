@@ -2,24 +2,16 @@
 
 {
   options = {
-    simple-weather.enable = 
-      lib.mkEnableOption "enables simple-weather";
+    weather.enable = 
+      lib.mkEnableOption "enables weather";
   };
   
-  config = lib.mkIf config.simple-weather.enable {
+  config = lib.mkIf config.weather.enable {
   
     home-manager.users.chrrltx = { pkgs, ... }: {
-      
-      dconf = {
-        enable = true;
-        settings."org/gnome/shell" = {
-          enabled-extensions = with pkgs.gnomeExtensions; [
 
-            simpleweather.extensionUuid  
-          
-          ];
-        };
-      };  
+      home.packages = [ pkgs.gnomeExtensions.weather-or-not ];
+
     };
 
   };  

@@ -10,16 +10,8 @@
   
     home-manager.users.chrrltx = { pkgs, ... }: {
       
-      dconf = {
-        enable = true;
-        settings."org/gnome/shell" = {
-          enabled-extensions = with pkgs.gnomeExtensions; [
+      home.packages = [ pkgs.gnomeExtensions.transparent-top-bar ];
 
-            transparent-top-bar.extensionUuid  
-          
-          ];
-        };
-      };  
     };
 
   };  

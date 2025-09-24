@@ -16,7 +16,7 @@
   forge.enable = true;
   pano.enable = true;
   rounded-corners.enable = true;
-  simple-weather.enable = true;
+  weather.enable = true;
   bar-organizer.enable = true;
   transparent-bar.enable = true;
 

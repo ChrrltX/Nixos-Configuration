@@ -9,17 +9,9 @@
   config = lib.mkIf config.blur-shell.enable {
   
     home-manager.users.chrrltx = { pkgs, ... }: {
-      
-      dconf = {
-        enable = true;
-        settings."org/gnome/shell" = {
-          enabled-extensions = with pkgs.gnomeExtensions; [
 
-            blur-my-shell.extensionUuid  
-          
-          ];
-        };
-      };  
+      home.packages = [ pkgs.gnomeExtensions.blur-my-shell ];
+      
     };
 
   };  
