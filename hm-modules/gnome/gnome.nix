@@ -4,6 +4,12 @@
   imports = [
 
     ./extensions/blur-my-shell.nix
+    ./extensions/transparent-top-bar.nix
+    ./extensions/rounded-corners.nix
+    ./extensions/forge.nix
+    ./extensions/simple-weather.nix
+    ./extensions/pano.nix
+    ./extensions/top-bar-organizer.nix
 
   ];
 

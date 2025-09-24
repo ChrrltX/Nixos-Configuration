@@ -5,11 +5,20 @@
     # Packages:
    
    # Desktops, Display Managers:
-
-  gnome.enable = true;
   
   gdm.enable = true;
   sddm.enable = false;
+
+   # Gnome:
+  gnome.enable = true;
+
+  blur-shell.enable = true;
+  forge.enable = true;
+  pano.enable = true;
+  rounded-corners.enable = true;
+  simple-weather.enable = true;
+  bar-organizer.enable = true;
+  transparent-bar.enable = true;
 
    # Hyprland:
   hyprland.enable = false;
