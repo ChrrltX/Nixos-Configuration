@@ -34,13 +34,14 @@
      
      # Disable All Gnome Apps:
     services.gnome.core-utilities.enable = false;
+    environment.gnome.excludePackages = with pkgs; [ gnome-tour nixos-render-docs ];
 
     home-manager.users.chrrltx = { pkgs, ... }: {
       
       dconf.settings = {
         
         "org/gnome/shell" = {
-          disable-user-extensions = false;
+          disable-user-extensions = true;
         };  
 
         "org/gnome/desktop/interface" = {

@@ -13,7 +13,7 @@
   gnome.enable = true;
 
   blur-shell.enable = true;
-  forge.enable = false;
+  forge.enable = true;
   pano.enable = true;
   rounded-corners.enable = true;
   weather.enable = true;
@@ -21,7 +21,7 @@
   transparent-bar.enable = true;
   unite.enable = true;
   just-perfection.enable = true;
-  tiling-shell.enable = true;
+  tiling-shell.enable = false;
   media-controls.enable = true;
   tray-icons.enable = true;
   dock.enable = true;

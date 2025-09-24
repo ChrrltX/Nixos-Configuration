@@ -52,7 +52,7 @@
 
        # Open The Bootloader List By Pressing Any Key!
 
-      loader.timeout = 0;
+      loader.timeout = 3;
 
     };
 
