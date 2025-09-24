@@ -19,6 +19,7 @@
   weather.enable = true;
   bar-organizer.enable = true;
   transparent-bar.enable = true;
+  unite.enable = true;
 
    # Hyprland:
   hyprland.enable = false;

@@ -10,6 +10,7 @@
     ./extensions/weather.nix
     ./extensions/pano.nix
     ./extensions/top-bar-organizer.nix
+    ./extensions/unite.nix
 
   ];
 
