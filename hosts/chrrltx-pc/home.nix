@@ -12,18 +12,18 @@
   sddm.enable = false;
 
    # Hyprland:
-  hyprland.enable = true;
-  pc-monitors.enable = true;
+  hyprland.enable = false;
+  pc-monitors.enable = false;
   lp-monitor.enable = false;
 
-  dynamic-cursors.enable = true;
-  hyprtrails.enable = true;
+  dynamic-cursors.enable = false;
+  hyprtrails.enable = false;
   
   hypridle.enable = false;
   hyprlock.enable = false;
-  hyprsunset.enable = true;
+  hyprsunset.enable = false;
   waybar.enable = false;
-  waybar-2.enable = true;
+  waybar-2.enable = false;
 
   services.caelestia-shell.enable = false;
 
@@ -60,7 +60,7 @@
   virt-manager.enable = true;
   nautilus.enable = true;
   signal.enable = true;
-  kde-connect.enable = true;
+  kde-connect.enable = false;
    
    # CLI:
 
