@@ -5,7 +5,7 @@ let
 in
 
 { 
-  imports = [
+    imports = [
 
      # Hyprland Config:
     ./modules/hypr-conf/general.nix
@@ -14,7 +14,7 @@ in
     ./modules/hypr-conf/input.nix
     ./modules/hypr-conf/windowrules.nix
 
-    # Plugins:
+     # Plugins:
     ./modules/plugins/dynamic-cursors.nix
     ./modules/plugins/hyprtrails.nix
      
@@ -36,7 +36,7 @@ in
      # Other:
     ./modules/caelestia.nix    
 
-  ];  
+  ]; 
 
   options = {
     hyprland.enable =

@@ -24,8 +24,13 @@
     };
      
      # Caelestia Shell:
-    caelestia-shell = {
-      url = "github:kochkaev/caelestia-shell-nixos";
+    #caelestia-shell = {
+    #  url = "github:kochkaev/caelestia-shell-nixos";
+    #  inputs.nixpkgs.follows = "nixpkgs";
+    #};  
+
+    quickshell = {
+      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
       inputs.nixpkgs.follows = "nixpkgs";
     };    
     
@@ -59,7 +64,8 @@
 #    disko,
     hyprland,
     hyprland-plugins,
-    caelestia-shell,
+    #caelestia-shell,
+    quickshell,
     stylix,
     nvf,
     spicetify-nix,
@@ -84,10 +90,13 @@
 	 stylix.nixosModules.stylix
          spicetify-nix.nixosModules.default
 	 nvf.nixosModules.default
-         caelestia-shell.nixosModules.default
+         #caelestia-shell.nixosModules.default
 
          {
            networking.hostName = "NixPC";
+           environment.systemPackages = [
+             quickshell.packages.x86_64-linux.default
+           ];
          }  
  
          home-manager.nixosModules.home-manager
@@ -113,10 +122,13 @@
 	 stylix.nixosModules.stylix
          spicetify-nix.nixosModules.default
 	 nvf.nixosModules.default
-         caelestia-shell.nixosModules.default
+         #caelestia-shell.nixosModules.default
 
          {
            networking.hostName = "NixLP";
+           environment.systemPackages = [
+             quickshell.packages.x86_64-linux.default
+           ];
          }
 
          home-manager.nixosModules.home-manager

@@ -246,7 +246,7 @@
 	    drawer = {
 	      transition-duration = 600;
 	      transition-left-to-right = true;
-	      click-to-reveal = true;
+	      click-to-reveal = false;
 	    };
 	    modules = [
               "custom/expand-right"
@@ -271,7 +271,7 @@
 	    drawer = {
 	      transition-duration = 600;
 	      transition-left-to-right = false;
-	      click-to-reveal = true;
+	      click-to-reveal = false;
 	    };
 	    modules = [
               "custom/expand-left"
@@ -376,7 +376,6 @@
         #clock:hover {
           transition: all .8s ease;
           color: rgb(147, 153, 178);
-          font-size: 16px;
         }  
 
         #workspaces {
@@ -400,6 +399,10 @@
           color: rgb(24, 24, 37);
         }
 
+        #workspaces button.active:hover {
+          background-color: rgb(122, 100, 148);
+        }  
+
         #workspaces button.empty {
           padding: 0px 5px;
           color: rgb(69, 71, 90);
@@ -414,6 +417,10 @@
           background-color: rgb(180, 190, 254);
 	  color: rgb(49, 50, 68);
 	}
+
+        #workspaces button.empty.active:hover {
+          background-color: rgb(108, 114, 152);
+        }  
 
         #cava {
           padding: 0px 5px;
@@ -430,8 +437,7 @@
 
         #mpris:hover {
           transition: all .8s linear;
-          color: rgb(180, 190, 254);
-          font-size: 22px;
+          color: rgb(122, 100, 148);
         }  
 
         #custom-previous {
@@ -443,8 +449,7 @@
 
         #custom-previous:hover {
           transition: all .8s linear;
-          color: rgb(180, 190, 254);
-          font-size: 22px;
+          color: rgb(122, 100, 148);
         }  
 
         #custom-next {
@@ -456,8 +461,7 @@
 
         #custom-next:hover {
           transition: all .8s linear;
-          color: rgb(180, 190, 254);
-          font-size: 22px;
+          color: rgb(122, 100, 148);
         }  
 
 	#network {
@@ -467,7 +471,6 @@
 
         #network:hover {
           transition: all .3s ease;
-          font-size: 18px;
         }
 
         #battery {
@@ -477,7 +480,6 @@
 
         #battery:hover {
           transition: all .3s ease;
-          font-size: 18px;
         }  
 
         #battery.charging {
@@ -504,7 +506,6 @@
 
         #pulseaudio:hover {
           transition: all .3s ease;
-          font-size: 18px;
         }  
 
         #user {
@@ -576,7 +577,6 @@
         }  
 
         #custom-quit:hover {
-          font-size: 23px;
           transition: all .3s ease;
         }  
         
@@ -588,7 +588,6 @@
         }
 
         #custom-lock:hover {
-          font-size: 23px;
           transition: all .3s ease;
         }  
 
@@ -600,7 +599,6 @@
         }
 
         #custom-reboot:hover {
-          font-size: 23px;
           transition: all .3s ease;
         }  
 
@@ -612,7 +610,6 @@
         }  
 
         #custom-power:hover {
-          font-size: 21px;
           transition: all .3s ease;
         }  
 

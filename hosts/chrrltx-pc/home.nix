@@ -10,40 +10,40 @@
   sddm.enable = false;
 
    # Gnome:
-  gnome.enable = true;
+  gnome.enable = false;
 
-  blur-shell.enable = true;
-  forge.enable = true;
-  pano.enable = true;
-  rounded-corners.enable = true;
-  weather.enable = true;
-  bar-organizer.enable = true;
-  transparent-bar.enable = true;
-  unite.enable = true;
-  just-perfection.enable = true;
-  tiling-shell.enable = false;
-  media-controls.enable = true;
-  tray-icons.enable = true;
-  dock.enable = true;
-  caffeine.enable = true;
-  lock-keys.enable = true;
-  runcat.enable = true;
+  #blur-shell.enable = true;
+  #forge.enable = true;
+  #pano.enable = true;
+  #rounded-corners.enable = true;
+  #weather.enable = true;
+  #bar-organizer.enable = true;
+  #transparent-bar.enable = true;
+  #unite.enable = true;
+  #just-perfection.enable = true;
+  #tiling-shell.enable = false;
+  #media-controls.enable = true;
+  #tray-icons.enable = true;
+  #dock.enable = true;
+  #caffeine.enable = true;
+  #lock-keys.enable = true;
+  #runcat.enable = true;
 
    # Hyprland:
-  hyprland.enable = false;
-  pc-monitors.enable = false;
+  hyprland.enable = true;
+  pc-monitors.enable = true;
   lp-monitor.enable = false;
 
-  dynamic-cursors.enable = false;
-  hyprtrails.enable = false;
+  dynamic-cursors.enable = true;
+  hyprtrails.enable = true;
   
   hypridle.enable = false;
   hyprlock.enable = false;
-  hyprsunset.enable = false;
+  hyprsunset.enable = true;
   waybar.enable = false;
   waybar-2.enable = false;
 
-  services.caelestia-shell.enable = false;
+  #services.caelestia-shell.enable = false;
 
   # Hardware:
 
@@ -109,7 +109,7 @@
       };
     }; 
 
-    home.packages = with pkgs; [ python3Full ];
+    home.packages = with pkgs; [ python3Full blender gimp3 osu-lazer ];
     
     home.username = "chrrltx";
 
