@@ -6,7 +6,7 @@
    
    # Desktops, Display Managers:
 
-  gnome.enable = false;
+  gnome.enable = true;
   hyprland.enable = true;
   
   gdm.enable = true;
@@ -42,13 +42,14 @@
   prismlauncher.enable = true;
    
    # Apps:
-
-  brave.enable = true;
+  
+  virt-manager.enable = true;
+  brave.enable = false;
+  zen-browser.enable = true;
   obsidian.enable = true;
   vesktop.enable = true;
   spotify.enable = true;
   kitty.enable = true;
-  virt-manager.enable = true;
   nautilus.enable = true;
    
    # CLI:
@@ -63,6 +64,9 @@
   bat.enable = true;
   fzf.enable = true;
   eza.enable = true;
+  
+  #virtualisation.virtualbox.host.enable = true;
+  programs.adb.enable = true;
 
   home-manager.users.chrrltx = { pkgs, ... }: {
     
@@ -76,7 +80,7 @@
       };
     }; 
 
-    home.packages = with pkgs; [ virtualbox ];
+    home.packages = with pkgs; [ whois swtpm ];
     
     home.username = "chrrltx";
 
