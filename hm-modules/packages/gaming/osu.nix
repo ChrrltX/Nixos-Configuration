@@ -9,7 +9,7 @@
   config = lib.mkIf config.osu.enable {
   
     home-manager.users.chrrltx = { pkgs, ... }: {
-      programs.osu-lazer.enable = true;
+      home.packages = with pkgs; [ osu-lazer ];
     };
 
   };  

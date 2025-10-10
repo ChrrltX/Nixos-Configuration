@@ -9,7 +9,7 @@
   config = lib.mkIf config.gimp.enable {
   
     home-manager.users.chrrltx = { pkgs, ... }: {
-      programs.gimp3.enable = true;
+      home.packages = with pkgs; [ gimp3 ];
     };
 
   };  

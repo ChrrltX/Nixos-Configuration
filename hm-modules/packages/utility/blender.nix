@@ -9,7 +9,7 @@
   config = lib.mkIf config.blender.enable {
   
     home-manager.users.chrrltx = { pkgs, ... }: {
-      programs.blender.enable = true;
+      home.packages = with pkgs; [ blender ];
     };
 
   };  
