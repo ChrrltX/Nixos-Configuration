@@ -130,7 +130,7 @@ let
   '';
 
 in
-{
+{ 
   options.programs.quickshell = {
     finalPackage = lib.mkOption {
       type = lib.types.package;
@@ -145,3 +145,4 @@ in
     };
   };
 }
+

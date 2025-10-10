@@ -1,6 +1,8 @@
 { config, pkgs, inputs, lib, ... }:
 
 {
+  #home-manager.users.chrrltx = { config, pkgs, inputs, lib, ... }: {
+
   # Configuration files
   xdg.configFile = {
     # Main caelestia shell configuration
@@ -50,4 +52,6 @@
       find ${config.xdg.stateHome}/caelestia/scheme -name "*.txt" -exec chmod u+w {} \; 2>/dev/null || true
     fi
   '';
+
+  #};
 }

@@ -33,9 +33,6 @@ in
     ./modules/hyprsunset.nix
     ./modules/power-profiles.nix
 
-     # Other:
-    ./modules/caelestia.nix    
-
   ]; 
 
   options = {

@@ -1,6 +1,8 @@
 { config, pkgs, inputs, lib, ... }:
 
-{
+{ 
+  home-manager.users.chrrltx = { config, pkgs, inputs, lib, ... }: {
+
   imports = [
     ./packages.nix          # Caelestia scripts and quickshell wrapper derivations
     ./config.nix           # Configuration files and environment setup
@@ -34,6 +36,12 @@
     # Additional dependencies
     lm_sensors
     curl
+    app2unit
+    aubio
+    glibc
+    libgcc
+    libqalculate
+    bash
 
     # Misc
     ibm-plex
@@ -45,6 +53,8 @@
     bluez
     ddcutil
     brightnessctl
+    material-symbols
+    swappy
 
     # Wrapper for caelestia to work with quickshell
     (writeScriptBin "caelestia-quickshell" ''
@@ -111,5 +121,7 @@
     caelestia-shell = "qs -c caelestia";
     caelestia-edit = "cd ${config.xdg.configHome}/quickshell/caelestia && $EDITOR";
     caelestia = "caelestia-quickshell";
+  };
+
   };
 }

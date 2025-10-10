@@ -13,6 +13,7 @@
      # Gaming:
     ./packages/gaming/prismlauncher.nix
     ./packages/gaming/vintage-story.nix
+    ./packages/gaming/osu.nix
      
      # Media: 
 
@@ -38,6 +39,9 @@
     ./packages/utility/eza.nix
     ./packages/utility/nautilus.nix
     ./packages/utility/kde-connect.nix
+    ./packages/utility/blender.nix
+    ./packages/utility/gimp.nix
+    ./packages/utility/fish.nix
 
   ];  
 }

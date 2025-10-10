@@ -19,7 +19,7 @@ Singleton {
         id: wttrProc
 
         running: true
-        command: ["fish", "-c", `curl "https://wttr.in/$(curl ipinfo.io | jq -r '.city' | string replace -a ' ' '%20')?format=j1" | jq -c '.current_condition[0] | {code: .weatherCode, desc: .weatherDesc[0].value, temp: .temp_F}'`]
+        command: ["fish", "-c", `curl "https://wttr.in/$(curl ipinfo.io | jq -r '.city' | string replace -a ' ' '%20')?format=j1" | jq -c '.current_condition[0] | {code: .weatherCode, desc: .weatherDesc[0].value, temp: .temp_C}'`]
         stdout: SplitParser {
             onRead: data => {
                 const json = JSON.parse(data);

@@ -32,7 +32,12 @@
     quickshell = {
       url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
       inputs.nixpkgs.follows = "nixpkgs";
-    };    
+    };  
+
+    astal = {
+      url = "github:aylur/astal";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     
      # Stylix:
     stylix = {
@@ -66,6 +71,7 @@
     hyprland-plugins,
     #caelestia-shell,
     quickshell,
+    astal,
     stylix,
     nvf,
     spicetify-nix,
@@ -101,6 +107,7 @@
  
          home-manager.nixosModules.home-manager
          {
+           home-manager.extraSpecialArgs = { inherit inputs; };
            home-manager.useGlobalPkgs = true;
            home-manager.useUserPackages = true;
            #home-manager.users.chrrltx = ./hosts/chrrltx-pc/home.nix;
@@ -132,7 +139,8 @@
          }
 
          home-manager.nixosModules.home-manager
-         {
+         { 
+           home-manager.extraSpecialArgs = { inherit inputs; };
            home-manager.useGlobalPkgs = true;
            home-manager.useUserPackages = true;
            #home-manager.users.chrrltx = ./hosts/chrrltx-pc/home.nix;

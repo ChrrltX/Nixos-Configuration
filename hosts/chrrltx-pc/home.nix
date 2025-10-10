@@ -1,7 +1,11 @@
 
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, inputs, finalPackage, ... }:
 
 { 
+  imports = [
+    ./../../hm-modules/hyprland/quickshell
+  ];
+
     # Packages:
    
    # Desktops, Display Managers:
@@ -66,6 +70,7 @@
   steam.enable = true;
   prismlauncher.enable = true;
   vintage-story.enable = true;
+  osu.enable = true;
    
    # Apps:
 
@@ -79,6 +84,8 @@
   nautilus.enable = true;
   signal.enable = true;
   kde-connect.enable = false;
+  blender.enable = true;
+  gimp.enable = true;
    
    # CLI:
 
@@ -89,6 +96,7 @@
   tree.enable = true;
   nvf.enable = true;
   zsh.enable = true;
+  fish.enable = true;
   bat.enable = true;
   fzf.enable = true;
   eza.enable = true;
@@ -96,6 +104,8 @@
   nixpkgs.config.permittedInsecurePackages = [
     "dotnet-runtime-7.0.20"
   ];
+  
+  programs.fish.enable = true;
 
   home-manager.users.chrrltx = { pkgs, ... }: {
     
@@ -109,7 +119,7 @@
       };
     }; 
 
-    home.packages = with pkgs; [ python3Full blender gimp3 osu-lazer ];
+    #home.packages = with pkgs; [ ];
     
     home.username = "chrrltx";
 

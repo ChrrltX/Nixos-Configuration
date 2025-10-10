@@ -16,7 +16,7 @@
 
     };  
 
-    stylix.targets.wofi.enable = false;
+    #stylix.targets.wofi.enable = false;
 
     programs.wofi = {
       

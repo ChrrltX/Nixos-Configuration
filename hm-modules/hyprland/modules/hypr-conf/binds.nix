@@ -104,6 +104,12 @@
           "$mod ALT, P, exec, playerctl play-pause"
 
 	];
+
+        #bindi = [
+          
+          #"SUPER, Super_L, global, caelestia:launcher"
+          
+        #];  
       };
     };
   };

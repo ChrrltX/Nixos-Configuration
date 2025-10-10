@@ -1,0 +1,16 @@
+{ config, pkgs, lib, ... }:
+
+{
+  options = {
+    gimp.enable = 
+      lib.mkEnableOption "enables gimp";
+  };
+  
+  config = lib.mkIf config.gimp.enable {
+  
+    home-manager.users.chrrltx = { pkgs, ... }: {
+      programs.gimp3.enable = true;
+    };
+
+  };  
+}

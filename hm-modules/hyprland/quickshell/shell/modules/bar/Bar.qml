@@ -93,7 +93,7 @@ Item {
             id: workspaces
 
             anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: osIcon.bottom
+            anchors.top: osIcon.right
             anchors.topMargin: Appearance.spacing.normal
 
             radius: Appearance.rounding.full
