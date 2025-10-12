@@ -67,7 +67,7 @@ Item {
     }
 
     anchors.top: parent.top
-    anchors.bottom: parent.bottom
+    anchors.right: parent.right
     anchors.left: parent.left
 
     implicitWidth: child.implicitWidth + BorderConfig.thickness * 2
@@ -76,8 +76,7 @@ Item {
         id: child
 
         anchors.top: parent.top
-        anchors.bottom: parent.bottom
-        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.verticalCenter: parent.verticalCenter
 
         implicitWidth: Math.max(osIcon.implicitWidth, workspaces.implicitWidth, activeWindow.implicitWidth, tray.implicitWidth, clock.implicitWidth, statusIcons.implicitWidth, power.implicitWidth)
 

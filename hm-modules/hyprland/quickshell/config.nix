@@ -1,8 +1,6 @@
 { config, pkgs, inputs, lib, ... }:
 
 {
-  #home-manager.users.chrrltx = { config, pkgs, inputs, lib, ... }: {
-
   # Configuration files
   xdg.configFile = {
     # Main caelestia shell configuration

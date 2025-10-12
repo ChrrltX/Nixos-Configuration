@@ -119,7 +119,7 @@
       };
     }; 
 
-    #home.packages = with pkgs; [ ];
+    home.packages = with pkgs; [ scrcpy gnome-clocks ];
     
     home.username = "chrrltx";
 
