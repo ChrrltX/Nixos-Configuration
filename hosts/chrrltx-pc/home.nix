@@ -39,7 +39,7 @@
   
   hypridle.enable = false;
   hyprlock.enable = false;
-  hyprsunset.enable = true;
+  sunsetr.enable = true;
   waybar.enable = false;
   waybar-2.enable = true;
 

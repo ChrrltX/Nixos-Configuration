@@ -30,7 +30,7 @@ in
     ./modules/screen-tools.nix
     ./modules/hypridle.nix
     ./modules/hyprlock.nix
-    ./modules/hyprsunset.nix
+    ./modules/sunsetr.nix
     ./modules/power-profiles.nix
 
   ]; 
@@ -87,7 +87,7 @@ in
 	    "waybar"
 	    "lxqt-policykit-agent"
             "protonvpn-app"
-            "hyprsunset"
+            "sunsetr"
 	  
 	  ];
 

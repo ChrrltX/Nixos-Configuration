@@ -25,7 +25,7 @@
 
    # QOL:
   
-  hyprsunset.enable = true;
+  sunsetr.enable = true;
 
    # Customization:
 
