@@ -7,10 +7,12 @@
   };
   
   config = lib.mkIf config.sunsetr.enable {
+    
+    environment.systemPackages = with pkgs; [ sunsetr ];
 
     home-manager.users.chrrltx = { pkgs, ... }: {
 
-      home.packages = with pkgs; [ hyprsunset sunsetr ];
+      home.packages = with pkgs; [ hyprsunset ];
 
       home.file."~/.config/sunsetr/sunsetr.toml".text = ''
         

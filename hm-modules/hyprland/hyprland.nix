@@ -30,7 +30,7 @@ in
     ./modules/screen-tools.nix
     ./modules/hypridle.nix
     ./modules/hyprlock.nix
-    ./modules/sunsetr.nix
+    #./modules/sunsetr.nix
     ./modules/power-profiles.nix
 
   ]; 

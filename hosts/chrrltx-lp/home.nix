@@ -25,7 +25,7 @@
 
    # QOL:
   
-  sunsetr.enable = true;
+  #sunsetr.enable = true;
 
    # Customization:
 
