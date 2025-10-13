@@ -119,7 +119,7 @@
       };
     }; 
 
-    home.packages = with pkgs; [ scrcpy gnome-clocks ];
+    home.packages = with pkgs; [ scrcpy gnome-clocks vinegar wineWowPackages.waylandFull winetricks ];
     
     home.username = "chrrltx";
 

@@ -23,7 +23,6 @@
         shuffle
         fullAppDisplay
         fullAlbumDate
-        oneko
 
       ];
 
