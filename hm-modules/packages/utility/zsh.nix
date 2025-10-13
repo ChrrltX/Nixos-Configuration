@@ -23,14 +23,20 @@
         syntaxHighlighting.enable = true;
 
         shellAliases = {
-
+           
+           # Git:
           add-nixos = "cd ~/nixos & git add .";
-          commit = "git commit -m";
+          commit = "cd ~/nixos & git commit -m";
           push-nixos = "cd ~/nixos & git push Nixos-Configuration main";
+          pull-nixos = "cd ~/nixos & git pull Nixos-Configuration main";
+           
+           # NH:
           switch = "nh os switch ~/nixos";
           clean = "nh clean all --keep 3";
           clean-dry = "nh clean all --keep 3 --dry";
-          screenshot = ''grim -g "$(slurp -w 0)" - | swappy -f -'';
+           
+           # Other:
+          scr = ''grim -g "$(slurp -w 0)" - | swappy -f -'';
 
         };
       
