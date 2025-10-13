@@ -2,10 +2,6 @@
 { config, pkgs, lib, inputs, finalPackage, ... }:
 
 { 
-  imports = [
-    ./../../hm-modules/hyprland/quickshell
-  ];
-
     # Packages:
    
    # Desktops, Display Managers:
