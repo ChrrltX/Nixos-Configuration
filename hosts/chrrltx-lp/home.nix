@@ -2,6 +2,9 @@
 { config, pkgs, lib, ... }:
 
 { 
+  imports = [
+    #./../../hm-modules/hyprland/quickshell
+  ];  
     # Packages:
    
    # Desktops, Display Managers:
@@ -30,7 +33,6 @@
    # Customization:
 
   stylix.enable = true;
-  services.caelestia-shell.enable = false;
   waybar.enable = false;
   waybar-2.enable = true;
   plymouth.enable = true;

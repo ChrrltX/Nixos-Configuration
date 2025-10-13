@@ -96,7 +96,6 @@
 	 stylix.nixosModules.stylix
          spicetify-nix.nixosModules.default
 	 nvf.nixosModules.default
-         #caelestia-shell.nixosModules.default
 
          {
            networking.hostName = "NixPC";
@@ -129,7 +128,6 @@
 	 stylix.nixosModules.stylix
          spicetify-nix.nixosModules.default
 	 nvf.nixosModules.default
-         #caelestia-shell.nixosModules.default
 
          {
            networking.hostName = "NixLP";
