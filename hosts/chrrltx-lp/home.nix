@@ -63,8 +63,7 @@
   bat.enable = true;
   fzf.enable = true;
   eza.enable = true;
-  
-  #virtualisation.virtualbox.host.enable = true;
+
   programs.adb.enable = true;
 
   home-manager.users.chrrltx = { pkgs, ... }: {

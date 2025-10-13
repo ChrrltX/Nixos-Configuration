@@ -1,5 +1,5 @@
 
-{ config, pkgs, lib, inputs, finalPackage, ... }:
+{ config, pkgs, lib, inputs, ... }:
 
 { 
     # Packages:
@@ -96,10 +96,6 @@
   bat.enable = true;
   fzf.enable = true;
   eza.enable = true;
- 
-  nixpkgs.config.permittedInsecurePackages = [
-    "dotnet-runtime-7.0.20"
-  ];
   
   programs.fish.enable = true;
 

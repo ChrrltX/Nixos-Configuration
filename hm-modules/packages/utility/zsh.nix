@@ -30,13 +30,15 @@
           push-nixos = "cd ~/nixos & git push Nixos-Configuration main";
           pull-nixos = "cd ~/nixos & git pull Nixos-Configuration main";
            
-           # NH:
+           # Nixos:
           switch = "nh os switch ~/nixos";
           clean = "nh clean all --keep 3";
           clean-dry = "nh clean all --keep 3 --dry";
+          rebuild = "cd ~/nixos & sudo nixos-rebuild switch --flake .";
            
            # Other:
           scr = ''grim -g "$(slurp -w 0)" - | swappy -f -'';
+          vn = "cd ~/nixos & vim";
 
         };
       

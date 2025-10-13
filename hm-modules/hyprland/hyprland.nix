@@ -105,6 +105,7 @@ in
 	wl-clipboard # Clipboard
         brightnessctl # Brightness Control
 	swww
+        polkit_gnome
 
       ];
 

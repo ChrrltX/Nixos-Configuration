@@ -84,7 +84,7 @@
  
          home-manager.nixosModules.home-manager
          {
-           home-manager.extraSpecialArgs = { inherit inputs; };
+           #home-manager.extraSpecialArgs = { inherit inputs; };
            home-manager.useGlobalPkgs = true;
            home-manager.useUserPackages = true;
            #home-manager.users.chrrltx = ./hosts/chrrltx-pc/home.nix;
@@ -113,7 +113,7 @@
 
          home-manager.nixosModules.home-manager
          { 
-           home-manager.extraSpecialArgs = { inherit inputs; };
+           #home-manager.extraSpecialArgs = { inherit inputs; };
            home-manager.useGlobalPkgs = true;
            home-manager.useUserPackages = true;
            #home-manager.users.chrrltx = ./hosts/chrrltx-pc/home.nix;
