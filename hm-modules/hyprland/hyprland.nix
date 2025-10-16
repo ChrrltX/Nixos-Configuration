@@ -26,6 +26,7 @@ in
     ./modules/waybar/waybar.nix
     ./modules/waybar/waybar-2.nix
 
+    ./modules/hyprshell.nix
     ./modules/wofi.nix
     ./modules/screen-tools.nix
     ./modules/hypridle.nix
@@ -88,6 +89,7 @@ in
 	    "lxqt-policykit-agent"
             "protonvpn-app"
             "sunsetr"
+            "hyprshell run &"
 	  
 	  ];
 

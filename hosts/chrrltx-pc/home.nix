@@ -42,6 +42,7 @@
   #sunsetr.enable = true;
   waybar.enable = false;
   waybar-2.enable = true;
+  hyprshell.enable = true;
 
   #services.caelestia-shell.enable = false;
 
@@ -112,7 +113,7 @@
       };
     }; 
 
-    home.packages = with pkgs; [ scrcpy gnome-clocks vinegar wineWowPackages.waylandFull winetricks ];
+    home.packages = with pkgs; [ scrcpy gnome-clocks vinegar wineWowPackages.waylandFull winetricks hyprshell hyprdim hyprpicker ];
     
     home.username = "chrrltx";
 

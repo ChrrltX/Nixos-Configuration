@@ -1,52 +1,49 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, inputs, ... }:
 
-{
+{  
   options = {
     nixcord.enable = 
       lib.mkEnableOption "enables nixcord";
   };
   
   config = lib.mkIf config.nixcord.enable {
-  
+
     home-manager.users.chrrltx = { pkgs, ... }: {
       
       programs.nixcord = {
-        enable = true;          # Enable Nixcord (It also installs Discord)
-        vesktop.enable = true;  # Vesktop
-        dorion.enable = true;   # Dorion
-        quickCss = "some CSS";  # quickCSS file
+        
+        enable = true;         
+        vesktop.enable = true; 
+        dorion.enable = true;
+
+        quickCss = "some CSS";
+        
         config = {
-          useQuickCss = true;   # use out quickCSS
-          themeLinks = [        # or use an online theme
-            "https://raw.githubusercontent.com/link/to/some/theme.css"
-          ];
-          frameless = true;                   # Set some Vencord options
-          plugins = {
-            hideAttachments.enable = true;    # Enable a Vencord plugin
-            ignoreActivities = {              # Enable a plugin and set some options
-              enable = true;
-              ignorePlaying = true;
-              ignoreWatching = true;
-              ignoredActivities = [ "someActivity" ];
-            };
-          };
+          
+          useQuickCss = true;
+          frameless = true; 
+          
+          #plugins = { };
         };
+
         dorion = {
-          theme = "dark";
-          zoom = "1.1";
-          blur = "acrylic";       # "none", "blur", or "acrylic"
-          sysTray = true;
+          
+          zoom = "1.0";
+          blur = "acrylic"; 
+          sysTray = false;
           openOnStartup = true;
           autoClearCache = true;
           disableHardwareAccel = false;
           rpcServer = true;
           rpcProcessScanner = true;
-          pushToTalk = true;
-          pushToTalkKeys = ["RControl"];
+          pushToTalk = false;
           desktopNotifications = true;
           unreadBadge = true;
+
         };
+
       };
+
     };
   };  
 }

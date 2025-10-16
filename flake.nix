@@ -44,6 +44,11 @@
       inputs.nixpkgs.follows = "nixpkgs";    
     };  
 
+    nixcord = {
+      url = "github:kaylorben/nixcord";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
   };
 
   outputs = inputs@{ 
@@ -57,6 +62,7 @@
     nvf,
     spicetify-nix,
     zen-browser,
+    nixcord,
     ...
     
   }: {
@@ -77,6 +83,7 @@
 	 stylix.nixosModules.stylix
          spicetify-nix.nixosModules.default
 	 nvf.nixosModules.default
+         #inputs.nixcord.nixosModules.nixcord
 
          {
            networking.hostName = "NixPC";
@@ -88,6 +95,9 @@
            home-manager.useGlobalPkgs = true;
            home-manager.useUserPackages = true;
            #home-manager.users.chrrltx = ./hosts/chrrltx-pc/home.nix;
+           home-manager.sharedModules = [
+             inputs.nixcord.homeModules.nixcord
+           ];
          }
 
        ];
@@ -117,6 +127,9 @@
            home-manager.useGlobalPkgs = true;
            home-manager.useUserPackages = true;
            #home-manager.users.chrrltx = ./hosts/chrrltx-pc/home.nix;
+           home-manager.sharedModules = [
+             inputs.nixcord.homeModules.nixcord
+           ];
          }
 
        ];  
