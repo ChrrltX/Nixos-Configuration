@@ -73,7 +73,7 @@
   brave.enable = true;
   zen-browser.enable = true;
   obsidian.enable = true;
-  vesktop.enable = true;
+  vesktop.enable = false;
   spotify.enable = true;
   kitty.enable = true;
   virt-manager.enable = true;
@@ -82,6 +82,7 @@
   kde-connect.enable = false;
   blender.enable = true;
   gimp.enable = true;
+  nixcord.enable = true;
    
    # CLI:
 
