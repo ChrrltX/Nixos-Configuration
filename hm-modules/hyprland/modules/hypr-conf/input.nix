@@ -31,10 +31,10 @@
 
         gestures = {
         
-          workspace_swipe = true;
+          #workspace_swipe = true;
           workspace_swipe_distance = "700";
-          workspace_swipe_fingers = "2";
-          workspace_swipe_min_fingers = true;
+          #workspace_swipe_fingers = "2";
+          #workspace_swipe_min_fingers = true;
           workspace_swipe_cancel_ratio = "0.2";
           workspace_swipe_min_speed_to_force = "5";
           workspace_swipe_direction_lock = true;

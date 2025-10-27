@@ -17,7 +17,7 @@
         settings = {
 
           vim = {
-      
+          
             theme.enable = true;
 
             statusline.lualine.enable = true;
@@ -37,9 +37,10 @@
               enable = true;
               setupOpts.enable_git_status = true;
             }; 
+            
+            lsp.enable = true;
 
             languages = {
-              enableLSP = true;
     	      nix.enable = true;
 	      python.enable = true;
 	      clang.enable = true;

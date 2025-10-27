@@ -42,7 +42,6 @@
     ./packages/utility/kde-connect.nix
     ./packages/utility/blender.nix
     ./packages/utility/gimp.nix
-    ./packages/utility/fish.nix
 
   ];  
 }

@@ -74,7 +74,7 @@
   brave.enable = true;
   zen-browser.enable = true;
   obsidian.enable = true;
-  vesktop.enable = false;
+  vesktop.enable = true;
   spotify.enable = true;
   kitty.enable = true;
   virt-manager.enable = true;
@@ -83,7 +83,7 @@
   kde-connect.enable = false;
   blender.enable = true;
   gimp.enable = true;
-  nixcord.enable = true;
+  nixcord.enable = false;
    
    # CLI:
 
@@ -94,7 +94,6 @@
   tree.enable = true;
   nvf.enable = true;
   zsh.enable = true;
-  fish.enable = true;
   bat.enable = true;
   fzf.enable = true;
   eza.enable = true;
@@ -113,7 +112,7 @@
       };
     }; 
 
-    home.packages = with pkgs; [ scrcpy gnome-clocks vinegar wineWowPackages.waylandFull winetricks hyprshell hyprdim hyprpicker ];
+    home.packages = with pkgs; [ scrcpy gnome-clocks vinegar wineWowPackages.waylandFull winetricks hyprdim hyprpicker lxqt.libqtxdg ];
     
     home.username = "chrrltx";
 

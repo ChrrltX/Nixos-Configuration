@@ -108,6 +108,7 @@ in
         brightnessctl # Brightness Control
 	swww
         polkit_gnome
+        dunst
 
       ];
 
