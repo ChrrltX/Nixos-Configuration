@@ -1,0 +1,1346 @@
+[2m20:21:18[0m [92mINF[0m Logging to file [2mpath=[0m/home/chrrltx/.var/app/org.vinegarhq.Vinegar/cache/vinegar/logs/2025-10-27T20:21:18+01:00.log
+[2m20:21:18[0m [92mINF[0m Setting up Wine
+[2m20:21:18[0m [92mINF[0m Initializing Wineprefix [2mdir=[0m/home/chrrltx/.var/app/org.vinegarhq.Vinegar/data/vinegar/prefixes/studio
+[2m20:21:18[0m [31mWIN[0m 002c:err:wineboot:process_run_key Error running cmd L"C:\\windows\\system32\\winemenubuilder.exe -a -r" (126).
+[2m20:21:19[0m [31mWIN[0m 00e8:err:wineboot:process_run_key Error running cmd L"C:\\windows\\system32\\winemenubuilder.exe -a -r" (126).
+[2m20:21:19[0m [31mWIN[0m 002c:err:wineboot:process_run_key Error running cmd L"C:\\windows\\system32\\winemenubuilder.exe -a -r" (126).
+[2m20:21:19[0m [31mWIN[0m 00a8:err:ntoskrnl:ZwLoadDriver failed to create driver L"\\Registry\\Machine\\System\\CurrentControlSet\\Services\\winebth": c00000e5
+[2m20:21:20[0m [92mINF[0m Checking Wineprefix
+[2m20:21:20[0m [92mINF[0m Acquiring user authentication
+[2m20:21:20[0m [92mINF[0m Using user for authentication [2muser=[0m1310478554
+[2m20:21:20[0m [92mINF[0m Checking WebView [2mversion=[0m141.0.3537.71
+[2m20:21:20[0m [92mINF[0m Checking for updates
+[2m20:21:20[0m [92mINF[0m Using Deployment [2mguid=[0mversion-30215da31a3b42e2 [2mchannel=[0mLIVE
+[2m20:21:20[0m [92mINF[0m Up to date [2mguid=[0mversion-30215da31a3b42e2
+[2m20:21:20[0m [92mINF[0m Applying FFlags
+[2m20:21:20[0m [92mINF[0m Kickstarting Wineserver
+[2m20:21:20[0m [92mINF[0m Running Studio! [2mcmd=[0m"/app/bin/wine /home/chrrltx/.var/app/org.vinegarhq.Vinegar/data/vinegar/versions/version-30215da31a3b42e2/RobloxStudioBeta.exe"
+[2m20:21:20[0m [92mINF[0m Registered with GameMode [2mresponse=[0m0
+[2m20:21:21[0m [31mWIN[0m WARNING: radv is not a conformant Vulkan implementation, testing use only.
+[2m20:21:21[0m [31mWIN[0m WARNING: radv is not a conformant Vulkan implementation, testing use only.
+[2m20:21:21[0m [31mWIN[0m 0130:err:secur32:SECUR32_initSchannelSP no schannel support, expect problems
+[2m20:21:21[0m [31mWIN[0m WARNING: radv is not a conformant Vulkan implementation, testing use only.
+[2m20:21:21[0m [31mWIN[0m WARNING: radv is not a conformant Vulkan implementation, testing use only.
+[2m20:21:21[0m [36mRBX[0m [FLog::Output] RobloxGitHash: a619f7aae6c14b67f91039bbd0aa99bb05519c0b
+[2m20:21:21[0m [36mRBX[0m [FLog::Output] \n\nCommand line:\nZ:\\home\\chrrltx\\.var\\app\\org.vinegarhq.Vinegar\\data\\vinegar\\versions\\version-30215da31a3b42e2\\RobloxStudioBeta.exe\n\n
+[2m20:21:21[0m [36mRBX[0m [FLog::Output] Creating PolicyContext(Root)
+[2m20:21:21[0m [36mRBX[0m [FLog::Output] BaseUrl: https://www.roblox.com
+[2m20:21:21[0m [36mRBX[0m [FLog::BackendConfigCacheManager] Header version / timestamp is empty
+[2m20:21:21[0m [36mRBX[0m [FLog::BackendConfigManager] startTimestampMs: 1761592881343. Thread start took 0ms
+[2m20:21:21[0m [36mRBX[0m [FLog::Output] settingsUrl: https://clientsettingscdn.roblox.com/v2/settings/application/PCStudioApp
+[2m20:21:26[0m [36mRBX[0m [FLog::UpdateRequest] Didn't receive 'flagOnly' property for channel. Assuming it's false.
+[2m20:21:26[0m [36mRBX[0m [FLog::Output] Settings Signature header not found
+[2m20:21:26[0m [36mRBX[0m [FLog::BackendConfigManager] Wait flag took 5241ms. Flag Source remoteCDN
+[2m20:21:26[0m [36mRBX[0m [FLog::BackendConfigManager] Wait guac took 0ms. Guac Source remoteCDN. Total startup config fetching time = 5241
+[2m20:21:26[0m [36mRBX[0m [FLog::BackendConfigManager] Wait latest version took 0ms. Total startup config fetching time = 5241
+[2m20:21:26[0m [36mRBX[0m [FLog::ClientSettings] LoadClientSettingsFromLocal path: \"C:\\users\\chrrltx\\AppData\\Local\\Roblox\\ClientSettings\\StudioIxpSettings.json\"
+[2m20:21:26[0m [36mRBX[0m [FLog::ClientSettings] LoadClientSettingsFromLocal group: \"ClientAppSettings\"
+[2m20:21:26[0m [36mRBX[0m [FLog::Output] LoadClientSettingsFromLocal: \"{\n  \"FFlagDebugGraphicsDisableD3D11\": false,\n  \"FFlagDebugGraphicsDisableD3D11FL10\": true,\n  \"FFlagDebugGraphicsDisableOpenGL\": true,\n  \"FFlagDebugGraphicsDisableVulkan\": true,\n  \"FFlagDebug"..
+[2m20:21:26[0m [36mRBX[0m [FLog::Warning] Note: Running under WINE version 10.16
+[2m20:21:26[0m [36mRBX[0m [FLog::ClientRunInfo] RobloxGitHash: a619f7aae6c14b67f91039bbd0aa99bb05519c0b
+[2m20:21:26[0m [36mRBX[0m [FLog::ClientRunInfo] The base url is https://www.roblox.com
+[2m20:21:26[0m [36mRBX[0m [FLog::ClientRunInfo] The channel is production
+[2m20:21:26[0m [36mRBX[0m [FLog::Output] Session GUID is 571582FE-D721-495A-8E55-F6ECA42C1662
+[2m20:21:26[0m [36mRBX[0m [FLog::Output] Machine GUID is BCCFA0F8-C6C4-4ED7-8CE4-9A8A5044747A
+[2m20:21:26[0m [36mRBX[0m [FLog::Output] Studio Launch Intent is None
+[2m20:21:26[0m [36mRBX[0m [FLog::Output] Is Studio Configured User Id Present: false
+[2m20:21:26[0m [36mRBX[0m 2025-10-27T19:21:26.707Z,5.707915,01a4,12 [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:21:26[0m [36mRBX[0m 2025-10-27T19:21:26.708Z,5.708918,01c4,12 [DFLog::HttpTraceError] HttpResponse(#5 00000000035B5B98) time:22.2ms (net:22.1ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/studio/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:21:26[0m [36mRBX[0m [FLog::Output] isSupportedInstallLocation - Launching from unsupported install path
+[2m20:21:26[0m [36mRBX[0m [FLog::StudioQtCategoryFilterLogging] No Logging CategoryFilter configuration found for: qt.qpa.input.tablet
+[2m20:21:26[0m [36mRBX[0m [FLog::StudioQtCategoryFilterLogging] No Telemetry CategoryFilter configuration found for: qt.qpa.input.tablet
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: AcousticSimulation
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: AssistantMeshGen
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: AvatarJointUpgrade
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: AvatarMakeup
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: CreateAnimationFromVideo
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: CreateAssetAsync
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: CustomVideoUpload
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: DefaultInstances2
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: DraggerImprovements2
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: FacialAnimationRecording
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: GltfExport
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: IEAvatarAutoSetup
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: ImprovedStrokes
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: LuaConstraintTool
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: LuauDCR
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: LuauNonStrictByDefault
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: NewCameraControls
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: NewFindAllReplaceAll2
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: NextGenStudio
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: ProximityPromptIndicators
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: RevampedAssetManagerRelease
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: ScriptSyncM2_5
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: TextureGenerator2
+[2m20:21:26[0m [36mRBX[0m [FLog::Error] Redundant Flag ID: VideoApi
+[2m20:21:26[0m [36mRBX[0m [FLog::Output] preferredLocale.name() = en_US
+[2m20:21:26[0m [36mRBX[0m [FLog::Output] systemLocale.name() = en_US
+[2m20:21:26[0m [36mRBX[0m [FLog::Output] setAssetFolder Z:/home/chrrltx/.var/app/org.vinegarhq.Vinegar/data/vinegar/versions/version-30215da31a3b42e2/content
+[2m20:21:26[0m [36mRBX[0m [FLog::Output] setExtraAssetFolder Z:/home\\chrrltx\\.var\\app\\org.vinegarhq.Vinegar\\data\\vinegar\\versions\\version-30215da31a3b42e2\\ExtraContent
+[2m20:21:26[0m [36mRBX[0m [FLog::Output] Reflection::load Z:\\home\\chrrltx\\.var\\app\\org.vinegarhq.Vinegar\\data\\vinegar\\versions\\version-30215da31a3b42e2\\ReflectionMetadata.xml
+[2m20:21:27[0m [36mRBX[0m [FLog::Output] Studio D3D9 GPU: ATI Radeon HD 5600 Series
+[2m20:21:27[0m [36mRBX[0m [FLog::Output] Studio D3D9 GPU: Vendor 1002 Device 68d8
+[2m20:21:27[0m [36mRBX[0m [FLog::Output] Studio D3D9 Driver: atiumdag.dll 31.0.10.1280
+[2m20:21:27[0m [36mRBX[0m [FLog::Output] Info: RPC:Constructor Started server - RBX_STUDIO_300
+[2m20:21:27[0m [36mRBX[0m [FLog::Output] Evaluating deferred inferred crashes
+[2m20:21:27[0m [36mRBX[0m [FLog::Output] ESGamePerfMonitor GPU: Vendor 00001002 Device 000068d8
+[2m20:21:27[0m [36mRBX[0m [FLog::Output] ESGamePerfMonitor GPU: SubSys 00000000 Revision 00000000
+[2m20:21:27[0m [36mRBX[0m [FLog::Output] ESGamePerfMonitor GPU: DedicatedVidMem 17179869184 DedicatedSysMem 0 SharedSystemMemory 16616378368
+[2m20:21:27[0m [36mRBX[0m [FLog::Output] *******\n** Validated reflection database in 76.128592 ms, found 7234 entries with the following skipped: 0 enums, 0 properties, 0 functions, 0 events, 0 callbacks, 0 classes.\n*******\n
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::BackendConfigBackgroundUpdater'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::BackendConfigCacheManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IBackendConfigFetcher'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::BackendConfigManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'TeamCreateWidgetPlaceSessionListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ActivityHistoryEventManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'ICloudEditModel'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::CloudEditPlaceListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IJoinConfigFetcher'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::TeamCreateConnectionIndicator'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::TeamCreateConnectionMonitor'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::TeamCreateContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::TeamCreateDataModelWorker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ITeamCreateManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::TeamCreateReconnectManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ITeamCreateSaver'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::TeamCreateTeamTestDisconnectionHandler'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::TeamCreateUserData'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::TeamCreateWorkflowManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::TeamTestContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::TeamTestDisconnectManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ITeamTestManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::TeamTestStarter'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::TeamTestTraceForwarder'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ITeamTestWorkflowManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::CollaborationIxpContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::EnvChangeTelemetry'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IFeatureActivityTracker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::LongProcessAttribute'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::RuntimeContext'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SavingAttribute'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::StudioStreamingAttribute'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ScriptingTelemetryModelListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SleepStateTracker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::StartupTelemetry'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'UserActivityInfo'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'UserActivityTracker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::UserHeartbeats'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::UserMouseButtonAndKeyPressTracker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DEPRECATED_ApplicationNotRespondingDetector'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'IHardwareSleepListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::CommonActionsHandler'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SwitchWindowsMenuActions'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IMainWindow'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'IRobloxMainWindow'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ChildProcessContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::INotificationService'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ClientServerTestManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ClientServerTestPlaceOpenResultWatcher'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IFileOpenEventHandler'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PlaceContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PlaceHeartbeats'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IPlaceManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IPlaceSessionStateController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IPlaceSessionTaskRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PlayTestSessionGuidSetter'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SelectedPlaceOpenPlaceTimeMonitor'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IDialogImageManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IPlaceOpener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IPlaceSessionContextBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PolicyContextManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::CodeAssistExperimentManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'ScriptEditor::ScriptEditorContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'RBX::ScriptEditor::ScriptEditorLazyTelemetryReporter'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IScriptingProductivityTelemetry'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IConversationalAIService'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'RBX::ScriptEditor::TelemetryReporterManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'BetaFeaturesController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'BetaFeaturesLoader'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::TestModeModifiedScriptSavePreferenceController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::UserSettingsContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::CodeAssistExperimentFetcher'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ScriptCloneTracker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ScriptEditorContextProviderBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ScriptEditorExperimentRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ScriptEditorUserScopedExperimentProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'ScriptNavigationHandler'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'RBX::Studio::ScriptNavigationContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::TestModeModifiedScriptController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IScriptEditorBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ISharedMemoryProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SharedMemoryManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'IUpdateManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IUpdateManagerBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::StudioDockPanelCreator'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::StudioDockPanelManagerPlaceListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::MarketPlaceServiceRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DeviceEmulatorController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::EmulatorKeyTracker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::GamepadEmulator'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::GestureEmulationManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'StudioDeviceEmulator'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::TouchEmulator'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::VREmulator'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IStudioDeviceEmulatorBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::InsertServiceDataModelListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'InsertServiceController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ServiceVisibilityServiceRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::FlagEditorAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SandBoxedSignalRController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::FileSyncManagerListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::LegacyStudioBridgeServiceRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'RESTRICTED_StudioServiceHost'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'ClientServerToggleFTUE'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'TextScraperListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::RunAutoSaveDialog'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::UICornerToolbarWidgetComponent'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IPlaceSessionContext'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PlacePublishServiceListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::StudioAssetServiceDependencies'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'RBX::Studio::StudioPublishServiceDependencies'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'IStudioPluginApiHost'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PluginApiHostPlaceListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::RenameActionController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'ISessionTracker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SessionTrackerPlaceListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::FileMenuRecentsUpdater'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'MRULocalFileStoreBase'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'MRURobloxApiGameStoreBase'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'MRUStoreLoginListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DebugContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IDebuggerHostAppServices'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DebuggerPlaceSessionListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DebuggerStandaloneDMListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Analytics::Studio::StudioUsageTracker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Analytics::Studio::UsageTrackerPlaceSessionListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'RibbonNotificationController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'RibbonNotificationServiceBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::UpdateUIManagerPlaceListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ABTestComponent'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::CreatorLayerFetcher'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::CreatorLayerRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IActivityHistoryManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::FocusedWidgetContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::AssetAccess::AssetAccessDataModelObserver'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::AssetAccess::AssetAccessPasteHook'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::AssetAccess::IAssetAccessController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::AssetDataModelPluginLoader'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::AssetDataModelPluginLoaderWaiting'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IAssetExportController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::AssetFolderWatcher'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IAssetInsertController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::AutoSaveDialog'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'RBX::Studio::BasicComponent'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ICancellableDialogManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ChangeHistoryContextDataModelController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ChangeHistoryContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ChangeHistoryServiceTaskRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ClipboardContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IContextController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IConstraintGizmoManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'RBX::Studio::ICreatorConfigManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IStandaloneDataModelANRListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IAssetDataModelANRListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IAssetDataModelManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::GameStateContextsProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PlaceSessionDataModelListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PlayTestContextClientServerListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PlayTestContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::RunServiceDataModelMonitor'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::RunServiceMonitor'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DataModelPatchPreloader'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DataModelAutoSaver'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DataModelAutoSaverTelemetry'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DataModelLocalFileSaver'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DescendantsStatsContextDataModelController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DescendantsStatsContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::AssetManagerServiceRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ObjectBrowserManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DraftsServiceDataModelTaskRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DraftsServiceHostManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::OpenScriptHistoryAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ScriptVersionTracker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'VersionHistoryController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::OpenPlaceVersionHistoryAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'PlaceVersionHistoryController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ScriptDiffContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IDragDropDataModelController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::FileWatcherV2'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ConversationalAIFeature'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IScriptDiffAndCommit'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IHelpActionController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ConstraintInsertionController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::InsertObjectView'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ObjectInsertionController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::InsertObjectDataModelController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IInsertObjectSettings'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::InternalModeContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DraggableDecalPasteRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::InstancePaster'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PasteDataModelAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PasteIntoDataModelAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PasteAtOriginalLocationDataModelAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PasteIntoAtOriginalLocationDataModelAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::InstancePicker::IInstancePicker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'BulkImportController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::BulkImportServiceRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::LightTechUpdateRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'LinkedSourceMigrator'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::LiveScriptingDMPatcher'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DEPRECATED_ResumeScriptSyncAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DEPRECATED_StartScriptSyncAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::FileSyncerDmHandler'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IFileSyncer_M2'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::FileSyncerIOHandler'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::FileSyncManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IFileSyncer_M3'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::FileSyncPersistenceHelper'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ResumeScriptSyncAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::StartScriptSyncAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ShowInFolderAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::StartSyncCache'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::StartSyncToNewFileAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::StartSyncToExistingFileAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::StartSyncSelectedInstancesToAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::StartSyncToDirectoryAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::StopScriptSyncAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SelectSyncingRootAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::Text2MeshDataModelObserver'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::Text2MeshAssetDataModelObserver'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::Text2MeshStandaloneDataModelObserver'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DraggerToolActionController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ModelingServiceRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'StudioCameraServiceFactory'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DraggerModeController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::AssetDataModelDraggerServiceHost'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DraggerModeContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IMaterialGenerator'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ModerationAutoSaverListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IModerationController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IMouseTracker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::OrientationIndicatorContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::OrientationIndicatorContextSetter'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::OrientationIndicatorActionController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::OrientationIndicatorActionCheckedController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IAssistantOutputConnection'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::RemoteSystemOutputTaskRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'SystemOutputController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SystemOutputControllerManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SystemOutputExpressivePrintingMonitor'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'SystemOutputModel'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PackageServiceSetupTaskRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PageWidgetsManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PageWidgetsPlaceListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IPerformanceToolsBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PerformanceToolsLayerRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::AvatarGenerationDataModelObserver'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'RBX::Studio::IPlaceVersionHistoryBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'RBX::Studio::PlaceVersionHistoryDependencies'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'PluginChangeWatcher'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'PluginFileController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'DEPRECATED_IPluginLoaderCache'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::CloudPluginsCachePreloader'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IPluginManagementApi'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PluginManagementController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PluginManagementUserListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'IUserPluginsModelProxy'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'PluginLoadingControllerApplicationScopeNotifier'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IPluginOTAManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'IPluginWidgetsView'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PluginWidgetsViewPlaceListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'IStudioPluginCommandsHost'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'IStudioPluginElementHost'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IPluginLegacyApiProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'IStudioPluginManagementHost'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PluginRibbonActionHostPlaceListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PluginUserStandaloneDMBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'IStudioPluginRibbonActionHost'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'PropertiesTelemetry'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PopupImagePickerController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IPublishMediator'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PublishMediatorContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ReflectionMetadataDocs'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IGraphicsEngineProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IRendererApi'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IRenderErrorModel'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::RenderScheduler'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IRenderThrottleModel'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ISelectionColorController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ViewClearColorSetter'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::WindowManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'ApplicationListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'BusyStateListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ManualRenderDuringPlaceOpen'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'MonitorOffListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::BusyContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'IQuickAccessConfig'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'RBX::Studio::IRidlCommandExample'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ISelectAll'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SelectionContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SelectionDataModelListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ISelectionModel'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ZoomExtentsContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SelectionPinning'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IShutdownCoordinator'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IShutdownDialogProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IStartPageBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IStandaloneDataModelController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::StandaloneDataModelRenderBinder'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IStandaloneScopeController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::StandaloneDataModelPluginLoader'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::StandalonePluginLoader'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::StandaloneUserPluginLoader'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::StandaloneDataModelProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::StreamingContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::CommandBarActionController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ICommandBarApi'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::CommandBarController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DEPRECATED_CommandBarController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::CommandBarDataModelUpdater'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::CommandBarDataModelNotifier'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::CommandBarPermissionDropdown'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ICommandBarRemoteCommandExecutor'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DEPRECATED_CommandBarPermissionDropdown'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::CommandToolBarProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ToggleVideoCaptureAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'IStudioStandardOut'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IStylingSavePublishEvent'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::StudioUserServiceHelperComponent'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ISystemMenu'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SystemMenuInteractionTelemetry'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SystemMenuStateProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IToolboxManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ColorPickerPopupController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'CalloutController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::CalloutPlaceSessionListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'UIEditorController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PathFindingSettingListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::UserPreferenceDataModelTaskRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IWebBrowserManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::AssetDataModelProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::CollaboratorLSPConnections'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IActionManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ShortcutDisambiguator'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DataModelListenerBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DocumentContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::RobloxDocManagerPlaceListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IActionsBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IDataModelQIconProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IPanelsManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ISettingsBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ISpotlightManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IToolsManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IWidgetsManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DataModelLocalSaveBridger'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::FileLockManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'IRobloxIDEDoc'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::RobloxViewContextMenuHandler'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ITeamTestModeChecker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'RBX::Studio::ShortcutInteractionTelemetry'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IInteractionTelemetry'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::AssetDataModelCommandRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PluginComponentManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IThumbnailController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::TwoWayCommunicator'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IAppContext'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::CmdHostAppServicesDataModelListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::AssistantPluginExperimentFetcher'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::AssistantPluginExperimentEnabler'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IConversationalAIAcceptance'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ConversationalAIActionRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ConversationalAIErrorListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ConversationalAIErrorReporter'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IConversationalAIExperimentation'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ConversationalAILayerRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IConversationalAIInstanceTracker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ConversationalAIModel'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ConversationalAIPlaceSessionListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::MarkdownRenderer'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IThumbnailAssetDataLoader'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IAssistantApplication'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IAssistantBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IAssistantExperimentation'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::AnchorAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::LockAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::AnchorToolAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::LockToolAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::MouseCommandContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PluginLoadingListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::INativeDialogManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IAssetPluginErrorReporter'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IStandalonePluginErrorReporter'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::StandaloneDataModelPluginHangMonitor'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::AssetDataModelPluginHangMonitor'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::AeroMeshHandler'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PhysicsServiceTaskRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'PhysicsSettingsHandler'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PlayTestModesController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PlayTestModeSettingContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PlayTestModesPlaceListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IRibbonFileSystemHelper'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IRibbonConfigurationProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SecretsController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SecretsControllerTaskRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SecretsUserIdSandbox'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IStudioHangMonitor'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::StudioOrchestratorCommunicator'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ColorApplier'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DataModelSoundManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SoundJobManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SystemCursor'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::NonBuiltinPluginDisabler'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::RunnableBuiltInPluginsSource'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::RunnableBuiltInStandalonePluginsSource'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IRunnableChangedPluginsSource'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::RunnableCloudPluginsSource'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::RunnableLocalPluginsSource'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::RunnablePluginsProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::UserIndependentPluginsHelper'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IUserContext'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DataModelProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SelectionHandlerForDataModelActions'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DataModelActionStateController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'FindReplaceDataModelSearcher'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'FindReplaceTasker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IFindReplaceAllBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ICustomizedDefaultInstances'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SaveDefaultInstanceAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ResetDefaultInstanceAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IRealtimeApplicationComponent'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ISignalRManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ILoginController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::LogoutMenuAttacher'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ILoginUIManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::LoginPageDocPanelProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ILoginPageManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DEPRECATED_LoginPageLoginListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::LoginPageQImageProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::AssetDmLuaFlagOverrides'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::StandaloneDmLuaFlagOverrides'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'StudioDebuggerScriptCloneTracker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::IInferredHangTrackerComponent'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SaveToRobloxWithNotesAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PublishToRobloxAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SettingsAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::OpenPluginsFolderAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::OpenFromRoblox'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::StartStudioTour'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::OnlineHelpAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::AboutRobloxAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'RBX::Studio::FindReplaceAction<false>'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'RBX::Studio::FindReplaceAction<true>'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'ConvertToPackageAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::MicroprofilerToggleAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::SelectAllAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'RBX::Studio::CommandBarSaveAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::UpdateManagerContinueAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'RBX::Studio::DownloadPlaceCopyAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::PlaceCloseAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::TeamTestStartAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::InternalFeaturesAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::AskAssistantFocusAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DocHistoryForwardAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DocHistoryBackwardAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::DumpWindowHierarchyToLogAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::ShortcutHelpAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::BetaFeaturesAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::QuickOpenActionsAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::QuickOpenAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::FullScreenAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'Studio::FileExitAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered Component 'CoreComponentManagerProxy'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'UserActivityInfo'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'UserActivityInfo'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::CodeAssistExperimentManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::CodeAssistExperimentManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'RBX::ScriptEditor::TelemetryReporterManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'RBX::ScriptEditor::TelemetryReporterManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'MRULocalFileStoreBase'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'MRULocalFileStoreBase'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'MRURobloxApiGameStoreBase'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'MRURobloxApiGameStoreBase'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Analytics::Studio::StudioUsageTracker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Analytics::Studio::StudioUsageTracker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::CreatorLayerRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::CreatorLayerRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::ScriptEditorExperimentRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component Studio::ScriptEditorExperimentRegister not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::PerformanceToolsLayerRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::ConversationalAILayerRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::IContextController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IContextController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::ChildProcessContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'ScriptEditor::ScriptEditorContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::FocusedWidgetContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::ClipboardContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::InstancePaster'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IActionManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::FlagEditorAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component Studio::FlagEditorAction not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IHelpActionController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::DraggerToolActionController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component Studio::DraggerToolActionController not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::OrientationIndicatorActionCheckedController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::OpenPluginsFolderAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component Studio::OpenPluginsFolderAction not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::OnlineHelpAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component Studio::OnlineHelpAction not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::SelectAllAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::DocHistoryForwardAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component Studio::DocHistoryForwardAction not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::DocHistoryBackwardAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component Studio::DocHistoryBackwardAction not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::DumpWindowHierarchyToLogAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::FileWatcherV2'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::FileWatcherV2'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'DEPRECATED_IPluginLoaderCache'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'DEPRECATED_IPluginLoaderCache'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component DEPRECATED_IPluginLoaderCache not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::PluginManagementController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::PluginManagementController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IPluginManagementApi'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::PluginLoadingListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::IPluginLegacyApiProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IPluginLegacyApiProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::ISelectionColorController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::ISelectionColorController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'IQuickAccessConfig'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'IQuickAccessConfig'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::IShutdownDialogProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IShutdownDialogProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component Studio::IShutdownDialogProvider not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'IStudioStandardOut'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'IStudioStandardOut'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::DataModelListenerBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::DataModelListenerBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::IDataModelQIconProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IDataModelQIconProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::PluginComponentManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::PluginComponentManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IScriptEditorBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'RBX::Studio::IPlaceVersionHistoryBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component RBX::Studio::IPlaceVersionHistoryBridge not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'IStudioPluginCommandsHost'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IInteractionTelemetry'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::SystemCursor'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::ICustomizedDefaultInstances'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component Studio::ICustomizedDefaultInstances not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::ISettingsBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'IStudioPluginApiHost'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::DraggableDecalPasteRegister'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::INativeDialogManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::INativeDialogManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::RunnablePluginsProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::RunnablePluginsProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IRunnableChangedPluginsSource'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'PluginChangeWatcher'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::UserIndependentPluginsHelper'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::UserIndependentPluginsHelper'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'FindReplaceTasker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'FindReplaceTasker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::IRealtimeApplicationComponent'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IRealtimeApplicationComponent'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::LoginPageQImageProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::LoginPageQImageProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'StudioDebuggerScriptCloneTracker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'StudioDebuggerScriptCloneTracker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::IInferredHangTrackerComponent'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IInferredHangTrackerComponent'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component Studio::IInferredHangTrackerComponent not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'CoreComponentManagerProxy'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'CoreComponentManagerProxy'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::RuntimeContext'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered component tree about to be deleted callback for Component 'Studio::IPlaceSessionContext'
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'PluginLoadingControllerApplicationScopeNotifier'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component PluginLoadingControllerApplicationScopeNotifier not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::INotificationService'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::INotificationService'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::TwoWayCommunicator'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IShutdownCoordinator'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component Studio::IShutdownCoordinator not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::PolicyContextManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::PolicyContextManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::ISharedMemoryProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::ISharedMemoryProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::SharedMemoryManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::SharedMemoryManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::BackendConfigCacheManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::BackendConfigCacheManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::IBackendConfigFetcher'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IBackendConfigFetcher'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::BackendConfigManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::BackendConfigManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::BackendConfigBackgroundUpdater'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component tree for root component 'Studio::IAppContext'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IAppContext'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::TeamTestTraceForwarder'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component Studio::TeamTestTraceForwarder not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::ITeamTestModeChecker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::StudioOrchestratorCommunicator'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component Studio::StudioOrchestratorCommunicator not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::NonBuiltinPluginDisabler'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::ILoginController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered component tree about to be deleted callback for Component 'Studio::StandaloneDataModelProvider'
+[2m20:21:27[0m [36mRBX[0m [DFLog::NamedMutex] NamedMutex(000000000237BA58, name:RobloxStudioCookieManager)
+[2m20:21:27[0m [36mRBX[0m [FLog::LoginTelemetry] Enter stage 'AuthTokenManagerFetchMetadata' with trace id '' (existing trace id is '')
+[2m20:21:27[0m [36mRBX[0m [DFLog::NamedMutex] NamedMutex(000000000CA17C40, name:www.roblox.com-oauth2RefreshToken-Studio)
+[2m20:21:27[0m [36mRBX[0m [DFLog::NamedMutex] NamedMutex(000000000CA17CD8, name:www.roblox.com-RefreshingAccessTokenMutex-Studio)
+[2m20:21:27[0m [36mRBX[0m [FLog::LoginController] Obtained meta data result with 0 ms
+[2m20:21:27[0m [36mRBX[0m [FLog::LoginTelemetry] Exit stage 'AuthTokenManagerFetchMetadata' with status 'true' and message 'AuthTokenManagerFetchMetadataSuccess'
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered component tree created callback for Component 'Studio::StandaloneDataModelProvider'
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered component tree about to be deleted callback for Component 'Studio::StandaloneDataModelProvider'
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::CommonActionsHandler'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'IUpdateManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::UpdateManager] Update is not enabled due to 'Installation location not supported'
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::RunAutoSaveDialog'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component Studio::RunAutoSaveDialog not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IPluginOTAManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioPluginOTA] pluginOTAInit Studio Plugin OTA initializing
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioPluginOTA] lockAcquired Successfully acquired the OTA lock.
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioPluginOTA] Scan plugin files from C:\\users\\chrrltx\\AppData\\Local\\Roblox\\OTAPlugins\\Deployed\\BuiltInPlugins, found 1 plugins
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioPluginOTA] Scan plugin files from C:\\users\\chrrltx\\AppData\\Local\\Roblox\\OTAPlugins\\Deployed\\BuiltInStandalonePlugins, found 3 plugins
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioPluginOTA] Successfully fetched Studio Plugin data for MaterialManager.
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioPluginOTA] Successfully fetched Studio Plugin data for Assistant.
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioPluginOTA] Successfully fetched Studio Plugin data for Ribbon.
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioPluginOTA] Successfully fetched Studio Plugin data for SuperTemplate.
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioPluginOTA] File Store validation success
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioPluginOTA] Scan plugin files from C:\\users\\chrrltx\\AppData\\Local\\Roblox\\OTAPlugins\\Downloaded\\BuiltInPlugins, found 0 plugins
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioPluginOTA] Scan plugin files from C:\\users\\chrrltx\\AppData\\Local\\Roblox\\OTAPlugins\\Downloaded\\BuiltInStandalonePlugins, found 0 plugins
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioPluginOTA] File Store validation success
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioPluginOTA] installPlugin Studio Plugin OTA install plugin
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioPluginOTA] Successfully fetched Studio Plugin data for SuperTemplate.
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioPluginOTA] Successfully fetched Studio Plugin data for MaterialManager.
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioPluginOTA] Successfully fetched Studio Plugin data for Assistant.
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioPluginOTA] Successfully fetched Studio Plugin data for Ribbon.
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioPluginOTA] initSuccess Studio Plugin OTA init success
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::ILoginUIManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::StartupTelemetry'.
+[2m20:21:27[0m [36mRBX[0m [FLog::Output] Studio Version: \"0.696.0.6960797\"
+[2m20:21:27[0m [36mRBX[0m [FLog::Output] Studio Architecture: x86_64 - Host Architecture: x86_64
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IUpdateManagerBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component Studio::IUpdateManagerBridge not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::AboutRobloxAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component Studio::AboutRobloxAction not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::UpdateManagerContinueAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component Studio::UpdateManagerContinueAction not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'PluginFileController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'IRobloxMainWindow'.
+[2m20:21:27[0m [36mRBX[0m [FLog::RobloxMainWindow] RobloxMainWindow::RobloxMainWindow - start
+[2m20:21:27[0m [36mRBX[0m [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:21:27[0m [36mRBX[0m [DFLog::HttpTraceError] HttpResponse(#7 000000000CBB60F8) time:27.9ms (net:27.9ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/studio/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioTimingLog] ======== Studio Startup Times =======
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioTimingLog] FastFlagsLoadTime  : 5.6213 sec
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioTimingLog] Authenticated : NO
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioTimingLog] LoginPageOpenTime  : 6.2520 sec
+[2m20:21:27[0m [36mRBX[0m [StudioQtLogging] <empty>: EnableNonClientDpiScaling() failed for HWND 0x10086 (120) (Call not implemented.)
+[2m20:21:27[0m [36mRBX[0m [FLog::RobloxMainWindow] RobloxMainWindow::RobloxMainWindow - end
+[2m20:21:27[0m [36mRBX[0m [FLog::RobloxTelemetry] Histogram (StudioStartupTime) value not valid (nan or non-existant)
+[2m20:21:27[0m [36mRBX[0m [DFLog::StudioPerformanceMeasurementsSummary] StudioPerformanceMeasurements summary for StudioStartup: 6257ms
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::RunnableBuiltInPluginsSource'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::RunnableBuiltInStandalonePluginsSource'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::RunnableLocalPluginsSource'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IMainWindow'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::UserSettingsContextProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'RESTRICTED_StudioServiceHost'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'ISessionTracker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::PageWidgetsManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component Studio::PageWidgetsManager not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'IStudioPluginManagementHost'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::InternalFeaturesAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component Studio::InternalFeaturesAction not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::ShortcutHelpAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component Studio::ShortcutHelpAction not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::EnvChangeTelemetry'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'IHardwareSleepListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::SwitchWindowsMenuActions'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::StudioDockPanelCreator'.
+[2m20:21:27[0m [36mRBX[0m [FLog::UpdateUIManager] Setting up status bar (0000000001338FE0)
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IRenderErrorModel'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::CommandToolBarProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'CalloutController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'UIEditorController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::ShortcutDisambiguator'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IToolsManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IWidgetsManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'RBX::Studio::ShortcutInteractionTelemetry'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::LoginPageDocPanelProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::SettingsAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component Studio::SettingsAction not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::FullScreenAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component Studio::FullScreenAction not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::FileExitAction'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IFeatureActivityTracker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::SleepStateTracker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::DEPRECATED_ApplicationNotRespondingDetector'.
+[2m20:21:27[0m [36mRBX[0m [FLog::AnrDetector] ANR Detector started
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IStudioHangMonitor'.
+[2m20:21:27[0m [36mRBX[0m [FLog::AnrDetector] ANR Detector worker thread started
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Component Studio::IStudioHangMonitor not created
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IGraphicsEngineProvider'.
+[2m20:21:27[0m [36mRBX[0m [FLog::CreateGraphicsEngine] Potential graphics modes:
+[2m20:21:27[0m [36mRBX[0m [FLog::CreateGraphicsEngine] - 2-Direct3D11
+[2m20:21:27[0m [36mRBX[0m [FLog::CreateGraphicsEngine] - 2-Direct3D11
+[2m20:21:27[0m [36mRBX[0m [FLog::CreateGraphicsEngine] - 4-OpenGL
+[2m20:21:27[0m [36mRBX[0m [FLog::CreateGraphicsEngine] Trying graphics mode 2-Direct3D11
+[2m20:21:27[0m [36mRBX[0m [DFLog::CoordinatorMemoryPressure] Setting memory pressure threshold to none
+[2m20:21:27[0m [36mRBX[0m [FLog::Graphics] RenderView created[1]
+[2m20:21:27[0m [31mWIN[0m Error [GENERAL |  
+[2m20:21:27[0m [31mWIN[0m | OpenXR-Loader] : RuntimeManifestFile::FindManif
+[2m20:21:27[0m [31mWIN[0m estFiles
+[2m20:21:27[0m [31mWIN[0m  - failed 
+[2m20:21:27[0m [31mWIN[0m to fin
+[2m20:21:27[0m [31mWIN[0m d acti
+[2m20:21:27[0m [31mWIN[0m ve run
+[2m20:21:27[0m [31mWIN[0m time f
+[2m20:21:27[0m [31mWIN[0m ile in
+[2m20:21:27[0m [31mWIN[0m  regis
+[2m20:21:27[0m [31mWIN[0m try
+[2m20:21:27[0m [36mRBX[0m Error [GENERAL |  | OpenXR-Loader] : RuntimeManifestFile::FindManifestFiles - failed to find active runtime file in registry\n
+[2m20:21:27[0m [31mWIN[0m Error [
+[2m20:21:27[0m [31mWIN[0m GENERAL
+[2m20:21:27[0m [31mWIN[0m  | xrE
+[2m20:21:27[0m [31mWIN[0m numerat
+[2m20:21:27[0m [31mWIN[0m eInsta
+[2m20:21:27[0m [31mWIN[0m nceExt
+[2m20:21:27[0m [31mWIN[0m ension
+[2m20:21:27[0m [31mWIN[0m Properties | Ope
+[2m20:21:27[0m [31mWIN[0m nXR-Lo
+[2m20:21:27[0m [31mWIN[0m ader] 
+[2m20:21:27[0m [31mWIN[0m : Runt
+[2m20:21:27[0m [31mWIN[0m imeInt
+[2m20:21:27[0m [31mWIN[0m erface
+[2m20:21:27[0m [31mWIN[0m ::Load
+[2m20:21:27[0m [31mWIN[0m Runtim
+[2m20:21:27[0m [31mWIN[0m es - u
+[2m20:21:27[0m [31mWIN[0m nknown
+[2m20:21:27[0m [31mWIN[0m  error
+[2m20:21:27[0m [31mWIN[0m 
+[2m20:21:27[0m [36mRBX[0m Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : RuntimeInterface::LoadRuntimes - unknown error\n
+[2m20:21:27[0m [31mWIN[0m Error [
+[2m20:21:27[0m [31mWIN[0m GENERA
+[2m20:21:27[0m [31mWIN[0m L | xr
+[2m20:21:27[0m [31mWIN[0m Enumer
+[2m20:21:27[0m [31mWIN[0m ateIns
+[2m20:21:27[0m [31mWIN[0m tanceE
+[2m20:21:27[0m [31mWIN[0m xtensi
+[2m20:21:27[0m [31mWIN[0m onProp
+[2m20:21:27[0m [31mWIN[0m erties
+[2m20:21:27[0m [31mWIN[0m  | Ope
+[2m20:21:27[0m [31mWIN[0m nXR-Lo
+[2m20:21:27[0m [31mWIN[0m ader] 
+[2m20:21:27[0m [31mWIN[0m : Runt
+[2m20:21:27[0m [31mWIN[0m imeInt
+[2m20:21:27[0m [31mWIN[0m erface
+[2m20:21:27[0m [31mWIN[0m ::Load
+[2m20:21:27[0m [31mWIN[0m Runtime
+[2m20:21:27[0m [31mWIN[0m s - fa
+[2m20:21:27[0m [31mWIN[0m iled t
+[2m20:21:27[0m [31mWIN[0m o load
+[2m20:21:27[0m [31mWIN[0m  a run
+[2m20:21:27[0m [31mWIN[0m time
+[2m20:21:27[0m [36mRBX[0m Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : RuntimeInterface::LoadRuntimes - failed to load a runtime\n
+[2m20:21:27[0m [31mWIN[0m Error 
+[2m20:21:27[0m [31mWIN[0m [GENER
+[2m20:21:27[0m [31mWIN[0m AL | xr
+[2m20:21:27[0m [31mWIN[0m Enumer
+[2m20:21:27[0m [31mWIN[0m ateIns
+[2m20:21:27[0m [31mWIN[0m tanceE
+[2m20:21:27[0m [31mWIN[0m xtensi
+[2m20:21:27[0m [31mWIN[0m onProp
+[2m20:21:27[0m [31mWIN[0m erties
+[2m20:21:27[0m [31mWIN[0m  | Ope
+[2m20:21:27[0m [31mWIN[0m nXR-Lo
+[2m20:21:27[0m [31mWIN[0m ader] 
+[2m20:21:27[0m [31mWIN[0m : Fail
+[2m20:21:27[0m [31mWIN[0m ed to 
+[2m20:21:27[0m [31mWIN[0m find d
+[2m20:21:27[0m [31mWIN[0m efault
+[2m20:21:27[0m [31mWIN[0m  runti
+[2m20:21:27[0m [31mWIN[0m me wit
+[2m20:21:27[0m [31mWIN[0m h Runt
+[2m20:21:27[0m [31mWIN[0m imeInt
+[2m20:21:27[0m [31mWIN[0m erface
+[2m20:21:27[0m [31mWIN[0m ::Load
+[2m20:21:27[0m [31mWIN[0m Runtim
+[2m20:21:27[0m [31mWIN[0m e()
+[2m20:21:27[0m [36mRBX[0m Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : Failed to find default runtime with RuntimeInterface::LoadRuntime()\n
+[2m20:21:27[0m [31mWIN[0m Err
+[2m20:21:27[0m [31mWIN[0m or [GE
+[2m20:21:27[0m [31mWIN[0m NERAL 
+[2m20:21:27[0m [31mWIN[0m | xrEn
+[2m20:21:27[0m [31mWIN[0m umerat
+[2m20:21:27[0m [31mWIN[0m eInsta
+[2m20:21:27[0m [31mWIN[0m nceExt
+[2m20:21:27[0m [31mWIN[0m ension
+[2m20:21:27[0m [31mWIN[0m Proper
+[2m20:21:27[0m [31mWIN[0m ties |
+[2m20:21:27[0m [31mWIN[0m  OpenX
+[2m20:21:27[0m [31mWIN[0m R-Load
+[2m20:21:27[0m [31mWIN[0m er] : 
+[2m20:21:27[0m [31mWIN[0m Faile
+[2m20:21:27[0m [31mWIN[0m d quer
+[2m20:21:27[0m [31mWIN[0m ying e
+[2m20:21:27[0m [31mWIN[0m xtensi
+[2m20:21:27[0m [31mWIN[0m on pro
+[2m20:21:27[0m [31mWIN[0m pertie
+[2m20:21:27[0m [31mWIN[0m s
+[2m20:21:27[0m [36mRBX[0m Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : Failed querying extension properties\n
+[2m20:21:27[0m [36mRBX[0m [FLog::Graphics] VRAM Local Budget: 14717464576 bytes, CurrentUsage: 0 bytes.
+[2m20:21:27[0m [36mRBX[0m [FLog::Graphics] VRAM Non Local Budget: 16403079168 bytes, CurrentUsage: 0 bytes.
+[2m20:21:27[0m [36mRBX[0m [FLog::Graphics] D3D11 Adapter: ATI Radeon HD 5600 Series
+[2m20:21:27[0m [36mRBX[0m [FLog::Graphics] D3D11 Adapter: Vendor 1002 Device 68d8 VRAM 16384 RAM 15846
+[2m20:21:27[0m [36mRBX[0m [channel] Caps: ThreadSafe 0 Framebuffer 1 FpFramebuffer 1 Shaders 1 Compute 1 Instancing 1 PerInstanceStream 1 ConstBuffers 1
+[2m20:21:27[0m [36mRBX[0m [channel] Caps: Framebuffer: MRT 8 MSAA 8 Stencil 1
+[2m20:21:27[0m [36mRBX[0m [channel] Caps: Framebuffer: Depth16 1 Depth24 1 DepthFloat 1 DepthClamp 1
+[2m20:21:27[0m [36mRBX[0m [channel] Caps: Border Color 1
+[2m20:21:27[0m [36mRBX[0m [channel] Caps: Texture: RGB10A2 1 RG11B10F 1 R16I 1
+[2m20:21:27[0m [36mRBX[0m [channel] Caps: Texture: BC6H 1 ASTC HDR 0
+[2m20:21:27[0m [36mRBX[0m [channel] Caps: Texture: DXT 1 PVR 0 ETC1 0 ETC2 0 Half 1
+[2m20:21:27[0m [36mRBX[0m [channel] Caps: Texture: 3D 1 Array 1 Depth 1 MSAA 1 MSAAFP16 0
+[2m20:21:27[0m [36mRBX[0m [channel] Caps: Texture: NPOT 1 PartialMips 1 CubeMipGen 1 CubeFramebuffer 1
+[2m20:21:27[0m [36mRBX[0m [channel] Caps: Texture: Size 16384 Units 32 VertexUnits 16
+[2m20:21:27[0m [36mRBX[0m [channel] Caps: ConstantBufferSize 65536
+[2m20:21:27[0m [36mRBX[0m [channel] Caps: isAppleGPU 0
+[2m20:21:27[0m [36mRBX[0m [channel] Caps: 32bIdx 1 Memoryless 0
+[2m20:21:27[0m [36mRBX[0m [channel] Caps: RTFlip 0 MinusOneToOneDepth 0
+[2m20:21:27[0m [36mRBX[0m [FLog::Graphics] D3D11: GfxCardName ATI Radeon HD 5600 Series GfxCardVendor 1002 GfxFeatureLevel D3D11.1
+[2m20:21:27[0m [36mRBX[0m [FLog::Graphics] Video memory size: 2147483648
+[2m20:21:27[0m [36mRBX[0m [FLog::Graphics] Loaded 2110 shaders from pack d3d11 variant default (8545323 bytes)
+[2m20:21:27[0m [36mRBX[0m [FLog::Graphics] Compiled 619 shaders in 23 ms
+[2m20:21:27[0m [36mRBX[0m [FLog::Graphics] Using TM1
+[2m20:21:27[0m [36mRBX[0m [FLog::Graphics] LightGrid is unified
+[2m20:21:27[0m [36mRBX[0m [FLog::CreateGraphicsEngine] Using graphics mode 2-Direct3D11
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::CommandBarActionController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::ICommandBarApi'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IActionsBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IPanelsManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::ISpotlightManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::ILoginPageManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::LongProcessAttribute'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'UserActivityTracker'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IRenderThrottleModel'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::ViewClearColorSetter'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::WindowManager'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'IStudioPluginRibbonActionHost'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::ColorPickerPopupController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::LogoutMenuAttacher'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IStartPageBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'IPluginWidgetsView'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::RenderScheduler'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'IStudioPluginElementHost'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IRendererApi'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'StudioDeviceEmulator'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IDebuggerHostAppServices'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'ApplicationListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'BusyStateListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'MonitorOffListener'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IStandaloneScopeController'.
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Successfully registered component tree about to be deleted callback for Component 'Studio::IAppContext'
+[2m20:21:27[0m [36mRBX[0m [FLog::ComponentManager] Creating component 'Studio::IStudioDeviceEmulatorBridge'.
+[2m20:21:27[0m [36mRBX[0m [FLog::CloseDataModel] Create DataModel - heartbeat(1)
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioApplicationState] State: Qt::ApplicationActive
+[2m20:21:27[0m [36mRBX[0m [FLog::Output] Hello world!!!
+[2m20:21:27[0m [36mRBX[0m [DFLog::BootcampCLI149079Log] Hello world?
+[2m20:21:27[0m [36mRBX[0m [DFLog::BootcampCLI154937Log] I love roblox. Roblox is life
+[2m20:21:27[0m [36mRBX[0m [DFLog::BootcampCLI156010Log] Hello there, world
+[2m20:21:27[0m [36mRBX[0m [DFLog::BootcampCLI163626Log] Hello world :)
+[2m20:21:27[0m [36mRBX[0m [DFLog::BootcampCLI164711Log] Hello World :D
+[2m20:21:27[0m [36mRBX[0m [FLog::RobloxMainWindow] RobloxMainWindow::showNativeLoginPageWidgets
+[2m20:21:27[0m [36mRBX[0m [FLog::StudioKeyEvents] login (automatic) [start]
+[2m20:21:27[0m [36mRBX[0m [FLog::LoginController] LoginController::login with category 'Local'
+[2m20:21:27[0m [36mRBX[0m [FLog::LoginTelemetry] Enter stage 'CheckIfManualLogin' with trace id 'NullTraceId' (existing trace id is '')
+[2m20:21:27[0m [36mRBX[0m [FLog::LoginTelemetry] Exit stage 'CheckIfManualLogin' with status 'false' and message 'StudioContinueAutomaticAuthentication'
+[2m20:21:27[0m [36mRBX[0m [FLog::LoginTelemetry] Enter stage 'AuthenticateOnStartup' with trace id '237eb28004e374f5' (existing trace id is '')
+[2m20:21:27[0m [36mRBX[0m [FLog::AuthTokenManager] Parsing user id from id token
+[2m20:21:27[0m [36mRBX[0m [FLog::LoginController] AuthTokenRefresh, Retrieved new access token for stage: 'AuthenticateOnStartup'
+[2m20:21:27[0m [36mRBX[0m [FLog::LoginTelemetry] Exit stage 'AuthenticateOnStartup' with status 'true' and message 'AuthenticationSuccess'
+[2m20:21:27[0m [36mRBX[0m [FLog::LoginTelemetry] Enter stage 'FetchUserInfo' with trace id '237eb28004e374f5' (existing trace id is '237eb28004e374f5')
+[2m20:21:28[0m [36mRBX[0m [FLog::LoginTelemetry] Exit stage 'FetchUserInfo' with status 'true' and message 'UserInfoSuccessfullyFetched'
+[2m20:21:28[0m [36mRBX[0m [FLog::Output] ABTestFramework using UserId with hash Q9JIoWXNo2JPecZ7yyie1A==
+[2m20:21:29[0m [36mRBX[0m [FLog::CloseDataModel] DataModel created: 000000001560B9B0
+[2m20:21:29[0m [36mRBX[0m [StudioQtLogging] <empty>: EnableNonClientDpiScaling() failed for HWND 0x200b4 (120) (Call not implemented.)
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] loadUrl calling CreateCoreWebView2EnvironmentWithOptions
+[2m20:21:29[0m [36mRBX[0m [DFLog::NamedMutex] NamedMutex(000000000E4F4C80, name:RibbonFileSystemHelper::m_fileSystemMutex)
+[2m20:21:29[0m [36mRBX[0m [DFLog::NamedMutex] NamedMutex(000000001663E870, name:LoggedInUsersStore)
+[2m20:21:29[0m [36mRBX[0m [DFLog::NamedMutex] ~NamedMutex(000000001663E870, name:LoggedInUsersStore)
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioTimingLog] ======== Studio Startup Times =======
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioTimingLog] FastFlagsLoadTime  : 5.6213 sec
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioTimingLog] Authenticated : YES
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioTimingLog] StartPageOpenTime  : 7.9329 sec
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioPluginOTA] pluginOTAStart Studio Plugin OTA fetcher timer started
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioPluginOTA] checkOTAUpdate check new ota update.
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] CreateCoreWebView2EnvironmentWithOptions: result=0
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] createCoreWebView2ControllerForUser calling CreateCoreWebView2Controller
+[2m20:21:29[0m [36mRBX[0m [FLog::Output] Web returned cloud plugins: []
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginQWidgetRelay::onResizeEvent: rplg_sabuiltin_Ribbon.rbxm_Ribbon - Failed Empty
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioCommands] Unable to find component AssistantBridge in histogram map.
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioPluginOTA] Successfully fetched Studio Plugin data for SuperTemplate.
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioPluginOTA] Successfully fetched Studio Plugin data for MaterialManager.
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioPluginOTA] Successfully fetched Studio Plugin data for Ribbon.
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioPluginOTA] Successfully fetched Studio Plugin data for Assistant.
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioPluginOTA] fetchSuccess Fetch plugin versions success
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioPluginOTA] Downloading SuperTemplate, version 3155
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginDockWidgetRelay::initializeFromInfo: rplg_sabuiltin_PluginManagement.rbxm_PluginManagement - Failed Empty
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginDockWidgetRelay::initializeFromInfo: rplg_sabuiltin_AudioCompressorEditor.rbxm_AudioCompressorEditor - Failed Empty
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginDockWidgetRelay::initializeFromInfo: rplg_sabuiltin_AttenuationCurveEditor.rbxm_AttenuationCurveEditor - Failed Empty
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginDockWidgetRelay::initializeFromInfo: rplg_sabuiltin_AudioEqualizerEditor.rbxm_AudioEqualizerEditor - Failed Empty
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginDockWidgetRelay::initializeFromInfo: rplg_sabuiltin_DirectionalCurveEditor.rbxm_DirectionalCurveEditor - Failed Empty
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginDockWidgetRelay::initializeFromInfo: rplg_sabuiltin_PlaceAnnotations.rbxm_PlaceAnnotations - Failed Empty
+[2m20:21:29[0m [36mRBX[0m [FLog::Graphics] Future is bright shadows
+[2m20:21:29[0m [36mRBX[0m [FLog::Graphics] LayeredClothingMode updated: LC=1 HSR=1
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginWidgetRelay::updateWidgetTitle: rplg_sabuiltin_PluginManagement.rbxm_PluginManagement - Failed Empty
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginWidgetRelay::updateWidgetTitle: rplg_sabuiltin_AudioCompressorEditor.rbxm_AudioCompressorEditor - Failed Empty
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginWidgetRelay::updateWidgetTitle: rplg_sabuiltin_AttenuationCurveEditor.rbxm_AttenuationCurveEditor - Failed Empty
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginWidgetRelay::updateWidgetTitle: rplg_sabuiltin_AudioEqualizerEditor.rbxm_AudioEqualizerEditor - Failed Empty
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginWidgetRelay::updateWidgetTitle: rplg_sabuiltin_DirectionalCurveEditor.rbxm_DirectionalCurveEditor - Failed Empty
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginWidgetRelay::updateWidgetTitle: rplg_sabuiltin_PlaceAnnotations.rbxm_PlaceAnnotations - Failed Empty
+[2m20:21:29[0m [31mWIN[0m 03c0:err:secur32:SECUR32_initSchannelSP no schannel support, expect problems
+[2m20:21:29[0m [36mRBX[0m [FLog::StudioDebuggerV2] DebuggerConnectionManager: no available connection found on startup
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [31mWIN[0m 0348:err:bcrypt:key_asymmetric_create no encryption support
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] CreateCoreWebView2Controller: result=0
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] setInitScript calling AddScriptToExecuteOnDocumentCreated
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] Event: CoreWebView2NavigationStarting
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] Embedded WebView2 Started Navigation Url: 'https://create.roblox.com/store/models'
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] Event: CoreWebView2ProcessInfosChanged
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] calling GetProcessExtendedInfos
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] GetProcessExtendedInfos: result=0
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioPluginOTA] Insert plugin data SuperTemplate
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioPluginOTA] persist plugin data success C:\\users\\chrrltx\\AppData\\Local\\Roblox\\OTAPlugins\\Downloaded\\OTAData.json
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioPluginOTA] Write content to plugin success SuperTemplate, size 1502671
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioPluginOTA] allDownloadSuccess All download success, 1 downloaded
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioPluginOTA] downloadCompleteSuccess Download complete successfully
+[2m20:21:30[0m [31mWIN[0m WARNING: radv is not a conformant Vulkan implementation, testing use only.
+[2m20:21:30[0m [31mWIN[0m WARNING: radv is not a conformant Vulkan implementation, testing use only.
+[2m20:21:30[0m [36mRBX[0m [FLog::RibbonFileSystemHelper] Custom ribbon layout file does not exist, using default layout. Error: File not found
+[2m20:21:30[0m [31mWIN[0m 0488:err:d3d:wined3d_context_gl_set_pixel_format wglSetPixelFormatWINE failed to set pixel format 1 on device context 0000000016010049.
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] AddScriptToExecuteOnDocumentCreated: result=0
+[2m20:21:30[0m [36mRBX[0m [FLog::Warning] Warning: [Foundation - Warning] - variant is not supported when using FoundationImages, consider using BuilderIcons
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioEmbeddedWebBrowser] No message handler for 'loadprogress' from source: https://create.roblox.com
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] Event: DOMContentLoaded
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioEmbeddedWebBrowser] No message handler for 'loadprogress' from source: https://create.roblox.com
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] Event: CoreWebView2NavigationCompleted
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] Embedded WebView2 Finished Navigation: url - 'https://create.roblox.com/store/models', status code - '200', trace id - '0'
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] setInitScript calling AddScriptToExecuteOnDocumentCreated
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] WebView2 TrySuspend completed with error code: 0, result: 1
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] Event: CoreWebView2NavigationStarting
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] Embedded WebView2 Started Navigation Url: '://about:blank#init/'
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] AddScriptToExecuteOnDocumentCreated: result=0
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] Event: DOMContentLoaded
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] Event: CoreWebView2NavigationCompleted
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] Embedded WebView2 Finished Navigation: url - '://about:blank#init/', status code - '200', trace id - '0'
+[2m20:21:30[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] WebView2 TrySuspend completed with error code: 0, result: 1
+[2m20:21:40[0m [36mRBX[0m [DFLog::RbxStorage] RbxStorage::init [INIT] user: http-write-init-only, availableDiskSpace: 75872657408 bytes, elapsed: 1.003 ms
+[2m20:21:40[0m [36mRBX[0m [DFLog::RbxStorage] Failed to get file size for path C:\\users\\chrrltx\\AppData\\Local\\Roblox\\rbx-storage\\a5\\a5e8973916a186dfd84a505e304d3078: File not found
+[2m20:21:40[0m [36mRBX[0m [DFLog::RbxStorage] Failed to get file size for path C:\\users\\chrrltx\\AppData\\Local\\Roblox\\rbx-storage\\86\\869ca78f0f054bd7ede5a845192436af: File not found
+[2m20:21:40[0m [36mRBX[0m [DFLog::RbxStorage] Failed to get file size for path C:\\users\\chrrltx\\AppData\\Local\\Roblox\\rbx-storage\\cc\\cc05cc1b2e38e44ec161420e012c380b: File not found
+[2m20:21:40[0m [36mRBX[0m [DFLog::RbxStorage] RbxStorage::init [DONE] name: TelemetryCache(SqliteCache+TelemetryCache(FileCache(default))), duration: 14.859 ms, dbOpenCount: 9, dbMaxMemory: 0.236 MiB, dbTotalSize: 0.000 MiB, dbNumItems: 1
+[2m20:21:48[0m [31mWIN[0m 0314:err:ole:create_server class {daa52b27-8897-50af-ada5-c6c71bb64e17} not registered
+[2m20:21:48[0m [31mWIN[0m 0314:err:ole:com_get_class_object no class object {daa52b27-8897-50af-ada5-c6c71bb64e17} could be created for context 0x4
+[2m20:21:48[0m [31mWIN[0m 0314:err:ole:create_server class {daa52b27-8897-50af-ada5-c6c71bb64e17} not registered
+[2m20:21:48[0m [31mWIN[0m 0314:err:ole:com_get_class_object no class object {daa52b27-8897-50af-ada5-c6c71bb64e17} could be created for context 0x4
+[2m20:21:48[0m [31mWIN[0m 0314:err:ole:create_server class {daa52b27-8897-50af-ada5-c6c71bb64e17} not registered
+[2m20:21:48[0m [31mWIN[0m 0314:err:ole:com_get_class_object no class object {daa52b27-8897-50af-ada5-c6c71bb64e17} could be created for context 0x4
+[2m20:21:57[0m [36mRBX[0m 2025-10-27T19:21:56.894Z,35.894699,01a4,12 [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:21:57[0m [36mRBX[0m 2025-10-27T19:21:56.895Z,35.895687,01c0,12 [DFLog::HttpTraceError] HttpResponse(#74 000000002A6D6CC8) time:25.1ms (net:25.0ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/studio/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:21:57[0m [36mRBX[0m 2025-10-27T19:21:56.898Z,35.898663,01a4,12 [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:21:57[0m [36mRBX[0m 2025-10-27T19:21:56.898Z,35.898663,01bc,12 [DFLog::HttpTraceError] HttpResponse(#75 000000002D062A08) time:29.0ms (net:29.0ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/studio/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:21:57[0m [36mRBX[0m 2025-10-27T19:21:56.904Z,35.904610,01a4,12 [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:21:57[0m [36mRBX[0m 2025-10-27T19:21:56.904Z,35.904610,01a4,12 [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:21:57[0m [36mRBX[0m 2025-10-27T19:21:56.904Z,35.904610,01c0,12 [DFLog::HttpTraceError] HttpResponse(#73 0000000024BFE7E8) time:35.5ms (net:35.4ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/client/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:21:57[0m [36mRBX[0m 2025-10-27T19:21:56.905Z,35.905602,01c4,12 [DFLog::HttpTraceError] HttpResponse(#76 000000002D0EC2D8) time:35.3ms (net:35.3ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/timespent/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:22:27[0m [36mRBX[0m [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:22:27[0m [36mRBX[0m [DFLog::HttpTraceError] HttpResponse(#79 000000000CEF7DD8) time:23.1ms (net:23.0ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/timespent/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:22:27[0m [36mRBX[0m [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:22:27[0m [36mRBX[0m [DFLog::HttpTraceError] HttpResponse(#82 000000002CF89968) time:16.9ms (net:14.9ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/studio/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:22:57[0m [36mRBX[0m 2025-10-27T19:22:56.894Z,95.894905,01a4,12 [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:22:57[0m [36mRBX[0m 2025-10-27T19:22:56.894Z,95.894905,01c4,12 [DFLog::HttpTraceError] HttpResponse(#85 000000002A15C328) time:23.0ms (net:22.9ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/timespent/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:23:23[0m [36mRBX[0m 2025-10-27T19:23:23.515Z,122.515556,01a4,12 [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:23:23[0m [36mRBX[0m 2025-10-27T19:23:23.516Z,122.516548,01c0,12 [DFLog::HttpTraceError] HttpResponse(#86 00000000307D9908) time:16.0ms (net:15.9ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/studio/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:23:23[0m [36mRBX[0m [FLog::Output] About to normally exit the main event loop.
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] closeDataModel - 000000001560B9B0
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Wait returned 1
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m 2025-10-27T19:23:23.752Z,122.752876,01a4,12 [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:23:23[0m [36mRBX[0m 2025-10-27T19:23:23.752Z,122.752876,01c4,12 [DFLog::HttpTraceError] HttpResponse(#87 00000000265AF238) time:15.8ms (net:15.7ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/studio/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m 2025-10-27T19:23:23.756Z,122.756889,01a4,12 [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m 2025-10-27T19:23:23.756Z,122.756889,01b8,12 [DFLog::HttpTraceError] HttpResponse(#88 00000000291A4388) time:19.0ms (net:15.8ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/studio/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m 2025-10-27T19:23:23.758Z,122.758896,01a4,12 [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:23:23[0m [36mRBX[0m 2025-10-27T19:23:23.758Z,122.758896,01b8,12 [DFLog::HttpTraceError] HttpResponse(#89 00000000307D9908) time:20.2ms (net:18.2ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/studio/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m 2025-10-27T19:23:23.761Z,122.761902,01a4,12 [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m 2025-10-27T19:23:23.763Z,122.763908,01b8,12 [DFLog::HttpTraceError] HttpResponse(#90 000000002BC6CD88) time:23.2ms (net:21.6ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/studio/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThread-PluginUIElementRelay_1`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] Closing WebView2 controller (WebBrowserManagerPreInitialize), isVisible=false, isLowMemoryMode=false
+[2m20:23:23[0m [36mRBX[0m [FLog::StudioTaskRegistry] Registering task id:7103 (StartPageBridge/openLoadingPage)
+[2m20:23:23[0m [36mRBX[0m [FLog::StudioTaskRegistry] Setting task status id:7103 (StartPageBridge/openLoadingPage) -> Started [Pending;0ms]
+[2m20:23:23[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] WebView2 controller (WebBrowserManagerPreInitialize) closed
+[2m20:23:23[0m [36mRBX[0m [FLog::StudioEmbeddedBrowserWebView2] WebView2 controller (WebBrowserManagerPreInitialize) closed normally, not force terminating
+[2m20:23:23[0m [36mRBX[0m [DFLog::NamedMutex] ~NamedMutex(000000000E4F4C80, name:RibbonFileSystemHelper::m_fileSystemMutex)
+[2m20:23:23[0m [36mRBX[0m [DFLog::SignalRCoreError] ID: 1 Disconnected - stop() called
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:23[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginDockWidgetRelay::cleanupAndDelete: rplg_sabuiltin_AttenuationCurveEditor.rbxm_AttenuationCurveEditor - Failed Empty
+[2m20:23:23[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginDockWidgetRelay::cleanupQWidget: rplg_sabuiltin_AttenuationCurveEditor.rbxm_AttenuationCurveEditor - Failed Empty
+[2m20:23:23[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginDockWidgetRelay::cleanupAndDelete: rplg_sabuiltin_AudioCompressorEditor.rbxm_AudioCompressorEditor - Failed Empty
+[2m20:23:23[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginDockWidgetRelay::cleanupQWidget: rplg_sabuiltin_AudioCompressorEditor.rbxm_AudioCompressorEditor - Failed Empty
+[2m20:23:23[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginDockWidgetRelay::cleanupAndDelete: rplg_sabuiltin_AudioEqualizerEditor.rbxm_AudioEqualizerEditor - Failed Empty
+[2m20:23:23[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginDockWidgetRelay::cleanupQWidget: rplg_sabuiltin_AudioEqualizerEditor.rbxm_AudioEqualizerEditor - Failed Empty
+[2m20:23:23[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginDockWidgetRelay::cleanupAndDelete: rplg_sabuiltin_DirectionalCurveEditor.rbxm_DirectionalCurveEditor - Failed Empty
+[2m20:23:23[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginDockWidgetRelay::cleanupQWidget: rplg_sabuiltin_DirectionalCurveEditor.rbxm_DirectionalCurveEditor - Failed Empty
+[2m20:23:23[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginDockWidgetRelay::cleanupAndDelete: rplg_sabuiltin_PlaceAnnotations.rbxm_PlaceAnnotations - Failed Empty
+[2m20:23:23[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginDockWidgetRelay::cleanupQWidget: rplg_sabuiltin_PlaceAnnotations.rbxm_PlaceAnnotations - Failed Empty
+[2m20:23:23[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginDockWidgetRelay::cleanupAndDelete: rplg_sabuiltin_PluginManagement.rbxm_PluginManagement - Failed Empty
+[2m20:23:23[0m [36mRBX[0m [FLog::StudioPluginRelay] PluginDockWidgetRelay::cleanupQWidget: rplg_sabuiltin_PluginManagement.rbxm_PluginManagement - Failed Empty
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Finished waiting on lock
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] doCloseDataModel - 000000001560B9B0
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Raising close..
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Removing all players
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Clearing contents...
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Closing Script Context
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Clearing World -- 0 Points, 0 Constraints
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Clearing World -- 0 Contacts, 0 Joints, 0 Primitives
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Clearing Workspace -- 2 Instances, 0 Parts, 0 Scripts
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Clearing StarterPack -- 1 Instances
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Clearing StarterPlayer -- 1 Instances
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Clearing TextChatService -- 1 Instances
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Clearing StarterGui -- 1 Instances
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Clearing CoreGui -- 2 Instances
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Clearing ChangeHistoryService -- 0 waypoints
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Clearing Lighting -- 1 Instances
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Clearing JointsService -- 1 Instances
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Clearing ReplicatedStorage -- 1 Instances
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Clearing ReplicatedFirst -- 1 Instances
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Clearing ChatService -- 1 Instances
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Clearing LocalizationService-- 1 Instances
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Visiting children with unlockParent...
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Removing all Children...
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Stopping model meshing job...
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Resetting workspace...
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Resetting runService...
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Resetting starterPackService...
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Resetting starterGuiService...
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Resetting starterPlayerService...
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Resetting guiRoot...
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Resetting UserInputService...
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Resetting CoreGuiService...
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Resetting TextChatService...
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Resetting ContextActionService...
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Clearing services...
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Removing GenericJobs...
+[2m20:23:23[0m [36mRBX[0m [FLog::CloseDataModel] Close DataModel Done!
+[2m20:23:23[0m [36mRBX[0m [FLog::StudioTaskRegistry] Cancelling task id:7103 (StartPageBridge/openLoadingPage) [Started;95ms]
+[2m20:23:23[0m [36mRBX[0m [FLog::StudioTaskRegistry] Deregistering task id:7103 (StartPageBridge/openLoadingPage) [Cancelled;0ms]
+[2m20:23:24[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:24[0m [36mRBX[0m [FLog::Graphics] RenderView destroyed[1]
+[2m20:23:24[0m [31mWIN[0m [Error] File: 
+[2m20:23:24[0m [31mWIN[0m C:\buildAgent\work\re_s\Client\dependencie
+[2m20:23:24[0m [31mWIN[0m s\opente
+[2m20:23:24[0m [31mWIN[0m lemetry-
+[2m20:23:24[0m [31mWIN[0m cpp\exp
+[2m20:23:24[0m [31mWIN[0m orters\
+[2m20:23:24[0m [31mWIN[0m otlp\s
+[2m20:23:24[0m [31mWIN[0m rc\ot
+[2m20:23:24[0m [31mWIN[0m lp_ht
+[2m20:23:24[0m [31mWIN[0m tp_c
+[2m20:23:24[0m [31mWIN[0m lient
+[2m20:23:24[0m [31mWIN[0m .cc:2
+[2m20:23:24[0m [31mWIN[0m 12 [O
+[2m20:23:24[0m [31mWIN[0m TLP 
+[2m20:23:24[0m [31mWIN[0m HTTP 
+[2m20:23:24[0m [31mWIN[0m Clien
+[2m20:23:24[0m [31mWIN[0m t] Se
+[2m20:23:24[0m [31mWIN[0m ssion
+[2m20:23:24[0m [31mWIN[0m  sta
+[2m20:23:24[0m [31mWIN[0m te: c
+[2m20:23:24[0m [31mWIN[0m onnec
+[2m20:23:24[0m [31mWIN[0m tion 
+[2m20:23:24[0m [31mWIN[0m failed.Could 
+[2m20:23:24[0m [31mWIN[0m not r
+[2m20:23:24[0m [31mWIN[0m esolv
+[2m20:23:24[0m [31mWIN[0m e hos
+[2m20:23:24[0m [31mWIN[0m t: tr
+[2m20:23:24[0m [31mWIN[0m acing
+[2m20:23:24[0m [31mWIN[0m .rob
+[2m20:23:24[0m [31mWIN[0m lox.c
+[2m20:23:24[0m [31mWIN[0m om
+[2m20:23:24[0m [31mWIN[0m [Err
+[2m20:23:24[0m [31mWIN[0m or] F
+[2m20:23:24[0m [31mWIN[0m ile:
+[2m20:23:24[0m [31mWIN[0m  C:\b
+[2m20:23:24[0m [31mWIN[0m uild
+[2m20:23:24[0m [31mWIN[0m Agent
+[2m20:23:24[0m [31mWIN[0m \wor
+[2m20:23:24[0m [31mWIN[0m k\re
+[2m20:23:24[0m [31mWIN[0m _s\Cl
+[2m20:23:24[0m [31mWIN[0m ient
+[2m20:23:24[0m [31mWIN[0m \dep
+[2m20:23:24[0m [31mWIN[0m enden
+[2m20:23:24[0m [31mWIN[0m cies
+[2m20:23:24[0m [31mWIN[0m \open
+[2m20:23:24[0m [31mWIN[0m tele
+[2m20:23:24[0m [31mWIN[0m metr
+[2m20:23:24[0m [31mWIN[0m y-cpp
+[2m20:23:24[0m [31mWIN[0m \exp
+[2m20:23:24[0m [31mWIN[0m orte
+[2m20:23:24[0m [31mWIN[0m rs\ot
+[2m20:23:24[0m [31mWIN[0m lp\sr
+[2m20:23:24[0m [31mWIN[0m c\ot
+[2m20:23:24[0m [31mWIN[0m lp_
+[2m20:23:24[0m [31mWIN[0m http_
+[2m20:23:24[0m [31mWIN[0m expo
+[2m20:23:24[0m [31mWIN[0m rter
+[2m20:23:24[0m [31mWIN[0m .cc:1
+[2m20:23:24[0m [31mWIN[0m 45 [
+[2m20:23:24[0m [31mWIN[0m OTLP 
+[2m20:23:24[0m [31mWIN[0m TRAC
+[2m20:23:24[0m [31mWIN[0m E HTT
+[2m20:23:24[0m [31mWIN[0m P Ex
+[2m20:23:24[0m [31mWIN[0m port
+[2m20:23:24[0m [31mWIN[0m er] 
+[2m20:23:24[0m [31mWIN[0m ERROR
+[2m20:23:24[0m [31mWIN[0m : Ex
+[2m20:23:24[0m [31mWIN[0m port
+[2m20:23:24[0m [31mWIN[0m  1 tr
+[2m20:23:24[0m [31mWIN[0m ace s
+[2m20:23:24[0m [31mWIN[0m pan(
+[2m20:23:24[0m [31mWIN[0m s) e
+[2m20:23:24[0m [31mWIN[0m rror:
+[2m20:23:24[0m [31mWIN[0m  1
+[2m20:23:24[0m [36mRBX[0m 2025-10-27T19:23:24.042Z,123.042191,01a4,12 [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:23:24[0m [36mRBX[0m 2025-10-27T19:23:24.043Z,123.043190,01c0,12 [DFLog::HttpTraceError] HttpResponse(#94 000000000F01A568) time:14.2ms (net:14.2ms callback:1.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/studio/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:23:24[0m [36mRBX[0m 2025-10-27T19:23:24.050Z,123.050201,01a4,12 [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:23:24[0m [36mRBX[0m 2025-10-27T19:23:24.050Z,123.050201,01bc,12 [DFLog::HttpTraceError] HttpResponse(#95 000000000F016B48) time:21.9ms (net:21.9ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/timespent/pbe\" } ip: external:0 numberOfTimesRetried:
+[2m20:23:24[0m [36mRBX[0m 2025-10-27T19:23:24.211Z,123.211266,01a4,12 [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:23:24[0m [36mRBX[0m 2025-10-27T19:23:24.211Z,123.211266,01b8,12 [DFLog::HttpTraceError] HttpResponse(#100 0000000012417C38) time:20.3ms (net:19.8ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/studio/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:23:24[0m [36mRBX[0m [DFLog::NamedMutex] ~NamedMutex(000000000237BA58, name:RobloxStudioCookieManager)
+[2m20:23:24[0m [36mRBX[0m [DFLog::NamedMutex] ~NamedMutex(000000000CA17CD8, name:www.roblox.com-RefreshingAccessTokenMutex-Studio)
+[2m20:23:24[0m [36mRBX[0m [DFLog::NamedMutex] ~NamedMutex(000000000CA17C40, name:www.roblox.com-oauth2RefreshToken-Studio)
+[2m20:23:24[0m [36mRBX[0m 2025-10-27T19:23:24.392Z,123.392563,01a4,12 [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:23:24[0m [36mRBX[0m 2025-10-27T19:23:24.393Z,123.393570,01c0,12 [DFLog::HttpTraceError] HttpResponse(#102 0000000002AB6FA8) time:31.5ms (net:31.5ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/studio/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:23:24[0m [36mRBX[0m [FLog::Output] Destroying PolicyContext(Root)
+[2m20:23:24[0m [36mRBX[0m 2025-10-27T19:23:24.530Z,123.530830,01a4,12 [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:23:24[0m [36mRBX[0m 2025-10-27T19:23:24.530Z,123.530830,01bc,12 [DFLog::HttpTraceError] HttpResponse(#104 0000000023E2E288) time:23.6ms (net:23.6ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/studio/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:23:24[0m [36mRBX[0m 2025-10-27T19:23:24.684Z,123.684181,01a4,12 [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:23:24[0m [36mRBX[0m 2025-10-27T19:23:24.684Z,123.684181,01c4,12 [DFLog::HttpTraceError] HttpResponse(#106 00000000162B89D8) time:23.5ms (net:23.5ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/studio/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:23:24[0m [36mRBX[0m 2025-10-27T19:23:24.822Z,123.822052,01a4,12 [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:23:24[0m [36mRBX[0m 2025-10-27T19:23:24.823Z,123.823051,01b8,12 [DFLog::HttpTraceError] HttpResponse(#108 00000000162B89D8) time:20.2ms (net:20.2ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/studio/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:23:25[0m [36mRBX[0m 2025-10-27T19:23:24.966Z,123.966087,01a4,12 [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:23:25[0m [36mRBX[0m 2025-10-27T19:23:24.966Z,123.966087,01c0,12 [DFLog::HttpTraceError] HttpResponse(#110 0000000023E2E288) time:21.6ms (net:21.6ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/studio/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:23:25[0m [36mRBX[0m 2025-10-27T19:23:25.112Z,124.112511,01a4,12 [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:23:25[0m [36mRBX[0m 2025-10-27T19:23:25.112Z,124.112511,01b8,12 [DFLog::HttpTraceError] HttpResponse(#112 0000000002AB6FA8) time:20.0ms (net:20.0ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/studio/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:23:25[0m [36mRBX[0m 2025-10-27T19:23:25.270Z,124.270729,01a4,12 [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:23:25[0m [36mRBX[0m 2025-10-27T19:23:25.270Z,124.270729,01b8,12 [DFLog::HttpTraceError] HttpResponse(#114 0000000023E2E288) time:23.4ms (net:23.4ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/studio/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:23:25[0m [36mRBX[0m 2025-10-27T19:23:25.412Z,124.412796,01a4,12 [DFLog::HttpTraceError] CURLOPT_ERRORBUFFER: Could not resolve host: ecsv2.roblox.com
+[2m20:23:25[0m [36mRBX[0m 2025-10-27T19:23:25.413Z,124.413803,01c4,12 [DFLog::HttpTraceError] HttpResponse(#116 0000000002AB6FA8) time:24.0ms (net:23.9ms callback:0.0ms timeInRetryQueue:0.0ms) error:2 message:HttpError: DnsResolve url:{ \"https://ecsv2.roblox.com/studio/pbe\" } ip: external:0 numberOfTimesRetried:0
+[2m20:23:25[0m [36mRBX[0m [FLog::QtUIThread] Not running task `LegacyRunInUIThreadWithQtContext-`: scheduled after UI thread event loop has stopped
+[2m20:23:25[0m [36mRBX[0m [FLog::Output] Info: RPC:Destructor Removed server - RBX_STUDIO_300
+[2m20:23:25[0m [36mRBX[0m [FLog::Output] Info: RPC:Destructor Destroyed server - RBX_STUDIO_300
+[2m20:23:25[0m [36mRBX[0m [FLog::AppMemUsageStatus] 1044687361
+[2m20:23:25[0m [36mRBX[0m [FLog::Output] About to exit the application, doing cleanup.
+[2m20:23:25[0m [93mWRN[0m No more processes left, killing Wineprefix
+[2m20:23:25[0m [92mINF[0m Goodbye!

@@ -5,6 +5,10 @@
       
      # Themes: 
     ./themes/catppuccin-mocha.nix
+    ./themes/gruvbox-dark-soft.nix
+    ./themes/mountain.nix
+    ./themes/ashes.nix
+
      
      # Cursors:
     ./cursors/bibata-white.nix
@@ -15,12 +19,7 @@
   stylix = {
 
     autoEnable = true;
-      
-     # Theme:
-     
-     # Gruvbox:
-    #base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
-       
+
      # Wallpaper:
     #image = ./wallpapers/dark-cat.png;
        
@@ -35,21 +34,6 @@
       popups = 0.85;
 
     };	
-       
-     # Cursor:
-    #cursor = {
-       
-      #package = pkgs.bibata-cursors;
-      #package = pkgs.google-cursor;
-      #package = pkgs.oreo-cursors-plus;
-
-      #name = "Bibata-Modern-Ice";
-      #name = "GoogleDot-White";
-      #name = "Oreo-Spark-Lite";
-      
-      #size = 22;
-    
-    #};
 
      # Fonts:
     fonts = {

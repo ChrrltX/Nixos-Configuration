@@ -59,7 +59,11 @@
 
   stylix.enable = true;
   plymouth.enable = true;
+
+   # Cursors:
   bibata-white.enable = true;
+   
+   # Themes:
   catppuccin-mocha.enable = true;
 
    # Gaming:
@@ -68,22 +72,25 @@
   prismlauncher.enable = true;
   vintage-story.enable = true;
   osu.enable = true;
+  roblox.enable = true;
    
    # Apps:
 
-  brave.enable = true;
+  brave.enable = false;
   zen-browser.enable = true;
   obsidian.enable = true;
   vesktop.enable = true;
   spotify.enable = true;
   kitty.enable = true;
   virt-manager.enable = true;
+  scrcpy.enable = true;
   nautilus.enable = true;
-  signal.enable = true;
+  signal.enable = false;
   kde-connect.enable = false;
   blender.enable = true;
   gimp.enable = true;
   nixcord.enable = false;
+  gnome-clocks.enable = true;
    
    # CLI:
 
@@ -97,8 +104,7 @@
   bat.enable = true;
   fzf.enable = true;
   eza.enable = true;
-  
-  programs.fish.enable = true;
+  tmux.enable = true;
 
   home-manager.users.chrrltx = { pkgs, ... }: {
     
@@ -112,7 +118,7 @@
       };
     }; 
 
-    home.packages = with pkgs; [ scrcpy gnome-clocks vinegar wineWowPackages.waylandFull winetricks hyprdim hyprpicker lxqt.libqtxdg ];
+    #home.packages = with pkgs; [ ];
     
     home.username = "chrrltx";
 

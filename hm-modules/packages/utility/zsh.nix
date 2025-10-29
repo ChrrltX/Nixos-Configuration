@@ -25,20 +25,25 @@
         shellAliases = {
            
            # Git:
-          add-nixos = "cd ~/nixos & git add .";
-          commit = "cd ~/nixos & git commit -m";
-          push-nixos = "cd ~/nixos & git push Nixos-Configuration main";
-          pull-nixos = "cd ~/nixos & git pull Nixos-Configuration main";
+          add-nixos = "cd ~/nixos | git add .";
+          commit = "cd ~/nixos | git commit -m";
+          push-nixos = "cd ~/nixos | git push Nixos-Configuration main";
+          pull-nixos = "cd ~/nixos | git pull Nixos-Configuration main";
            
            # Nixos:
           switch = "nh os switch ~/nixos";
+          update = "nh os switch ~/nixos --update";
           clean = "nh clean all --keep 3";
           clean-dry = "nh clean all --keep 3 --dry";
-          rebuild = "cd ~/nixos & sudo nixos-rebuild switch --flake .";
-           
+
+          rebuild = "cd ~/nixos | sudo nixos-rebuild switch --flake .";
+
+           # Vim:
+          v = "cd ~/nixos | vim";
+
            # Other:
           scr = ''grim -g "$(slurp -w 0)" - | swappy -f -'';
-          vn = "cd ~/nixos & vim";
+          boblox = "nohup flatpak run org.vinegarhq.Vinegar & disown";
 
         };
       

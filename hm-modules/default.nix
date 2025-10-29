@@ -14,6 +14,7 @@
     ./packages/gaming/prismlauncher.nix
     ./packages/gaming/vintage-story.nix
     ./packages/gaming/osu.nix
+    ./packages/gaming/roblox.nix
      
      # Media: 
 
@@ -42,6 +43,8 @@
     ./packages/utility/kde-connect.nix
     ./packages/utility/blender.nix
     ./packages/utility/gimp.nix
+    ./packages/utility/gnome-clocks.nix
+    ./packages/utility/tmux.nix
 
   ];  
 }

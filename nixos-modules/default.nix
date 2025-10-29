@@ -16,6 +16,7 @@
 
      # Virtualisation
     ./virtualisation/virt-manager.nix 
+    ./virtualisation/scrcpy.nix
 
      # Packages:
 

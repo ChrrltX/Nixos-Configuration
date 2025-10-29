@@ -49,6 +49,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nix-flatpak = {
+      url = "github:gmodena/nix-flatpak";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };    
+
   };
 
   outputs = inputs@{ 
@@ -63,6 +68,7 @@
     spicetify-nix,
     zen-browser,
     nixcord,
+    nix-flatpak
     ...
     
   }: {
@@ -83,6 +89,7 @@
 	 stylix.nixosModules.stylix
          spicetify-nix.nixosModules.default
 	 nvf.nixosModules.default
+         nix-flatpak.nixosModules.nix-flatpak
          #inputs.nixcord.nixosModules.nixcord
 
          {
