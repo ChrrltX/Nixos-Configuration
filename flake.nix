@@ -68,7 +68,7 @@
     spicetify-nix,
     zen-browser,
     nixcord,
-    nix-flatpak
+    nix-flatpak,
     ...
     
   }: {
