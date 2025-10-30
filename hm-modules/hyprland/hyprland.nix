@@ -22,7 +22,7 @@ in
     ./modules/monitors/pc-monitors.nix
     ./modules/monitors/lp-monitor.nix
 
-     # Extensions:
+     # Modules:
     ./modules/waybar/waybar.nix
     ./modules/waybar/waybar-2.nix
 
@@ -33,6 +33,9 @@ in
     ./modules/hyprlock.nix
     #./modules/sunsetr.nix
     ./modules/power-profiles.nix
+    ./modules/swaync.nix
+    #./modules/hyprdim.nix
+    #./modules/hyprpicker.nix
 
   ]; 
 
