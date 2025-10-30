@@ -1,4 +1,4 @@
-## My NixOS Configurations
+## My NixOS Configuration
 
 > *Anyone is free to take my configuration and edit it to their liking, i hope that i could help inspire some people at least or help them get ideas for structuring their own NixOS configuration*
 
