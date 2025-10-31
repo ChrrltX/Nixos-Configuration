@@ -30,7 +30,10 @@
     };  
 
      # NVF:
-    nvf.url = "github:notashelf/nvf"; 
+    nvf = {
+      url = "github:notashelf/nvf"; 
+      inputs.nixpkgs.follows = "nixpkgs";
+    };  
      
      # Spicetify:
     spicetify-nix = {
