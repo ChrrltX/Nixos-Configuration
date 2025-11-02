@@ -23,6 +23,11 @@
       inputs.hyprland.follows = "hyprland";
     };
      
+     # Vicinae:
+    vicinae = {
+      url = "github:vicinaehq/vicinae";
+    };  
+     
      # Stylix:
     stylix = {
       url = "github:danth/stylix"; 
@@ -46,12 +51,14 @@
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";    
     };  
-
+     
+     # Nixcord:
     nixcord = {
       url = "github:kaylorben/nixcord";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
+     
+     # Flatpak:
     nix-flatpak = {
       url = "github:gmodena/nix-flatpak";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -66,6 +73,7 @@
 #    disko,
     hyprland,
     hyprland-plugins,
+    vicinae,
     stylix,
     nvf,
     spicetify-nix,
@@ -107,6 +115,7 @@
            #home-manager.users.chrrltx = ./hosts/chrrltx-pc/home.nix;
            home-manager.sharedModules = [
              inputs.nixcord.homeModules.nixcord
+             inputs.vicinae.homeManagerModules.default
            ];
          }
 
@@ -126,6 +135,7 @@
 	 stylix.nixosModules.stylix
          spicetify-nix.nixosModules.default
 	 nvf.nixosModules.default
+         vicinae.nixosModules.default
 
          {
            networking.hostName = "NixLP";

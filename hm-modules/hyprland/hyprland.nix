@@ -36,6 +36,7 @@ in
     ./modules/swaync.nix
     #./modules/hyprdim.nix
     #./modules/hyprpicker.nix
+    ./modules/vicinae.nix
 
   ]; 
 

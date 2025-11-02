@@ -44,6 +44,7 @@
   waybar-2.enable = true;
   hyprshell.enable = true;
   swaync.enable = true;
+  vicinae.enable = true;
 
   #services.caelestia-shell.enable = false;
 
@@ -122,7 +123,7 @@
       };  
     }; 
 
-    home.packages = with pkgs; [ vscodium lutris cartridges protonmail-desktop ];
+    home.packages = with pkgs; [ vscodium lutris cartridges ];
     
     home.username = "chrrltx";
 
