@@ -71,11 +71,13 @@
      # Git:
     programs.git = {
       enable = true;
-      userName  = "ChrrltX";
-      userEmail = "";
-      extraConfig = {
-        init.defaultBranch = "main";
-      };
+      settings = {
+        user.name = "ChrrltX";
+        user.email = "";
+        extraConfig = {
+          init.defaultBranch = "main";
+        };
+      };  
     }; 
 
     home.packages = with pkgs; [ whois swtpm ];
@@ -83,6 +85,17 @@
     home.username = "chrrltx";
 
     home.homeDirectory = "/home/chrrltx";
+
+    xdg = {
+      enable = true;
+      desktopEntries = {
+        nixos-manual = {
+          name = "NixOs Manual";
+          exec = "nixos-help";
+          noDisplay = true;
+        };
+      };
+    };  
     
     home.stateVersion = "25.05";
 

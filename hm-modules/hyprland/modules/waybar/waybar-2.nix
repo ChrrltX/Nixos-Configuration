@@ -55,6 +55,8 @@
             "network"
             "custom/separator"
             "battery"
+            "custom/swaync"
+            "custom/separator"
             "group/power"
 	  ];
 
@@ -76,6 +78,12 @@
             interval = 1;
             tooltip = false;
           };
+
+          "custom/swaync" = {
+            format = "";
+            tooltip = false;
+            on-click = "swaync-client --open-panel";
+          };  
 
           "hyprland/workspaces" = {
             ws = "WS1";
@@ -375,6 +383,16 @@
 
         #clock:hover {
           transition: all .8s ease;
+          color: rgb(147, 153, 178);
+        }  
+
+        #custom-swaync {
+          padding: 0px 5px;
+          transition: all .3s ease;
+        }
+
+        #custom-swaync:hover {
+          transition: all .3s ease;
           color: rgb(147, 153, 178);
         }  
 

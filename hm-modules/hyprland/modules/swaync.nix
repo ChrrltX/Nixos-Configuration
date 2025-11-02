@@ -9,7 +9,12 @@
   config = lib.mkIf config.swaync.enable {
   
     home-manager.users.chrrltx = { pkgs, ... }: {
-      home.packages = with pkgs; [ swaync ];
+      #home.packages = with pkgs; [ swaync ];
+      services.swaync = {
+        enable = true;
+        #settings = { };
+      };
+
     };
 
   };  

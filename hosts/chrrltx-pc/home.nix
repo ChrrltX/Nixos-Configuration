@@ -43,6 +43,7 @@
   waybar.enable = false;
   waybar-2.enable = true;
   hyprshell.enable = true;
+  swaync.enable = true;
 
   #services.caelestia-shell.enable = false;
 
@@ -64,7 +65,8 @@
   bibata-white.enable = true;
    
    # Themes:
-  catppuccin-mocha.enable = true;
+  catppuccin-mocha.enable = false;
+  ashes.enable = true;
 
    # Gaming:
   
@@ -111,18 +113,31 @@
      # Git:
     programs.git = {
       enable = true;
-      userName  = "ChrrltX";
-      userEmail = "";
-      extraConfig = {
-        init.defaultBranch = "main";
-      };
+      settings = {
+        user.name = "ChrrltX";
+        user.email = "";
+        extraConfig = {
+          init.defaultBranch = "main";
+        };
+      };  
     }; 
 
-    #home.packages = with pkgs; [ ];
+    home.packages = with pkgs; [ vscodium lutris cartridges protonmail-desktop ];
     
     home.username = "chrrltx";
 
     home.homeDirectory = "/home/chrrltx";
+
+    xdg = {
+      enable = true;
+      desktopEntries = {
+        nixos-manual = {
+          name = "NixOs Manual";
+          exec = "nixos-help";
+          noDisplay = true;
+        };
+      };
+    };       
     
     home.stateVersion = "25.05";
 

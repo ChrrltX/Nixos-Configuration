@@ -16,7 +16,7 @@
 
     };  
 
-    #stylix.targets.wofi.enable = false;
+    stylix.targets.wofi.enable = false;
 
     programs.wofi = {
       
@@ -26,14 +26,15 @@
       
         promt = "Search";
 	allow_images = true;
-        width = 500;
-        height = 400;
+        image_size = 50;
+        width = "75%";
+        height = "75%";
         show = "Search";
         term = "kitty";
         hide_scroll = true;
         print_command = true;
         insensitive = true;
-        columns = 1;
+        columns = 5;
         no_actions = true;
 	matching = "fuzzy";
 
@@ -51,12 +52,13 @@
         * {
           all:unset;
           font-family: 'JetBrainsMono Nerd Font Mono', monospace;
-          font-size: 18px;
+          font-size: 22px;
           outline: none;
           border: none;
           border-radius: 10px;
           text-shadow:none;
-          background-color: rgba(30, 30, 46, 0.5);
+          /* background-color: rgba(30, 30, 46, 0.5); */
+          background-color: transparent;
           color: rgba(30, 30, 46, 0.5);
         }
 
@@ -64,18 +66,21 @@
           all:unset;
           padding: 20px;
           border-radius: 10px;
-          background-color: rgba(30, 30, 46, 0.5);
+          /* background-color: rgba(30, 30, 46, 0.5); */
+          background-color: transparent;
         }
         
         #inner-box {
           margin: 2px;
           padding: 5px
           border: none;
-          background-color: rgba(30, 30, 46, 0.5);
+          /* background-color: rgba(30, 30, 46, 0.5); */
+          background-color: transparent;
         }
         
         #outer-box {  
-          background-color: rgba(30, 30, 46, 0.5);
+          /* background-color: rgba(30, 30, 46, 0.5); */
+          background-color: transparent;
           border: none;
         }
         
@@ -90,19 +95,20 @@
           margin-left:20px;
           margin-right:20px;
           margin-top:20px;
+          margin-bottom: 10px;
           padding: 20px;
           border: none;
           outline: none;
           color: @text;
           box-shadow: 1px 1px 5px rgba(0,0,0, .5);
           border-radius:10;
-          background-color: rgba(30, 30, 46, 0.7);
+          background-color: rgba(17, 17, 27, 0.9);
         }
         
         #input image {
           border: none;
           color: rgb(243, 139, 168);
-          padding-right:10px;
+          padding-right:15px;
         }
         
         #input * {
@@ -128,9 +134,13 @@
           border: none;
           margin: 5px;
           padding: 10px;
-          background-color: rgba(30, 30, 46, 0.5);
-          color: rgba(30, 30, 46, 0.5);
+          background-color: rgba(17, 17, 27, 0.9);
         }
+
+        #entry:hover {
+          color: rgba(142, 116, 173, 0.5);
+          background-color: rgba(142, 116, 173, 0.5);
+        }  
         
         #entry arrow {
           border: none;
@@ -146,7 +156,7 @@
         }
         
         #entry:selected #text {
-          color: @text;
+          color: rgb(69, 71, 90);
         }
         
         #entry:drop(active) {

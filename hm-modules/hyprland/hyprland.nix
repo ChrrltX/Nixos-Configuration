@@ -87,14 +87,15 @@ in
          
           exec-once = [ 
 	    
-	    "swww-daemon"
-	    "waybar"
-	    "lxqt-policykit-agent"
+            "swww-daemon"
+            "waybar"
+            "lxqt-policykit-agent"
             "protonvpn-app"
             "sunsetr"
             "hyprshell run &"
+            "swaync"
 	  
-	  ];
+   	  ];
 
         };
       };
@@ -104,14 +105,14 @@ in
       
         #mako # Notifications
         libnotify # Notifications
-	pavucontrol # Audio Controls
-	playerctl # Media Controls
-	wireplumber # Audio Controls
-	wl-clipboard # Clipboard
+        pavucontrol # Audio Controls
+        playerctl # Media Controls
+      	wireplumber # Audio Controls
+      	wl-clipboard # Clipboard
         brightnessctl # Brightness Control
-	swww
+      	swww
         polkit_gnome
-        dunst
+        #dunst
 
       ];
 

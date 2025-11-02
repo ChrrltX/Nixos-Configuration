@@ -16,6 +16,8 @@
         enable = true;
       };
 
+      #stylix.targets.zen-browser.profileNames = [ "<ChrrltX>" ];
+
     };
 
   };  
