@@ -66,8 +66,8 @@
   bibata-white.enable = true;
    
    # Themes:
-  catppuccin-mocha.enable = false;
-  ashes.enable = true;
+  catppuccin-mocha.enable = true;
+  ashes.enable = false;
 
    # Gaming:
   
@@ -123,7 +123,7 @@
       };  
     }; 
 
-    home.packages = with pkgs; [ vscodium lutris cartridges ];
+    home.packages = with pkgs; [ vscodium lutris cartridges whois nwg-drawer nwg-dock-hyprland nurl ];
     
     home.username = "chrrltx";
 

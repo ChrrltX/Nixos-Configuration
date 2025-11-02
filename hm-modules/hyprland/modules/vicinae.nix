@@ -9,13 +9,24 @@
   config = lib.mkIf config.vicinae.enable {
   
     home-manager.users.chrrltx = { pkgs, ... }: {
+
+      wayland.windowManager.hyprland = {
+        settings = {
+           
+  	   # Bind Wofi:
+          "$menu" = "vicinae open";
+
+          bind = [ "$mod, Space, exec, $menu" ];
+
+        };
+      };  
         
-        services.vicinae = {
+      services.vicinae = {
         enable = true;
         autoStart = true;
         settings = {
           faviconService = "twenty";
-          font.size = 11;
+          font.size = 11.5;
           popToRootOnClose = false;
           rootSearch.searchFiles = false;
           window = {

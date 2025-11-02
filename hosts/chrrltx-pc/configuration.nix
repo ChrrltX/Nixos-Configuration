@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   imports = [ 
@@ -12,6 +12,7 @@
     useOSProber = true;
     efiSupport = true;
     device = "nodev";
+    gfxmodeEfi = "2560x1440x144";
   };  
   boot.loader.efi.canTouchEfiVariables = true;
 

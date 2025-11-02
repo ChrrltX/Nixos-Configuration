@@ -8,9 +8,9 @@
       settings = {
          
 	 # Bind Wofi:
-        "$menu" = "wofi --show drun";
+        "$apps" = "wofi --show drun";
 
-        bind = [ "$mod, Space, exec, $menu" ];
+        bind = [ "$mod, P, exec, $apps" ];
 
       };
 
@@ -71,15 +71,15 @@
         }
         
         #inner-box {
-          margin: 2px;
+          margin: 20px;
           padding: 5px
           border: none;
-          /* background-color: rgba(30, 30, 46, 0.5); */
+          /* background-color: rgba(30, 30, 46, 0.9); */
           background-color: transparent;
         }
         
         #outer-box {  
-          /* background-color: rgba(30, 30, 46, 0.5); */
+          /* background-color: rgba(30, 30, 46, 0.9); */
           background-color: transparent;
           border: none;
         }
@@ -102,7 +102,7 @@
           color: @text;
           box-shadow: 1px 1px 5px rgba(0,0,0, .5);
           border-radius:10;
-          background-color: rgba(17, 17, 27, 0.9);
+          background-color: rgba(17, 17, 27, 0.95);
         }
         
         #input image {
@@ -134,7 +134,8 @@
           border: none;
           margin: 5px;
           padding: 10px;
-          background-color: rgba(17, 17, 27, 0.9);
+          /* background-color: rgba(17, 17, 27, 0.95); */
+          background-color: ${config.stylix.base16Scheme.base08};
         }
 
         #entry:hover {
