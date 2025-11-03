@@ -1,0 +1,16 @@
+{ config, pkgs, lib, ... }:
+
+{
+  options = {
+    ?.enable = 
+      lib.mkEnableOption "enables ?";
+  };
+  
+  config = lib.mkIf config.?.enable {
+  
+    home-manager.users.chrrltx = { pkgs, ... }: {
+      programs.?.enable = true;
+    };
+
+  };  
+}

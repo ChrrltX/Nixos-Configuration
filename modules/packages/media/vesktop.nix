@@ -24,8 +24,9 @@
 	  videoHardwareAcceleration = true;
 	  discordBranch = "stable";
 	  minimizeToTray = false;  
+          arRPC = true;
 	
-	  plugins = {
+	  vencord.plugins = {
 	    
 	    enable = true;
 	  

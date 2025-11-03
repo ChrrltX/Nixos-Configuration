@@ -9,7 +9,9 @@
     ./themes/mountain.nix
     ./themes/ashes.nix
 
-     
+     # Bootloader:
+    ./bootloader/plymouth.nix 
+
      # Cursors:
     ./cursors/bibata-white.nix
     ./cursors/white-dot.nix

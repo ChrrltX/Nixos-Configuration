@@ -2,15 +2,29 @@
 { config, pkgs, lib, inputs, ... }:
 
 { 
-    # Packages:
+    #\\\\\\\\\\\\\\\\\\\\\
+    #--------------------
+    # Installed Packages:
+    #--------------------
+    #/////////////////////
    
+   #\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
    # Desktops, Display Managers:
-  
+   #/////////////////////////////
+   
+   # >>> DMs:
+   #----------
+
   gdm.enable = true;
   sddm.enable = false;
 
-   # Gnome:
+   #>>> Gnome:
+   #-----------
+
   gnome.enable = false;
+   
+   #>>> Gnome Extensions:
+   #----------------------
 
   #blur-shell.enable = true;
   #forge.enable = true;
@@ -29,55 +43,77 @@
   #lock-keys.enable = true;
   #runcat.enable = true;
 
-   # Hyprland:
+   #>>> Hyprland:
+   #--------------
+
   hyprland.enable = true;
   pc-monitors.enable = true;
   lp-monitor.enable = false;
+   
+   #>>> Hyprland Extensions:
+   #-------------------------
 
   dynamic-cursors.enable = true;
   hyprtrails.enable = true;
-  
+  waybar.enable = false;
+  waybar-2.enable = true;
   hypridle.enable = false;
   hyprlock.enable = false;
   #sunsetr.enable = true;
-  waybar.enable = false;
-  waybar-2.enable = true;
   hyprshell.enable = true;
   swaync.enable = true;
   vicinae.enable = true;
 
-  #services.caelestia-shell.enable = false;
-
+  #\\\\\\\\\\\
   # Hardware:
+  #///////////
+   
+   # >>> Drivers:
+   #--------------
 
   amd.enable = true;
+
+   # >>> Other:
+   #------------
+
   openrgb.enable = true;
-
+   
+   #\\\\\\\\\\\
    # Security:
-  
-  proton-vpn.enable = true;
+   #///////////
+   
+   #>>> Network:
+   #-------------
 
+  proton-vpn.enable = true;
+   
+   #\\\\\\\\\\\\\\\\
    # Customization:
+   #////////////////
+
+   #>>> Enable Styling:
+   #--------------------
 
   stylix.enable = true;
   plymouth.enable = true;
 
-   # Cursors:
-  bibata-white.enable = true;
-   
-   # Themes:
+   #>>> Themes:
+   #------------
+
   catppuccin-mocha.enable = true;
   ashes.enable = false;
 
-   # Gaming:
-  
-  steam.enable = true;
-  prismlauncher.enable = true;
-  vintage-story.enable = true;
-  osu.enable = true;
-  roblox.enable = true;
-   
-   # Apps:
+   #>>> Cursors:
+   #-------------
+
+  bibata-white.enable = true;
+
+   #\\\\\\\\\\\\\\\
+   # Applications:
+   #///////////////
+
+   #>>> Common:
+   #------------
 
   brave.enable = false;
   zen-browser.enable = true;
@@ -85,17 +121,30 @@
   vesktop.enable = true;
   spotify.enable = true;
   kitty.enable = true;
-  virt-manager.enable = true;
-  scrcpy.enable = true;
   nautilus.enable = true;
   signal.enable = false;
-  kde-connect.enable = false;
   blender.enable = true;
+
+   #>>> Utility:
+   #-------------
+
+  virt-manager.enable = true;
+  scrcpy.enable = true;
+  kde-connect.enable = false;
   gimp.enable = true;
-  nixcord.enable = false;
   gnome-clocks.enable = true;
+
+   #>>> Gaming:
+   #------------
+
+  steam.enable = true;
+  prismlauncher.enable = true;
+  vintage-story.enable = true;
+  osu.enable = true;
+  roblox.enable = true;
    
-   # CLI:
+   #>>> CLI:
+   #---------
 
   fastfetch.enable = true;
   nh.enable = true;
@@ -108,10 +157,16 @@
   fzf.enable = true;
   eza.enable = true;
   tmux.enable = true;
+   
+   #\\\\\\\\\\\\\\\\\\\
+   #------------------
+   # HM Configuration:
+   #------------------
+   #///////////////////
 
   home-manager.users.chrrltx = { pkgs, ... }: {
     
-     # Git:
+     #>>> Git:
     programs.git = {
       enable = true;
       settings = {
@@ -122,24 +177,15 @@
         };
       };  
     }; 
-
+     
+     #>>> Temporary Packages:
     home.packages = with pkgs; [ vscodium lutris cartridges whois nwg-drawer nwg-dock-hyprland nurl ];
     
+     #>>> User:
     home.username = "chrrltx";
-
     home.homeDirectory = "/home/chrrltx";
-
-    xdg = {
-      enable = true;
-      desktopEntries = {
-        nixos-manual = {
-          name = "NixOs Manual";
-          exec = "nixos-help";
-          noDisplay = true;
-        };
-      };
-    };       
-    
+     
+     #>>> HM Version (!Do Not Touch!):
     home.stateVersion = "25.05";
 
   };

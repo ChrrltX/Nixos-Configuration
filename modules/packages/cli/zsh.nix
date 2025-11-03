@@ -44,6 +44,9 @@
            # Other:
           scr = ''grim -g "$(slurp -w 0)" - | swappy -f -'';
           boblox = "nohup flatpak run org.vinegarhq.Vinegar & disown";
+          cat = "bat";
+          ls = "eza";
+          trash = "rm -rf .local/share/Trash";
 
         };
       
