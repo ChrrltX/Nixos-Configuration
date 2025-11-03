@@ -110,8 +110,7 @@
           #//////////
 
          ./hosts/chrrltx-pc/configuration.nix
-         ./nixos-modules
-         ./hm-modules
+         ./modules/default.nix
          ./themes/default.nix
           
           #\\\\\\\\\\\\\\\\
@@ -155,8 +154,7 @@
           #//////////
 
          ./hosts/chrrltx-lp/configuration.nix
-         ./nixos-modules
-         ./hm-modules
+         ./modules/default.nix
          ./themes/default.nix
           
           #\\\\\\\\\\\\\\\\

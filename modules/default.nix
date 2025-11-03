@@ -74,7 +74,7 @@
     
     ./hardware/amd.nix
     ./hardware/bluetooth.nix
-    ./packages/openrgb.nix
+    ./hardware/openrgb.nix
      
      
       #\\\\\\\\\\\\\\\\\
