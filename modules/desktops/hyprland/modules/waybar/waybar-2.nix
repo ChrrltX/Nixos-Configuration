@@ -345,21 +345,21 @@
           padding:7px;
           margin:0;
           border-radius: 0px 0px 10px 0px;
-          background-color: rgba(17, 17, 27, 80);
+          background-color: #${config.stylix.base16Scheme.base00};
 	}
 
 	.modules-center {
           padding:7px;
           margin:0;
           border-radius:0px 0 10px 10px;
-          background-color: rgba(17, 17, 27, 80);
+          background-color: #${config.stylix.base16Scheme.base00};
 	}
         
         .modules-right {
           padding:7px;
           margin:0;
           border-radius:0px 0px 0px 10px;
-          background-color: rgba(17, 17, 27, 80);
+          background-color: #${config.stylix.base16Scheme.base00};
 	}  
 
 	tooltip {
@@ -372,28 +372,30 @@
 
         #custom-separator {
           padding: 0px 5px;
-          color: rgb(108, 112, 134);
+          color: #${config.stylix.base16Scheme.base05};
         }
 
         #clock {
           padding: 0px 5px;
+          color: #${config.stylix.base16Scheme.base05};
           background-color: transparent;
           transition: all .3s ease;
         }  
 
         #clock:hover {
-          transition: all .8s ease;
-          color: rgb(147, 153, 178);
+          transition: all .3s ease;
+          color: #${config.stylix.base16Scheme.base04};
         }  
 
         #custom-swaync {
           padding: 0px 5px;
+          color: #${config.stylix.base16Scheme.base05};
           transition: all .3s ease;
         }
 
         #custom-swaync:hover {
           transition: all .3s ease;
-          color: rgb(147, 153, 178);
+          color: #${config.stylix.base16Scheme.base04};
         }  
 
         #workspaces {
@@ -402,54 +404,48 @@
 
         #workspaces button {
           padding: 0px 5px;
+          color: #${config.stylix.base16Scheme.base05};
           background-color: transparent;
           transition: all .3s ease;
         } 
 
         #workspaces button:hover {
-          background-color: rgb(49, 50, 68);
-          color: rgb(147, 153, 178);
+          background-color: #${config.stylix.base16Scheme.base02};
+          color: #${config.stylix.base16Scheme.base04};
         }  
 
 	#workspaces button.active {
           padding: 0px 5px;
-	  background-color: rgb(203, 166, 247);
-          color: rgb(24, 24, 37);
+	  background-color: #${config.stylix.base16Scheme.base0E};
+          color: #${config.stylix.base16Scheme.base01};
         }
-
-        #workspaces button.active:hover {
-          background-color: rgb(122, 100, 148);
-        }  
 
         #workspaces button.empty {
           padding: 0px 5px;
-          color: rgb(69, 71, 90);
+          color: #${config.stylix.base16Scheme.base03};
         } 
 
         #workspaces button.empty:hover {
-          background-color: rgb(49, 50, 68);
-          color: rgb(147, 153, 178);
+          color: #${config.stylix.base16Scheme.base02};
+          color: #${config.stylix.base16Scheme.base04};
         }  
 
 	#workspaces button.empty.active {
-          background-color: rgb(180, 190, 254);
-	  color: rgb(49, 50, 68);
+          background-color: #${config.stylix.base16Scheme.base07};
+	  color: #${config.stylix.base16Scheme.base00};
 	}
-
-        #workspaces button.empty.active:hover {
-          background-color: rgb(108, 114, 152);
-        }  
 
         #cava {
           padding: 0px 5px;
           transition: all .3s ease;
+          color: #${config.stylix.base16Scheme.base05};
           background-color: transparent;
         }
 
         #mpris {
           padding: 0px 5px;
           transition: all .3s ease;
-          color: rgb(203, 166, 247);
+          color: #${config.stylix.base16Scheme.base0E};
           font-size: 20px;
         }  
 
@@ -461,7 +457,7 @@
         #custom-previous {
           padding: 0px 5px;
           transition: all .3s ease;
-          color: rgb(203, 166, 247);
+          color: #${config.stylix.base16Scheme.base0E};
           font-size: 20px;
         }
 
@@ -473,7 +469,7 @@
         #custom-next {
           padding: 0px 5px;
           transition: all .3s ease;
-          color: rgb(203, 166, 247);
+          color: #${config.stylix.base16Scheme.base0E};
           font-size: 20px;
         }  
 
@@ -484,32 +480,36 @@
 
 	#network {
 	  padding: 0px 5px;
+          color: #${config.stylix.base16Scheme.base05};
 	  transition: all .3s ease;
 	}
 
         #network:hover {
           transition: all .3s ease;
+          color: #${config.stylix.base16Scheme.base04};
         }
 
         #battery {
           padding: 0px 5px;
+          color: #${config.stylix.base16Scheme.base05};
           transition: all .3s ease;
         }
 
         #battery:hover {
           transition: all .3s ease;
+          color: #${config.stylix.base16Scheme.base04};
         }  
 
         #battery.charging {
-          color: rgb(166, 227, 161);
+          color: #${config.stylix.base16Scheme.base0B};
         }
 
         #battery.warning:not(.charging) {
-          color: rgb(250, 179, 135);
+          color: #${config.stylix.base16Scheme.base0A};
         }
 
         #battery.critical:not(.charging) {
-          color: rgb(243, 139, 168);
+          color: #${config.stylix.base16Scheme.base08};
           animation-name: blink;
           animation-duration: 0.5s;
           animation-timing-function: linear;
@@ -519,11 +519,13 @@
 
         #pulseaudio {
           padding: 0px 5px;
+          color: #${config.stylix.base16Scheme.base05};
           transition: all .3s ease;
         } 
 
         #pulseaudio:hover {
           transition: all .3s ease;
+          color: #${config.stylix.base16Scheme.base04};
         }  
 
         #user {
@@ -538,15 +540,17 @@
 
         #custom-expand-right {
           padding: 0px 5px;
+          color: #${config.stylix.base16Scheme.base05};
           transition: all .3s ease;
         } 
 
         #custom-expand-right:hover {
-          color: rgb(180, 190, 254);
+          color: #${config.stylix.base16Scheme.base04};
         }
 
 	#custom-endpoint-right {
           padding: 0px 5px;
+          color: #${config.stylix.base16Scheme.base05};
 	}
 
 	#tray {
@@ -571,15 +575,17 @@
 
         #custom-expand-left {
           padding: 0px 5px;
+          color: #${config.stylix.base16Scheme.base05};
           transition: all .3s ease;
         } 
 
         #custom-expand-left:hover {
-          color: rgb(180, 190, 254);
+          color: #${config.stylix.base16Scheme.base04};
         }
 
 	#custom-endpoint-left {
           padding: 0px 5px;
+          color: #${config.stylix.base16Scheme.base05};
 	}
 
         #group-power {
@@ -589,7 +595,7 @@
 
         #custom-quit {
           padding: 0px 5px;
-          color: rgb(249, 226, 175);
+          color: #${config.stylix.base16Scheme.base0F};
           font-size: 20px;
           transition: all .3s ease;
         }  
@@ -600,7 +606,7 @@
         
         #custom-lock {
           padding: 0px 5px;
-          color: rgb(250, 179, 135);
+          color: #${config.stylix.base16Scheme.base0A};
           font-size: 20px;
           transition: all .3s ease;
         }
@@ -611,7 +617,7 @@
 
         #custom-reboot {
           padding: 0px 5px;
-          color: rgb(235, 160, 172);
+          color: #${config.stylix.base16Scheme.base09};
           font-size: 20px;
           transition: all .3s ease;
         }
@@ -622,7 +628,7 @@
 
         #custom-power {
           padding: 0px 5px;
-          color: rgb(243, 139, 168);
+          color: #${config.stylix.base16Scheme.base08};
           font-size: 18px;
           transition: all .3s ease;
         }  

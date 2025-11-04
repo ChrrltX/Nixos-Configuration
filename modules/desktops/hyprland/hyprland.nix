@@ -96,7 +96,7 @@ in
             "hyprshell run &"
             "swaync"
             "vicinae server"
-            '' nwg-dock-hyprland -c "wofi --show drun" -x -ml 10 -p "left" ''
+            #'' nwg-dock-hyprland -c "wofi --show drun" -x -ml 10 -p "left" ''
 	  
    	  ];
 

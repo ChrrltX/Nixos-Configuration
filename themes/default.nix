@@ -3,18 +3,21 @@
 { 
   imports = [
       
-     # Themes: 
-    ./themes/catppuccin-mocha.nix
-    ./themes/gruvbox-dark-soft.nix
-    ./themes/mountain.nix
-    ./themes/ashes.nix
+     #>>> Themes: 
+    ./stylix/themes/catppuccin-mocha.nix
+    ./stylix/themes/gruvbox-dark-soft.nix
+    ./stylix/themes/mountain.nix
+    ./stylix/themes/ashes.nix
 
-     # Bootloader:
+     #>>> Bootloader:
     ./bootloader/plymouth.nix 
 
-     # Cursors:
-    ./cursors/bibata-white.nix
-    ./cursors/white-dot.nix
+     #>>> Cursors:
+    ./stylix/cursors/bibata-white.nix
+    ./stylix/cursors/white-dot.nix
+
+     #>>> Icons:
+    ./stylix/icons/papirus.nix 
   
   ];
 

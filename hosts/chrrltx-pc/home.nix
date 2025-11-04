@@ -100,13 +100,20 @@
    #>>> Themes:
    #------------
 
-  catppuccin-mocha.enable = true;
+  catppuccin-mocha.enable = false;
   ashes.enable = false;
+  mountain.enable = false;
+  gruvbox-dark-soft.enable = true;
 
    #>>> Cursors:
    #-------------
 
   bibata-white.enable = true;
+
+   #>>> Icons:
+   #-----------
+  
+  papirus.enable = true;
 
    #\\\\\\\\\\\\\\\
    # Applications:

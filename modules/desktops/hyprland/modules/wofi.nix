@@ -24,7 +24,7 @@
       
       settings = {
       
-        promt = "Search";
+        prompt = "Search";
 	allow_images = true;
         image_size = 50;
         width = "75%";
@@ -102,7 +102,8 @@
           color: @text;
           box-shadow: 1px 1px 5px rgba(0,0,0, .5);
           border-radius:10;
-          background-color: rgba(17, 17, 27, 0.95);
+          /*background-color: rgba(17, 17, 27, 0.95);*/
+          background-color: #${config.stylix.base16Scheme.base01};
         }
         
         #input image {
@@ -135,7 +136,8 @@
           margin: 5px;
           padding: 10px;
           /* background-color: rgba(17, 17, 27, 0.95); */
-          background-color: ${config.stylix.base16Scheme.base08};
+          background-color: #${config.stylix.base16Scheme.base01};
+          box-shadow: 1px 1px 5px rgba(0,0,0, .5);
         }
 
         #entry:hover {
@@ -152,8 +154,8 @@
         #entry:selected {
           border: none;
           border-radius: 20px;
-          background-color: rgb(203, 166, 247);
-          color: transparent;
+          background-color: #${config.stylix.base16Scheme.base0E};
+          color: #${config.stylix.base16Scheme.base01};
         }
         
         #entry:selected #text {

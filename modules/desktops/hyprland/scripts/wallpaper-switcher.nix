@@ -5,8 +5,9 @@ pkgs.writeShellScriptBin "wallpaper-switcher" ''
   DIR=$HOME/nixos/themes/wallpapers/
 
   wofi_command="wofi --show dmenu \
-                        --prompt 'choose..'
-                        --width=300 --height=400 \
+                        --prompt Wallpapers:
+                        --width=20% --height=30% \
+                        --allow-images \
                         --cache-file=/dev/null \
                         --hide-scroll --no-actions \
                         --define=matching=fuzzy"
