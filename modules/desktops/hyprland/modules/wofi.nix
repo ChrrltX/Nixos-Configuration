@@ -57,16 +57,13 @@
           border: none;
           border-radius: 10px;
           text-shadow:none;
-          /* background-color: rgba(30, 30, 46, 0.5); */
           background-color: transparent;
-          color: rgba(30, 30, 46, 0.5);
         }
 
         window {
           all:unset;
           padding: 20px;
           border-radius: 10px;
-          /* background-color: rgba(30, 30, 46, 0.5); */
           background-color: transparent;
         }
         
@@ -74,12 +71,10 @@
           margin: 20px;
           padding: 5px
           border: none;
-          /* background-color: rgba(30, 30, 46, 0.9); */
           background-color: transparent;
         }
         
         #outer-box {  
-          /* background-color: rgba(30, 30, 46, 0.9); */
           background-color: transparent;
           border: none;
         }
