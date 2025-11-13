@@ -40,7 +40,7 @@
            
            # Nixos:
           switch = "nh os switch ~/nixos";
-          update = "nh os switch ~/nixos --update";
+          update = "nh os boot ~/nixos --update";
           clean = "nh clean all --keep 3";
           clean-dry = "nh clean all --keep 3 --dry";
 

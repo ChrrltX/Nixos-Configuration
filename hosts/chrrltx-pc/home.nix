@@ -176,6 +176,10 @@
    #------------------
    #///////////////////
 
+  users.users.chrrltx.packages = with pkgs; [
+    (python313.withPackages (ps: with ps; [ pygobject3 ]))
+  ];
+
   home-manager.users.chrrltx = { pkgs, ... }: {
     
      #>>> Git:
@@ -191,7 +195,7 @@
     }; 
      
      #>>> Temporary Packages:
-    home.packages = with pkgs; [ whois nwg-drawer nwg-dock-hyprland nurl autojump television haskellPackages.sys-auth-smbclient ];
+    home.packages = with pkgs; [ python3 whois nwg-drawer nwg-dock-hyprland nurl autojump television haskellPackages.sys-auth-smbclient ];
     
      #>>> User:
     home.username = "chrrltx";

@@ -37,7 +37,7 @@ in
     #./modules/hyprdim.nix
     #./modules/hyprpicker.nix
     ./modules/vicinae.nix
-    ./modules/wlogout.nix
+    ./modules/wlogout/wlogout.nix
 
   ]; 
 
