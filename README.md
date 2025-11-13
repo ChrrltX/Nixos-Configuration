@@ -20,4 +20,4 @@
 **What do i wanna change or add:**
 - I want to add an option to run my home server as well, and fully convert it into running NixOS
 - I wanna add Impermanence (to wipe my disk on every reboot and rebuild my system from my configuration, to keep my disk clean)
-
+- Add a GUI "settings" application for my NixOS config (mostly for my "program".enable options to be able to click nice looking buttons instead of rewriting true/false every time)
