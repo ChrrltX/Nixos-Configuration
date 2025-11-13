@@ -21,7 +21,7 @@
    #>>> Gnome:
    #-----------
 
-  gnome.enable = false;
+  gnome.enable = true;
    
    #>>> Gnome Extensions:
    #----------------------
@@ -63,6 +63,7 @@
   hyprshell.enable = true;
   swaync.enable = true;
   vicinae.enable = true;
+  wlogout.enable = true;
 
   #\\\\\\\\\\\
   # Hardware:
@@ -100,10 +101,10 @@
    #>>> Themes:
    #------------
 
-  catppuccin-mocha.enable = false;
+  catppuccin-mocha.enable = true;
   ashes.enable = false;
   mountain.enable = false;
-  gruvbox-dark-soft.enable = true;
+  gruvbox-dark-soft.enable = false;
 
    #>>> Cursors:
    #-------------
@@ -140,6 +141,7 @@
   kde-connect.enable = false;
   gimp.enable = true;
   gnome-clocks.enable = true;
+  woomer.enable = true;
 
    #>>> Gaming:
    #------------
@@ -149,6 +151,7 @@
   vintage-story.enable = true;
   osu.enable = true;
   roblox.enable = true;
+  cartridges.enable = true;
    
    #>>> CLI:
    #---------
@@ -164,6 +167,8 @@
   fzf.enable = true;
   eza.enable = true;
   tmux.enable = true;
+  duf.enable = true;
+  carbon-now.enable = true;
    
    #\\\\\\\\\\\\\\\\\\\
    #------------------
@@ -186,7 +191,7 @@
     }; 
      
      #>>> Temporary Packages:
-    home.packages = with pkgs; [ vscodium lutris cartridges whois nwg-drawer nwg-dock-hyprland nurl ];
+    home.packages = with pkgs; [ whois nwg-drawer nwg-dock-hyprland nurl autojump television haskellPackages.sys-auth-smbclient ];
     
      #>>> User:
     home.username = "chrrltx";

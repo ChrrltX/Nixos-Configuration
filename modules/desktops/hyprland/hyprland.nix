@@ -37,6 +37,7 @@ in
     #./modules/hyprdim.nix
     #./modules/hyprpicker.nix
     ./modules/vicinae.nix
+    ./modules/wlogout.nix
 
   ]; 
 
@@ -96,6 +97,7 @@ in
             "hyprshell run &"
             "swaync"
             "vicinae server"
+            "swayosd-server"
             #'' nwg-dock-hyprland -c "wofi --show drun" -x -ml 10 -p "left" ''
 	  
    	  ];
@@ -108,6 +110,7 @@ in
       
         #mako # Notifications
         libnotify # Notifications
+        swayosd # OSD
         pavucontrol # Audio Controls
         playerctl # Media Controls
       	wireplumber # Audio Controls

@@ -32,38 +32,47 @@
 
 	  modules-left = [
             "hyprland/workspaces"
-            "custom/separator"
+            #"custom/separator"
+            #"custom/space"
             "custom/previous"
             "mpris"
             "custom/next"
-            "custom/separator"
+            #"custom/separator"
+            #"custom/space"
             "group/expand-right"
           ];
 	  modules-center = [
             "cava"
-            "custom/separator"
+            #"custom/separator"
+            #"custom/space"
             "clock"
             #"hyprland/workspaces#ws2"
-            "custom/separator"
+            #"custom/separator"
+            #"custom/space"
             "cava"
 	  ];  
 	  modules-right = [ 
             "group/expand-left"
-            "custom/separator"
+            #"custom/separator"
+            #"custom/space"
             "pulseaudio"
-            "custom/separator"
+            #"custom/separator"
+            #"custom/space"
             "network"
-            "custom/separator"
+            #"custom/separator"
+            #"custom/space"
             "battery"
             "custom/swaync"
-            "custom/separator"
-            "group/power"
+            #"custom/separator"
+            #"custom/space"
+            #"group/power"
+            "custom/wlogout"
 	  ];
 
 	   # Modules:
 
           "custom/space" = {
-            format = "  ";
+            format = " ";
             tooltip = false;
           };  
 
@@ -326,6 +335,12 @@
             on-click = "shutdown now";
           };
 
+          "custom/wlogout" = {
+            format = "";
+            tooltip = false;
+            on-click = "wlogout";
+          };  
+
 	};
       };
 
@@ -376,7 +391,7 @@
         }
 
         #clock {
-          padding: 0px 5px;
+          padding: 0px 8px;
           color: #${config.stylix.base16Scheme.base05};
           background-color: transparent;
           transition: all .3s ease;
@@ -388,7 +403,7 @@
         }  
 
         #custom-swaync {
-          padding: 0px 5px;
+          padding: 0px 8px;
           color: #${config.stylix.base16Scheme.base05};
           transition: all .3s ease;
         }
@@ -436,7 +451,7 @@
 	}
 
         #cava {
-          padding: 0px 5px;
+          padding: 0px 8px;
           transition: all .3s ease;
           color: #${config.stylix.base16Scheme.base05};
           background-color: transparent;
@@ -479,7 +494,7 @@
         }  
 
 	#network {
-	  padding: 0px 5px;
+	  padding: 0px 8px;
           color: #${config.stylix.base16Scheme.base05};
 	  transition: all .3s ease;
 	}
@@ -490,7 +505,7 @@
         }
 
         #battery {
-          padding: 0px 5px;
+          padding: 0px 8px;
           color: #${config.stylix.base16Scheme.base05};
           transition: all .3s ease;
         }
@@ -518,7 +533,7 @@
         }   
 
         #pulseaudio {
-          padding: 0px 5px;
+          padding: 0px 8px;
           color: #${config.stylix.base16Scheme.base05};
           transition: all .3s ease;
         } 
@@ -529,7 +544,7 @@
         }  
 
         #user {
-          padding: 0px 5px;
+          padding: 0px 8px;
           transition: all .3s ease;
         }  
 
@@ -539,7 +554,7 @@
         }
 
         #custom-expand-right {
-          padding: 0px 5px;
+          padding: 0px 8px;
           color: #${config.stylix.base16Scheme.base05};
           transition: all .3s ease;
         } 
@@ -554,12 +569,12 @@
 	}
 
 	#tray {
-	  padding: 0px 5px;
+	  padding: 0px 8px;
 	  transition: all .3s ease;
 	}
 
 	#tray menu * {
-	  padding: 0px 5px;
+	  padding: 0px 8px;
 	  transition: all .3s ease;
 	}
 
@@ -574,7 +589,7 @@
         }
 
         #custom-expand-left {
-          padding: 0px 5px;
+          padding: 0px 8px;
           color: #${config.stylix.base16Scheme.base05};
           transition: all .3s ease;
         } 
@@ -634,6 +649,17 @@
         }  
 
         #custom-power:hover {
+          transition: all .3s ease;
+        }  
+
+        #custom-wlogout {
+          padding: 0px 5px;
+          color: #${config.stylix.base16Scheme.base08};
+          font-size: 18px;
+          transition: all .3s ease;
+        }  
+
+        #custom-wlogout:hover {
           transition: all .3s ease;
         }  
 

@@ -13,7 +13,15 @@
 
     home-manager.users.chrrltx = { pkgs, ... }: {
       
-      home.packages = with pkgs; [ zsh-powerlevel10k ];
+      home.packages = with pkgs; [ zsh-powerlevel10k fortune ];
+
+      programs.oh-my-posh = {
+        enable = true;
+        #useTheme = "catppuccin_mocha";
+        #useTheme = "catppuccin"; 
+        useTheme = "clean-detailed";
+        enableZshIntegration = true;
+      };
       
       programs.zsh = {
 
@@ -26,7 +34,7 @@
            
            # Git:
           add-nixos = "cd ~/nixos | git add .";
-          commit = "cd ~/nixos | git commit -m";
+          commit-nixos = "cd ~/nixos | git commit -m";
           push-nixos = "cd ~/nixos | git push Nixos-Configuration main";
           pull-nixos = "cd ~/nixos | git pull Nixos-Configuration main";
            
@@ -50,19 +58,23 @@
 
         };
       
-        plugins = [
+        #plugins = [
 
            # Powerlevel10k Theme:
-          {                                                                                   
-            name = "powerlevel10k";                                                           
-            src = pkgs.zsh-powerlevel10k;                                                     
-            file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";                         
-          }
+          #{                                                                                   
+          #  name = "powerlevel10k";                                                           
+          #  src = pkgs.zsh-powerlevel10k;                                                     
+          #  file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";                         
+          #}
 
-        ];
+        #];
+
+        #initContent = ''
+        #  source ~/.p10k.zsh
+        #'';
 
         initContent = ''
-          source ~/.p10k.zsh
+          cd ~/nixos
         '';
 
         oh-my-zsh = {

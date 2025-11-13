@@ -10,7 +10,7 @@
 	 # Bind Wofi:
         "$apps" = "wofi --show drun";
 
-        bind = [ "$mod, P, exec, $apps" ];
+        bind = [ "$mod, A, exec, $apps" ];
 
       };
 

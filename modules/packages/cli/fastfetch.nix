@@ -10,9 +10,9 @@
 
     home-manager.users.chrrltx = { pkgs, ... }: {
 
-      programs.zsh = {
-        initContent = "fastfetch";
-      };
+      #programs.zsh = {
+      #  initContent = "fastfetch";
+      #};
 
       programs.fastfetch = {
         

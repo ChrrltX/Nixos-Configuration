@@ -9,9 +9,11 @@
   config = lib.mkIf config.papirus.enable {
     
     stylix = {
-      iconTheme = {
+      icons = {
+        enable = true;
         package = pkgs.papirus-icon-theme;
-        name = "Papirus";
+        dark = "Colloid-Dark";
+        light = "Colloid-Light";
       };
     };
 

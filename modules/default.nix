@@ -14,6 +14,7 @@
     ./packages/gaming/osu.nix
     ./packages/gaming/roblox.nix
     ./packages/gaming/steam.nix
+    ./packages/gaming/cartridges.nix
      
      #>>> Media: 
 
@@ -32,6 +33,7 @@
     ./packages/utility/blender.nix
     ./packages/utility/gimp.nix
     ./packages/utility/gnome-clocks.nix
+    ./packages/utility/woomer.nix
 
      #>>> CLI:
 
@@ -46,6 +48,8 @@
     ./packages/cli/fzf.nix
     ./packages/cli/eza.nix
     ./packages/cli/tmux.nix
+    ./packages/cli/duf.nix
+    ./packages/cli/carbon-now.nix
 
       #\\\\\\\\\\\\\\\\\\\
       # Display Managers:

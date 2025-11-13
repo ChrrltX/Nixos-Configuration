@@ -7,6 +7,11 @@
   };
 
   config = lib.mkIf config.steam.enable {
+     
+     # Proton:
+    home-manager.users.chrrltx = { pkgs, ... }: {
+      home.packages = with pkgs; [ protonplus ];
+    };
 
      # Steam:
     programs.steam.enable = true;

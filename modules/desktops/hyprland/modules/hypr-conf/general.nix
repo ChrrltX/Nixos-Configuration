@@ -11,7 +11,8 @@
 	  gaps_in = "5";
 	  gaps_out = "18";
 	  border_size = "3";
-	  "col.active_border" = lib.mkForce "rgba(167,125,255,1) rgba(86,65,129,1) 45deg";
+	  #"col.active_border" = lib.mkForce "rgba(167,125,255,1) rgba(86,65,129,1) 45deg";
+          "col.active_border" = lib.mkForce "rgb(${config.stylix.base16Scheme.base0E}) rgb(${config.stylix.base16Scheme.base0C}) 45deg";
 
 	  resize_on_border = false;
 	  allow_tearing = true;

@@ -21,8 +21,10 @@
           "$mod SHIFT, V, togglefloating,"
 	  "$mod SHIFT, F, fullscreen,"
           "$mod SHIFT, S, exec, $screenshot,"
+          "$mod SHIFT, W, exec, woomer"
+          "$mod, ESC, exec, wlogout"
 
-	   # Executables:
+	   # Apps:
 	  "$mod, Tab, exec, $terminal"
 	  "$mod, Z, exec, $browser"
 	  "$mod, S, exec, steam"
@@ -30,6 +32,7 @@
 	  "$mod, R, exec, obsidian"
           "$mod, W, exec, wallpaper-switcher"
           "$mod, F, exec, $files"
+          "$mod, C, exec, cartridges"
           
 	   # Move Focus:
 	  "$mod, left, movefocus, l"

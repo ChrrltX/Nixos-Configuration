@@ -6,6 +6,9 @@
     ./home.nix
   ];
 
+   # Gets Rid of NixOS Manual:
+  documentation.nixos.enable = false;
+
    # Bootloader:
   boot.loader.grub = {
     enable = true;
