@@ -71,6 +71,7 @@
       #///////////
 
     ./security/proton-vpn.nix
+    ./security/gnome-polkit.nix
       
       #\\\\\\\\\\\
       # Hardware:

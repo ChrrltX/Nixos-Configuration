@@ -91,7 +91,8 @@ in
 	    
             "swww-daemon"
             "waybar"
-            "lxqt-policykit-agent"
+            #"lxqt-policykit-agent"
+            "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"
             "protonvpn-app"
             "sunsetr"
             "hyprshell run &"

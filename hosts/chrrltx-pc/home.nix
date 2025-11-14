@@ -54,13 +54,13 @@
    #-------------------------
 
   dynamic-cursors.enable = true;
-  hyprtrails.enable = true;
+  hyprtrails.enable = false;
   waybar.enable = false;
   waybar-2.enable = true;
   hypridle.enable = false;
   hyprlock.enable = false;
   #sunsetr.enable = true;
-  hyprshell.enable = true;
+  hyprshell.enable = false;
   swaync.enable = true;
   vicinae.enable = true;
   wlogout.enable = true;
@@ -82,6 +82,10 @@
    #\\\\\\\\\\\
    # Security:
    #///////////
+
+   #>>> System:
+
+  gnome-polkit.enable = true; 
    
    #>>> Network:
    #-------------
@@ -175,10 +179,6 @@
    # HM Configuration:
    #------------------
    #///////////////////
-
-  users.users.chrrltx.packages = with pkgs; [
-    (python313.withPackages (ps: with ps; [ pygobject3 ]))
-  ];
 
   home-manager.users.chrrltx = { pkgs, ... }: {
     
