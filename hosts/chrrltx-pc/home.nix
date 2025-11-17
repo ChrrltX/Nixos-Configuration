@@ -59,7 +59,7 @@
   waybar-2.enable = true;
   hypridle.enable = false;
   hyprlock.enable = false;
-  #sunsetr.enable = true;
+  sunsetr.enable = true;
   hyprshell.enable = false;
   swaync.enable = true;
   vicinae.enable = true;
@@ -195,7 +195,7 @@
     }; 
      
      #>>> Temporary Packages:
-    home.packages = with pkgs; [ python3 whois nwg-drawer nwg-dock-hyprland nurl autojump television haskellPackages.sys-auth-smbclient ];
+    home.packages = with pkgs; [ easyeffects python3 whois nwg-drawer nwg-dock-hyprland nurl autojump television haskellPackages.sys-auth-smbclient ];
     
      #>>> User:
     home.username = "chrrltx";
