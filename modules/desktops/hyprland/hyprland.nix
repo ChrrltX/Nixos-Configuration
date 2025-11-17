@@ -99,6 +99,7 @@ in
             "swaync"
             "vicinae server"
             "swayosd-server"
+            "sunsetr"
             #'' nwg-dock-hyprland -c "wofi --show drun" -x -ml 10 -p "left" ''
 	  
    	  ];

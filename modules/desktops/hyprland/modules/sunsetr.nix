@@ -15,7 +15,7 @@
       home.packages = with pkgs; [ hyprsunset ];
 
       home.file."~/.config/sunsetr/sunsetr.toml" = {
-        source = ./sunsetr;
+        source = ./sunsetr.nix;
         recursive = true;
         text = ''
         

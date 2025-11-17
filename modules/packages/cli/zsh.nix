@@ -18,8 +18,8 @@
       programs.oh-my-posh = {
         enable = true;
         #useTheme = "catppuccin_mocha";
-        #useTheme = "catppuccin"; 
-        useTheme = "clean-detailed";
+        useTheme = "catppuccin"; 
+        #useTheme = "clean-detailed";
         enableZshIntegration = true;
       };
       
