@@ -17,7 +17,6 @@
 	   # Main Binds:
 	  "$mod, Q, killactive,"
 	  "$mod SHIFT, Q, forcekillactive"
-          "$mod, Backspace, exit,"
           "$mod SHIFT, V, togglefloating,"
 	  "$mod SHIFT, F, fullscreen,"
           "$mod SHIFT, S, exec, $screenshot,"

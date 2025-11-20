@@ -39,6 +39,10 @@
     home-manager.users.chrrltx = { pkgs, ... }: {
       
       dconf.settings = {
+
+        "org/gnome/orca" = {
+          enabled = false;
+        };  
         
         "org/gnome/shell" = {
           disable-user-extensions = true;

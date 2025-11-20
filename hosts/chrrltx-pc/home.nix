@@ -21,7 +21,7 @@
    #>>> Gnome:
    #-----------
 
-  gnome.enable = true;
+  gnome.enable = false;
    
    #>>> Gnome Extensions:
    #----------------------
