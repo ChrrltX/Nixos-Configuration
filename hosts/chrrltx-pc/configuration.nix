@@ -1,16 +1,10 @@
 { config, pkgs, lib, input,  ... }:
 
-let
-  delete-script = pkgs.callPackage ./../../delete-script.nix { };
-in
-
 {
   imports = [ 
     ./hardware-configuration.nix
     ./home.nix
   ];
-
-  environment.systemPackages = [ delete-script ];
    
    # Gets Rid of NixOS Manual:
   documentation.nixos.enable = false;

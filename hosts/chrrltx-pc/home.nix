@@ -134,7 +134,7 @@
   spotify.enable = true;
   kitty.enable = true;
   nautilus.enable = true;
-  signal.enable = false;
+  signal.enable = true;
   blender.enable = true;
 
    #>>> Utility:
@@ -180,6 +180,14 @@
    #------------------
    #///////////////////
 
+  #environment.systemPackages = [
+  #  inputs.nix-gaming.packages.${pkgs.system}.rocket-league
+  #];
+
+  imports = [
+    ./../../rocket-league.nix
+  ];  
+
   home-manager.users.chrrltx = { pkgs, ... }: {
     
      #>>> Git:
@@ -195,7 +203,7 @@
     }; 
      
      #>>> Temporary Packages:
-    home.packages = with pkgs; [ easyeffects python3 whois nwg-drawer nwg-dock-hyprland nurl autojump television haskellPackages.sys-auth-smbclient ];
+    home.packages = with pkgs; [ easyeffects heroic wine hyprviz waytrogen python3 whois nwg-drawer nwg-dock-hyprland nurl autojump television haskellPackages.sys-auth-smbclient ];
     
      #>>> User:
     home.username = "chrrltx";

@@ -29,7 +29,7 @@
 
           night_temp = 3300        # Color temperature during night (1000-20000) Kelvin
           day_temp = 6500          # Color temperature during day (1000-20000) Kelvin
-          night_gamma = 90         # Gamma percentage for night (10-100%)
+          night_gamma = 100         # Gamma percentage for night (10-100%)
           day_gamma = 100          # Gamma percentage for day (10-100%)
           update_interval = 60     # Update frequency during transitions in seconds (10-300)
 

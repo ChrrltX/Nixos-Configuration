@@ -31,41 +31,24 @@
 	   # Module Positions:
 
 	  modules-left = [
+            "custom/swaync"
             "hyprland/workspaces"
-            #"custom/separator"
-            #"custom/space"
-            "custom/previous"
-            "mpris"
-            "custom/next"
-            #"custom/separator"
-            #"custom/space"
+            "privacy"
             "group/expand-right"
           ];
 	  modules-center = [
             "cava"
-            #"custom/separator"
-            #"custom/space"
             "clock"
-            #"hyprland/workspaces#ws2"
-            #"custom/separator"
-            #"custom/space"
             "cava"
 	  ];  
 	  modules-right = [ 
             "group/expand-left"
-            #"custom/separator"
-            #"custom/space"
+            "custom/previous"
+            "mpris"
+            "custom/next"
             "pulseaudio"
-            #"custom/separator"
-            #"custom/space"
             "network"
-            #"custom/separator"
-            #"custom/space"
             "battery"
-            "custom/swaync"
-            #"custom/separator"
-            #"custom/space"
-            #"group/power"
             "custom/wlogout"
 	  ];
 
@@ -83,20 +66,23 @@
 
           "clock" = {
             format = " {:%I:%M %p}";
-            format-alt = " 󰸘 {:%a, %d %b |  %I:%M %p}";
+            format-alt = " 󰸘 {:%a, %d %b    %I:%M %p}";
             interval = 1;
             tooltip = false;
           };
 
           "custom/swaync" = {
-            format = "";
+            #format = "";
+            #format = "󱗼";
+            format = "";
             tooltip = false;
             on-click = "swaync-client --open-panel";
           };  
 
           "hyprland/workspaces" = {
-            ws = "WS1";
-            format = "{name}";
+            #format = "{name}";
+            #format = "{windows}";
+            format = "{icon}";
             format-icons = {
               #active = "";
               active = "";
@@ -105,22 +91,16 @@
             };  
             persistent-workspaces = {
               "*" = 5;
-              #"DP-3" = ["1" "2" "3" "4" "5"];
-            };  
-          };
-
-          "hyprland/workspaces#ws2" = {
-            ws = "WS2";
-            format = "{name}";
-            format-icons = {
-              #active = "";
-              active = "";
-              default = "";
-              empty = "";
-            };  
-            persistent-workspaces = {
-              "HDMI-A-1" = ["6" "7" "8" "9" "10"];
-            };  
+            }; 
+            #active-only = true;
+            #format-window-separator = "";
+            #workspace-taskbar = {
+            #  enable = true;
+            #  update-active-window = true;
+            #  format = "{icon} {title:.22}";
+            #  icon-size = 18;
+            #  on-click-window = "";
+            #};
           };
 
           "cava" = {
@@ -151,7 +131,7 @@
           };
 
           "mpris" = {
-            #format = "| {status_icon} {title}-{artist}-{album} {player_icon}";
+            #format = "{status_icon} {title-artist-album} {player_icon}";
             #format-paused = "| {status_icon} <i>{dynamic}</i> {player_icon}";
             format = "{status_icon}";
             format-paused = "{status_icon}";
@@ -159,14 +139,15 @@
             player-icons = {
               mpv = "";  
               spotify = "";
-              brave = "";
-              zen-twilight = "";
+              brave = "";
+              zen-twilight = "";
             };
             status-icons = {
               paused = "";
               playing = "";
-            };  
-            "[format]-len" = 15;
+            };
+            "[[format]-len]" = 35;
+            dynamic-len = 35;
             ellipsis = "...";
             on-click = "playerctl play-pause";
             #on-click-middle = "playerctl previous";
@@ -181,8 +162,35 @@
 
           "custom/next" = {
             format = "";
-            on-click-right = "playerctl next";
+            on-click = "playerctl next";
             tooltip = false;
+          };  
+
+          "privacy" = {
+            transition-duration = 250;
+            icon-spacing = 6;
+            icon-size = 18; 
+            modules = [
+              {
+                type = "screenshare";
+                tooltip = true;
+              }
+              #{
+              #  type = "audio-out";
+              #  tooltip = true;
+              #}
+              {
+                type = "audio-in";
+                tooltip = false;
+              }  
+            ];
+            ignore-monitor = true;
+            ignore = [
+              {
+                type = "audio-in";
+                name = "cava";
+              }
+            ];
           };  
 
           "pulseaudio" = {
@@ -292,6 +300,7 @@
 	    };
 	    modules = [
               "custom/expand-left"
+              #"privacy"
               #"custom/endpoint-left"
             ];
           };
@@ -378,6 +387,9 @@
 	}  
 
 	tooltip {
+         margin: 3px;
+         transition: all .3s ease;
+         background-color: #${config.stylix.base16Scheme.base01};
 	}
         
         #custom-space {
@@ -419,8 +431,9 @@
 
         #workspaces button {
           padding: 0px 5px;
+          margin: 0px 2px;
           color: #${config.stylix.base16Scheme.base05};
-          background-color: transparent;
+          /*background-color: #${config.stylix.base16Scheme.base02};*/
           transition: all .3s ease;
         } 
 
@@ -441,7 +454,7 @@
         } 
 
         #workspaces button.empty:hover {
-          color: #${config.stylix.base16Scheme.base02};
+          background-color: #${config.stylix.base16Scheme.base02};
           color: #${config.stylix.base16Scheme.base04};
         }  
 
@@ -491,6 +504,12 @@
         #custom-next:hover {
           transition: all .8s linear;
           color: rgb(122, 100, 148);
+        } 
+
+        #privacy {
+          padding: 0px 8px;
+          transition: all .3s ease;
+          color: #${config.stylix.base16Scheme.base09};
         }  
 
 	#network {
