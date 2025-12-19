@@ -100,7 +100,7 @@ in
             "vicinae server"
             "swayosd-server"
             "sunsetr"
-            "openrgb --startminimized"
+            "openrgb --startminimized --color 8c68cf"
             "easyeffects -w"
             #'' nwg-dock-hyprland -c "wofi --show drun" -x -ml 10 -p "left" ''
 	  

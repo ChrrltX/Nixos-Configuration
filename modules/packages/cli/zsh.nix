@@ -51,7 +51,10 @@
 
            # Other:
           scr = ''grim -g "$(slurp -w 0)" - | swappy -f -'';
-          boblox = "nohup flatpak run org.vinegarhq.Vinegar & disown";
+          hm-logs = "journalctl -eu home-manager-chrrltx.service";
+          x = "exit";
+          img = "kitten icat";
+          diff = "kitten diff";
           cat = "bat";
           ls = "eza";
           trash = "rm -rf .local/share/Trash";

@@ -179,14 +179,8 @@
    # HM Configuration:
    #------------------
    #///////////////////
-
-  #environment.systemPackages = [
-  #  inputs.nix-gaming.packages.${pkgs.system}.rocket-league
-  #];
-
-  imports = [
-    ./../../rocket-league.nix
-  ];  
+  
+  virtualisation.waydroid.enable = true;
 
   home-manager.users.chrrltx = { pkgs, ... }: {
     
@@ -203,7 +197,7 @@
     }; 
      
      #>>> Temporary Packages:
-    home.packages = with pkgs; [ easyeffects heroic wine hyprviz waytrogen python3 whois nwg-drawer nwg-dock-hyprland nurl autojump television haskellPackages.sys-auth-smbclient ];
+    home.packages = with pkgs; [ onlyoffice-desktopeditors aircrack-ng alpaca adwaita-icon-theme grimblast mousam loupe totem clapper catppuccinifier-gui video-downloader mpvpaper easyeffects heroic wine hyprviz waytrogen python3 whois nwg-drawer nwg-dock-hyprland nurl autojump television haskellPackages.sys-auth-smbclient ];
     
      #>>> User:
     home.username = "chrrltx";

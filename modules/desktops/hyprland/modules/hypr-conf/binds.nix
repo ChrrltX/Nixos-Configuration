@@ -8,9 +8,10 @@
 	 # Definitions:
         "$mod" = "SUPER";
 	"$terminal" = "kitty";
+        "$dp-terminal" = "kitten quick_access_terminal --detach";
 	"$browser" = "zen-twilight";
         "$files" = "nautilus";
-        "$screenshot" = ''grim -g "$(slurp -w 0)" - | swappy -f -'';
+        "$screenshot" = '' grimblast copy area | notify-send "󱣴   Screenshot Taken" '';
 
 	bind = [
 	  
@@ -19,12 +20,13 @@
 	  "$mod SHIFT, Q, forcekillactive"
           "$mod SHIFT, V, togglefloating,"
 	  "$mod SHIFT, F, fullscreen,"
-          "$mod SHIFT, S, exec, $screenshot,"
+          "$mod SHIFT, S, exec, $screenshot"
           "$mod SHIFT, W, exec, woomer"
           "$mod, ESC, exec, wlogout"
 
 	   # Apps:
 	  "$mod, Tab, exec, $terminal"
+          "$mod, grave, exec, $dp-terminal"
 	  "$mod, Z, exec, $browser"
 	  "$mod, S, exec, steam"
 	  "$mod, D, exec, vesktop"
@@ -40,20 +42,20 @@
 	  "$mod, down, movefocus, d"
 	   
 	   # Move Workspaces:
+	  "$mod, F1, workspace, 6"
+	  "$mod, F2, workspace, 7"
+	  "$mod, F3, workspace, 8"
+	  "$mod, F4, workspace, 9"
+	  "$mod, F5, workspace, 10"
 	  "$mod, 1, workspace, 1"
 	  "$mod, 2, workspace, 2"
 	  "$mod, 3, workspace, 3"
 	  "$mod, 4, workspace, 4"
 	  "$mod, 5, workspace, 5"
-	  "$mod SHIFT, 1, workspace, 6"
-	  "$mod SHIFT, 2, workspace, 7"
-	  "$mod SHIFT, 3, workspace, 8"
-	  "$mod SHIFT, 4, workspace, 9"
-	  "$mod SHIFT, 5, workspace, 10"
 
 	   # Scroll Workspaces:
-	  "$mod, mouse_down, workspace, e+1"
-	  "$mod, mouse_up, workspace, e-1"
+	  #"$mod, mouse_down, workspace, e+1"
+	  #"$mod, mouse_up, workspace, e-1"
 
 	   # Move Windows to Workspaces:
 	  "$mod CTRL, 1, movetoworkspace, 1"
@@ -80,8 +82,10 @@
 	bindle = [
            
 	   # Increasing/Decreasing Volume:
-	  ",XF86AudioRaiseVolume, exec, progress-osd --volume +2%"
-          ",XF86AudioLowerVolume, exec, progress-osd --volume -2%"
+          "$mod, mouse_up, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%+"
+          "$mod, mouse_up, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%-"
+	  #",XF86AudioRaiseVolume, exec, progress-osd --volume +2%"
+          #",XF86AudioLowerVolume, exec, progress-osd --volume -2%"
 
           "$mod ALT, up, exec, progress-osd --volume +2%"
           "$mod ALT, down, exec, progress-osd --volume -2%"

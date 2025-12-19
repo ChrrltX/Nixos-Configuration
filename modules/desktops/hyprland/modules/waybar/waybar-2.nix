@@ -31,7 +31,6 @@
 	   # Module Positions:
 
 	  modules-left = [
-            "custom/swaync"
             "hyprland/workspaces"
             "privacy"
             "group/expand-right"
@@ -39,6 +38,7 @@
 	  modules-center = [
             "cava"
             "clock"
+            "custom/swaync"
             "cava"
 	  ];  
 	  modules-right = [ 
@@ -46,8 +46,11 @@
             "custom/previous"
             "mpris"
             "custom/next"
+            "backlight"
             "pulseaudio"
             "network"
+            "network#vpn"
+            "bluetooth"
             "battery"
             "custom/wlogout"
 	  ];
@@ -72,12 +75,25 @@
           };
 
           "custom/swaync" = {
-            #format = "";
-            #format = "󱗼";
-            format = "";
-            tooltip = false;
-            on-click = "swaync-client --open-panel";
-          };  
+            tooltip = true;
+            format = "{icon} {0}";
+            format-icons = {
+              notification = "󱅫";
+              none = "󰂜";
+              dnd-notification = "󰂠";
+              dnd-none = "󰪓";
+              inhibited-notification = "󰂛";
+              inhibited-none = "󰪑";
+              dnd-inhibited-notification = "󰂛";
+              dnd-inhibited-none = "󰪑";
+            };
+            return-type = "json";
+            exec-if = "which swaync-client";
+            exec = "swaync-client -swb";
+            on-click = "swaync-client -t -sw";
+            on-click-right = "swaync-client -d -sw";
+            escape = true;
+          };
 
           "hyprland/workspaces" = {
             #format = "{name}";
@@ -154,6 +170,21 @@
             #on-click-right = "playerctl next";
           };
 
+          "backlight" = {
+            format = "{icon} {percent}%";
+            format-icons = [
+              ""
+              ""
+              ""
+              ""
+              ""
+              ""
+              ""
+              ""
+              ""
+            ];
+          };
+
           "custom/previous" = {
             format = "";
             on-click = "playerctl previous";
@@ -194,32 +225,71 @@
           };  
 
           "pulseaudio" = {
-            format = "{icon} {volume}%";
-            format-icons = [
-              ""
-              ""
-            ];
-            format-muted = "";
             scroll-step = 1;
+            format = "{icon} {volume}% {format_source}";
+            format-bluetooth = "{icon} {volume}%  {format_source}";
+            format-bluetooth-muted = "󰸈 {icon}  {format_source}";
+            format-muted = "󰸈 {format_source}";
+            format-source = " {volume}%";
+            format-source-muted = "  ";
+            format-icons = {
+              headphone = "";
+              hands-free = "";
+              headset = "";
+              phone = "";
+              portable = "";
+              car = "";
+              default = [
+                ""
+                ""
+                ""
+              ];
+            };
             on-click = "pavucontrol";
-            tooltip = false;
           };
 
 	  "network" = {
             format = "{icon}";
             format-icons = {
               wifi = [
-                "󰤟"
-                "󰤢"
-                "󰤥"
-                "󰤨"
+                "󰤟 {essid}"
+                "󰤢 {essid}"
+                "󰤥 {essid}"
+                "󰤨 {essid}"
               ];
               ethernet = "";
               disconnected = ""; 
             };
+            tooltip-format = "{ifname} via {gwaddr}";
+            tooltip-format-wifi = "󰤨  {essid}({signalStrength}%)";
+            tooltip-format-ethernet = " {ifname}";
+            tooltip-format-disconnected = "Disconnected";
             tooltip = false;
 	    on-click = "kitty nmtui";
 	  };
+
+          "network#vpn" = {
+            interface = "proton0";
+            format = "";
+            format-disconnected = "";
+            on-click = "kitty nmtui";
+          };
+
+          "bluetooth" = {
+            format = "{icon}";
+            format-connected-battery = "{icon} {device_battery_percentage}%";
+            interval = 15;
+            format-icons = {
+              on = "";
+              off = "󰂲";
+              disabled = "󰂲";
+              connected = "";
+              connected-battery = "";
+            };
+            tooltip-format = "{device_alias}";
+            on-click = "blueman-manager";
+          };
+
 
           "battery" = {
             interval = 30;
@@ -233,10 +303,15 @@
             format-plugged = "{capacity}% 󰂄 ";
             format-alt = "{time} {icon}";
             format-icons = [
+              "󰂎"
+              "󰁺"
               "󰁻"
               "󰁼"
+              "󰁽"
               "󰁾"
+              "󰁿"
               "󰂀"
+              "󰂁"
               "󰂂"
               "󰁹"
             ];
@@ -506,6 +581,17 @@
           color: rgb(122, 100, 148);
         } 
 
+        #backlight {
+          padding: 0px 8px;
+          transition: all .3s ease;
+          color: #${config.stylix.base16Scheme.base05};
+        }  
+
+        #backlight:hover {
+          transition: all .3s ease;
+          color: #${config.stylix.base16Scheme.base04};
+        }
+
         #privacy {
           padding: 0px 8px;
           transition: all .3s ease;
@@ -519,6 +605,28 @@
 	}
 
         #network:hover {
+          transition: all .3s ease;
+          color: #${config.stylix.base16Scheme.base04};
+        }
+
+        #network#vpn {
+	  padding: 0px 0px;
+          color: #${config.stylix.base16Scheme.base05};
+	  transition: all .3s ease;
+        }
+
+        #network#vpn:hover {
+          transition: all .3s ease;
+          color: #${config.stylix.base16Scheme.base04};
+        }
+
+        #bluetooth {
+          padding: 0px 8px;
+          transition: all .3s ease;
+          color: #${config.stylix.base16Scheme.base05};
+        }  
+
+        #bluetooth:hover {
           transition: all .3s ease;
           color: #${config.stylix.base16Scheme.base04};
         }
