@@ -31,7 +31,8 @@
 	  "$mod, S, exec, steam"
 	  "$mod, D, exec, vesktop"
 	  "$mod, R, exec, obsidian"
-          "$mod, W, exec, wallpaper-switcher"
+          #"$mod, W, exec, wallpaper-switcher"
+          "$mod, W, exec, waypaper"
           "$mod, F, exec, $files"
           "$mod, C, exec, cartridges"
           

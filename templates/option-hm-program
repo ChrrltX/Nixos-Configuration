@@ -9,7 +9,7 @@
   config = lib.mkIf config.?.enable {
   
     home-manager.users.chrrltx = { pkgs, ... }: {
-      programs.?.enable = true;
+      programs.!.enable = true;
     };
 
   };  

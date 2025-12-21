@@ -15,6 +15,7 @@
     ./packages/gaming/roblox.nix
     ./packages/gaming/steam.nix
     ./packages/gaming/cartridges.nix
+    ./packages/gaming/heroic.nix
      
      #>>> Media: 
 
@@ -24,6 +25,7 @@
     ./packages/media/spotify.nix
     ./packages/media/signal.nix
     ./packages/media/zen-browser.nix
+    ./packages/media/onlyoffice.nix
      
      #>>> Utility:
 
@@ -34,6 +36,13 @@
     ./packages/utility/gimp.nix
     ./packages/utility/gnome-clocks.nix
     ./packages/utility/woomer.nix
+    ./packages/utility/alpaca.nix
+    ./packages/utility/catppuccinifier.nix
+    ./packages/utility/easyeffects.nix
+    ./packages/utility/hyprviz.nix
+    ./packages/utility/video-downloader.nix
+    ./packages/utility/waypaper.nix
+    ./packages/utility/weather-app.nix
 
      #>>> CLI:
 

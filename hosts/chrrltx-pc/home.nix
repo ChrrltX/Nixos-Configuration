@@ -136,6 +136,7 @@
   nautilus.enable = true;
   signal.enable = true;
   blender.enable = true;
+  onlyoffice.enable = true;
 
    #>>> Utility:
    #-------------
@@ -146,6 +147,12 @@
   gimp.enable = true;
   gnome-clocks.enable = true;
   woomer.enable = true;
+  alpaca.enable = true;
+  catppuccinifier.enable = true;
+  easyeffects.enable = true;
+  video-downloader.enable = true;
+  waypaper.enable = true;
+  weather-app.enable = true;
 
    #>>> Gaming:
    #------------
@@ -156,6 +163,7 @@
   osu.enable = true;
   roblox.enable = true;
   cartridges.enable = true;
+  heroic.enable = true;
    
    #>>> CLI:
    #---------
@@ -197,7 +205,7 @@
     }; 
      
      #>>> Temporary Packages:
-    home.packages = with pkgs; [ onlyoffice-desktopeditors aircrack-ng alpaca adwaita-icon-theme grimblast mousam loupe totem clapper catppuccinifier-gui video-downloader mpvpaper easyeffects heroic wine hyprviz waytrogen python3 whois nwg-drawer nwg-dock-hyprland nurl autojump television haskellPackages.sys-auth-smbclient ];
+    home.packages = with pkgs; [ adwaita-icon-theme grimblast loupe totem mpvpaper wine python3 whois nurl ];
     
      #>>> User:
     home.username = "chrrltx";
