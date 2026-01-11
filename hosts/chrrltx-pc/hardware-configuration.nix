@@ -8,23 +8,36 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
+<<<<<<< HEAD
   boot.initrd.availableKernelModules = [ "nvme" "ahci" "xhci_pci" "usbhid" "usb_storage" "sd_mod" ];
+=======
+  boot.initrd.availableKernelModules = [ "nvme" "ahci" "xhci_pci" "usb_storage" "usbhid" "sd_mod" ];
+>>>>>>> 56ec908 (Added Impermanence)
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
+<<<<<<< HEAD
     { device = "/dev/disk/by-uuid/aedd4585-7877-4b0f-bb4d-ec189a8ebc6b";
+=======
+    { device = "/dev/disk/by-uuid/a41672a1-03b0-41b5-8d4e-55b1ebd6e91b";
+>>>>>>> 56ec908 (Added Impermanence)
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
+<<<<<<< HEAD
     { device = "/dev/disk/by-uuid/71C0-6855";
+=======
+    { device = "/dev/disk/by-uuid/17B5-ECFA";
+>>>>>>> 56ec908 (Added Impermanence)
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
   swapDevices =
+<<<<<<< HEAD
     [ { device = "/dev/disk/by-uuid/a2eea7c8-bc17-49ef-a490-ac2d7abbb2ac"; }
     ];
 
@@ -36,6 +49,11 @@
   # networking.interfaces.enp14s0.useDHCP = lib.mkDefault true;
   # networking.interfaces.wlp15s0.useDHCP = lib.mkDefault true;
 
+=======
+    [ { device = "/dev/disk/by-uuid/2734ba72-c317-48c9-87bf-8c510597c491"; }
+    ];
+
+>>>>>>> 56ec908 (Added Impermanence)
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }

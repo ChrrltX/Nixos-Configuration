@@ -17,10 +17,23 @@
     };
 
      #>>> Disko:
+<<<<<<< HEAD
 #    inputs.disko = {
 #      url = "github:nix-community/disko/latest";
 #      inputs.nixpkgs.follows = "nixpkgs";
 #    };  
+=======
+    inputs.disko = {
+      url = "github:nix-community/disko/latest";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };  
+     
+     #>>> Impermanence:
+    impermanence = {
+      url = "github:nix-community/impermanence";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };  
+>>>>>>> 56ec908 (Added Impermanence)
     
      #>>> Hyprland:
     hyprland.url = "github:hyprwm/Hyprland";
@@ -79,7 +92,12 @@
     
     nixpkgs, 
     home-manager,
+<<<<<<< HEAD
 #    disko,
+=======
+    disko,
+    impermanence,
+>>>>>>> 56ec908 (Added Impermanence)
     hyprland,
     hyprland-plugins,
     vicinae,
@@ -123,7 +141,12 @@
           # NixOS Modules:
           #////////////////
 
+<<<<<<< HEAD
 	 #disko.nixosModules.disko
+=======
+	 disko.nixosModules.disko
+         impermanence.nixosModules.impermanence
+>>>>>>> 56ec908 (Added Impermanence)
 	 stylix.nixosModules.stylix
          spicetify-nix.nixosModules.default
 	 nvf.nixosModules.default
@@ -167,10 +190,17 @@
           # NixOS Modules:
           #////////////////
 
+<<<<<<< HEAD
 	 stylix.nixosModules.stylix
          spicetify-nix.nixosModules.default
 	 nvf.nixosModules.default
          vicinae.nixosModules.default
+=======
+          stylix.nixosModules.stylix
+          spicetify-nix.nixosModules.default
+	  nvf.nixosModules.default
+          vicinae.nixosModules.default
+>>>>>>> 56ec908 (Added Impermanence)
           
           #\\\\\\\\\\\\\
           # HM Modules:
