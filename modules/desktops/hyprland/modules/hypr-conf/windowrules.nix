@@ -8,10 +8,10 @@
 	windowrule = [
 	   
 	   # Other Stuff and Fixes:
-	  "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
-	  "suppressevent maximize, class:.*"
+	  #"nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
+	  #"suppressevent maximize, class:.*"
 
-	  "center, floating:1, xwayland:0"
+	  #"center, floating:1, xwayland:0"
 	
 	];
 

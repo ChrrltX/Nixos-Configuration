@@ -134,32 +134,13 @@
   spotify.enable = true;
   kitty.enable = true;
   nautilus.enable = true;
-<<<<<<< HEAD
-  signal.enable = true;
-  blender.enable = true;
-=======
   signal.enable = false;
   blender.enable = false;
->>>>>>> 56ec908 (Added Impermanence)
   onlyoffice.enable = true;
 
    #>>> Utility:
    #-------------
 
-<<<<<<< HEAD
-  virt-manager.enable = true;
-  scrcpy.enable = true;
-  kde-connect.enable = false;
-  gimp.enable = true;
-  gnome-clocks.enable = true;
-  woomer.enable = true;
-  alpaca.enable = true;
-  catppuccinifier.enable = true;
-  easyeffects.enable = true;
-  video-downloader.enable = true;
-  waypaper.enable = true;
-  weather-app.enable = true;
-=======
   virt-manager.enable = false;
   scrcpy.enable = false;
   kde-connect.enable = false;
@@ -172,7 +153,6 @@
   video-downloader.enable = true;
   waypaper.enable = true;
   weather-app.enable = false;
->>>>>>> 56ec908 (Added Impermanence)
 
    #>>> Gaming:
    #------------
@@ -180,11 +160,7 @@
   steam.enable = true;
   prismlauncher.enable = true;
   vintage-story.enable = true;
-<<<<<<< HEAD
-  osu.enable = true;
-=======
   osu.enable = false;
->>>>>>> 56ec908 (Added Impermanence)
   roblox.enable = true;
   cartridges.enable = true;
   heroic.enable = true;

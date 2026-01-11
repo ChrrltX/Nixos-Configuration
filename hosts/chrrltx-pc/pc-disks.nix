@@ -1,7 +1,7 @@
 {config, lib, inputs, ...}:
 {
   fileSystems."/" = {
-    device = "/dev/root_vg/root";
+    device = "/dev/disk/by-uuid/a41672a1-03b0-41b5-8d4e-55b1ebd6e91b";
     fsType = "btrfs";
     options = [ "subvol=root" ];
   };
@@ -45,7 +45,7 @@
   };
 
   fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/XXXX-XXXX";
+    device = "/dev/disk/by-uuid/17B5-ECFA";
     fsType = "vfat";
   };
 }

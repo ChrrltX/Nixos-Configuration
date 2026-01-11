@@ -4,11 +4,8 @@
   imports = [ 
     ./hardware-configuration.nix
     ./home.nix
-<<<<<<< HEAD
-=======
-    ./impermanence.nix
-    ./pc-disks.nix
->>>>>>> 56ec908 (Added Impermanence)
+    #./impermanence.nix
+    #./pc-disks.nix
   ];
    
    # Gets Rid of NixOS Manual:

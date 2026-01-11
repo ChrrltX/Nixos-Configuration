@@ -23,11 +23,7 @@
         
       services.vicinae = {
         enable = true;
-<<<<<<< HEAD
-        autoStart = true;
-=======
         #autoStart = true;
->>>>>>> 56ec908 (Added Impermanence)
         settings = {
           faviconService = "twenty";
           font.size = 11.5;
