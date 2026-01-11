@@ -4,8 +4,9 @@
   imports = [ 
     ./hardware-configuration.nix
     ./home.nix
-    #./impermanence.nix
-    #./pc-disks.nix
+    ./impermanence.nix
+    ./pc-disks.nix
+    ./disko-pc.nix
   ];
    
    # Gets Rid of NixOS Manual:
